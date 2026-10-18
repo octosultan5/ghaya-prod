@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_template_archive/
+
+Sitemap: https://ghayaprod.com/sitemap.xml
