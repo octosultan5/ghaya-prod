@@ -1225,3 +1225,115 @@ a.log-in-btn:hover:after {
 .section:not(.dark-bg) .aximo-section-title:not(.light) h2 {
     color: #0c0c0c !important;
 }
+
+/* Force Hide Preloader Instantly to Prevent Page Freezing */
+.aximo-preloader-wrap { display: none !important; opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; z-index: -999 !important; }
+
+
+/* ============================================================
+   NEO-BRUTALIST PRICING CARDS - HIGH CONTRAST & LEGIBILITY FIX
+   ============================================================ */
+.aximo-pricing-wrap2 {
+  background-color: #FFFFFF !important;
+  border: 2px solid #000000 !important;
+  border-radius: 20px !important;
+  padding: 40px 30px !important;
+  color: #0c0c0c !important;
+}
+
+.aximo-pricing-wrap2 .aximo-pricing-header2 h5 {
+  color: #0c0c0c !important;
+  font-size: 22px !important;
+  font-weight: 800 !important;
+}
+
+.aximo-pricing-wrap2 .aximo-pricing-price2 h2 {
+  color: #0c0c0c !important;
+  font-size: 40px !important;
+  font-weight: 800 !important;
+}
+
+.aximo-pricing-wrap2 .aximo-pricing-price2 .price-currency {
+  color: #0c0c0c !important;
+  font-weight: 700 !important;
+}
+
+.aximo-pricing-wrap2 .aximo-pricing-price2 .price-sub {
+  color: #555555 !important;
+}
+
+.aximo-pricing-wrap2 .aximo-pricing-description p {
+  color: #333333 !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+}
+
+.aximo-pricing-wrap2 .aximo-pricing-body2 ul li {
+  color: #111111 !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+}
+
+.aximo-pricing-wrap2 .aximo-pricing-btn2 {
+  background: #0c0c0c !important;
+  color: #ffffff !important;
+  border: 2px solid #0c0c0c !important;
+  font-weight: 700 !important;
+  border-radius: 50px !important;
+  text-align: center !important;
+  display: block !important;
+  padding: 14px 20px !important;
+  transition: all 0.3s ease !important;
+}
+
+.aximo-pricing-wrap2 .aximo-pricing-btn2:hover {
+  background: #BFF747 !important;
+  color: #0c0c0c !important;
+  border-color: #0c0c0c !important;
+}
+
+/* Featured / Active Middle Card */
+.aximo-pricing-wrap2.active,
+.aximo-pricing-wrap2:hover {
+  background-color: #BFF747 !important;
+  border: 2px solid #000000 !important;
+  box-shadow: 6px 6px 0 0 #000000 !important;
+  transform: translate(-3px, -3px) !important;
+}
+
+.aximo-pricing-wrap2.active .aximo-pricing-header2 h5,
+.aximo-pricing-wrap2.active .aximo-pricing-price2 h2,
+.aximo-pricing-wrap2.active .aximo-pricing-price2 .price-currency,
+.aximo-pricing-wrap2:hover .aximo-pricing-header2 h5,
+.aximo-pricing-wrap2:hover .aximo-pricing-price2 h2,
+.aximo-pricing-wrap2:hover .aximo-pricing-price2 .price-currency {
+  color: #0c0c0c !important;
+}
+
+.aximo-pricing-wrap2.active .aximo-pricing-price2 .price-sub,
+.aximo-pricing-wrap2:hover .aximo-pricing-price2 .price-sub {
+  color: #222222 !important;
+  font-weight: 600 !important;
+}
+
+.aximo-pricing-wrap2.active .aximo-pricing-description p,
+.aximo-pricing-wrap2:hover .aximo-pricing-description p {
+  color: #111111 !important;
+}
+
+.aximo-pricing-wrap2.active .aximo-pricing-body2 ul li,
+.aximo-pricing-wrap2:hover .aximo-pricing-body2 ul li {
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+.aximo-pricing-wrap2.active .aximo-pricing-btn2 {
+  background: #0c0c0c !important;
+  color: #ffffff !important;
+}
+
+.aximo-pricing-wrap2.active .aximo-pricing-btn2:hover {
+  background: #ffffff !important;
+  color: #0c0c0c !important;
+}
+
