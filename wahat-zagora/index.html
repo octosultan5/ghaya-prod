@@ -14,7 +14,7 @@
     
     <!-- CSS Vendors from GreenAura -->
     
-    <!-- FontAwesome 6 CDN for 100% Guaranteed Icons -->
+    <!-- FontAwesome 6 CDN for guaranteed crisp icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Supabase JS Client SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -438,6 +438,163 @@
         .wz-footer a:hover {
             color: var(--wz-leaf);
         }
+    
+        /* Filter Tabs */
+        .catalog-filter-btn {
+            background: #ffffff;
+            color: var(--wz-dark);
+            border: 1px solid #d5dfd8;
+            padding: 9px 24px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 5px;
+        }
+        .catalog-filter-btn:hover, .catalog-filter-btn.active {
+            background: var(--wz-emerald);
+            color: #ffffff;
+            border-color: var(--wz-emerald);
+            box-shadow: 0 4px 15px rgba(19, 78, 58, 0.25);
+        }
+
+        /* Calculator Widget */
+        .calculator-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f6faf7 100%);
+            border: 2px solid #e1ede4;
+            border-radius: 24px;
+            padding: 40px 30px;
+            box-shadow: 0 12px 40px rgba(19, 78, 58, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        .calculator-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(197, 155, 39, 0.25) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .calc-input-box {
+            background: #ffffff;
+            border: 1px solid #d0ded4;
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            transition: border-color 0.3s;
+        }
+        .calc-input-box:focus-within {
+            border-color: var(--wz-emerald);
+            box-shadow: 0 0 0 3px rgba(19, 78, 58, 0.1);
+        }
+        .calc-result-box {
+            background: linear-gradient(135deg, var(--wz-emerald) 0%, var(--wz-emerald-light) 100%);
+            color: #ffffff;
+            border-radius: 20px;
+            padding: 30px 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(19, 78, 58, 0.3);
+            border: 2px solid rgba(197, 155, 39, 0.4);
+        }
+
+        /* FAQ Accordion */
+        .faq-card {
+            background: #ffffff;
+            border: 1px solid #e2ede5;
+            border-radius: 16px;
+            margin-bottom: 14px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .faq-card:hover {
+            border-color: var(--wz-emerald);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+        }
+        .faq-header {
+            padding: 20px 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 800;
+            font-size: 16.5px;
+            color: var(--wz-dark);
+            user-select: none;
+        }
+        .faq-header i {
+            transition: transform 0.3s ease;
+            color: var(--wz-emerald);
+        }
+        .faq-card.open .faq-header i {
+            transform: rotate(180deg);
+        }
+        .faq-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.35s ease;
+            padding: 0 24px;
+            color: #55695e;
+            font-size: 15px;
+            line-height: 1.8;
+            background: #fbfdfc;
+        }
+        .faq-card.open .faq-body {
+            max-height: 300px;
+            padding: 14px 24px 22px;
+            border-top: 1px dashed #e6eee8;
+        }
+
+        /* Social Proof Toast */
+        .social-proof-toast {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #ffffff;
+            border-right: 4px solid var(--wz-emerald);
+            border-radius: 16px;
+            padding: 14px 20px;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            z-index: 9998;
+            max-width: 360px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            pointer-events: none;
+        }
+        .social-proof-toast.show {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+        .social-proof-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(46, 204, 113, 0.15);
+            color: var(--wz-emerald);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        /* Google Map Frame */
+        .map-wrapper {
+            border-radius: 24px;
+            overflow: hidden;
+            border: 2px solid #e1ede4;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.06);
+            position: relative;
+        }
+
     </style>
 </head>
 <body>
@@ -701,9 +858,17 @@
                 <p class="section-desc">جميع الأصناف منتقاة بعناية، خالية من الآفات، وجاهزة للنقل والغرس الفوري مع ضمان الاستقرار والنمو.</p>
             </div>
 
+            <!-- Filter Tabs -->
+            <div class="text-center mb-5">
+                <button class="catalog-filter-btn active" data-filter="all">جميع الشتلات والأشجار</button>
+                <button class="catalog-filter-btn" data-filter="palms">النخيل الفاخر</button>
+                <button class="catalog-filter-btn" data-filter="trees">أشجار الزيتون والمثمرة</button>
+                <button class="catalog-filter-btn" data-filter="flowers">نباتات الزينة والورود</button>
+            </div>
+
             <div class="row">
                 <!-- Item 1: Washingtonia -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 plant-item" data-category="palms">
                     <div class="plant-card">
                         <div class="plant-img-wrapper">
                             <span class="plant-badge">الأكثر طلباً للفيلات</span>
@@ -726,7 +891,7 @@
                 </div>
 
                 <!-- Item 2: Date Palm Medjool -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 plant-item" data-category="palms">
                     <div class="plant-card">
                         <div class="plant-img-wrapper">
                             <span class="plant-badge" style="background: var(--wz-gold); color: #000;">نخيل تمر أصيل</span>
@@ -749,7 +914,7 @@
                 </div>
 
                 <!-- Item 3: Ancient Olive Tree -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 plant-item" data-category="trees">
                     <div class="plant-card">
                         <div class="plant-img-wrapper">
                             <span class="plant-badge">قطعة فنية طبيعية</span>
@@ -771,8 +936,8 @@
                     </div>
                 </div>
 
-                <!-- Item 4: %D8%A7%D9%84%D9%85%D8%AC%D9%86%D9%88%D9%86%D8%A9 -->
-                <div class="col-md-6 col-lg-4">
+                <!-- Item 4: Bougainvillea -->
+                <div class="col-md-6 col-lg-4 plant-item" data-category="flowers">
                     <div class="plant-card">
                         <div class="plant-img-wrapper">
                             <span class="plant-badge" style="background: #e91e63;">ألوان زاهية مبهجة</span>
@@ -795,7 +960,7 @@
                 </div>
 
                 <!-- Item 5: Lemon 4 Seasons -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 plant-item" data-category="trees">
                     <div class="plant-card">
                         <div class="plant-img-wrapper">
                             <span class="plant-badge" style="background: #f1c40f; color: #000;">إنتاج طيلة السنة</span>
@@ -817,8 +982,8 @@
                     </div>
                 </div>
 
-                <!-- Item 6: %D8%A7%D9%84%D8%B3%D9%8A%D9%83%D8%A7%D8%B3 Revoluta -->
-                <div class="col-md-6 col-lg-4">
+                <!-- Item 6: Cycas Revoluta -->
+                <div class="col-md-6 col-lg-4 plant-item" data-category="palms">
                     <div class="plant-card">
                         <div class="plant-img-wrapper">
                             <span class="plant-badge" style="background: #27ae60;">أناقة ملكية</span>
@@ -936,6 +1101,74 @@
         </div>
     </section>
 
+    
+    <!-- Garden Cost Calculator Section -->
+    <section class="py-5" style="background: #fdfbf7;">
+        <div class="container py-4">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa fa-calculator ml-1"></i> حاسبة التكلفة الذكية</span>
+                <h2 class="section-title">احسب التكلفة التقديرية لتهيئة حديقتك مع التوصيل والغرس</h2>
+                <p class="section-desc">حدد مساحة حديقتك والأشجار التي ترغب بها واحصل على ميزانية تقريبية فورية بأثمنة المشتل المباشرة دون وساطة.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="calculator-card">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 mb-4 mb-lg-0">
+                                <h3 class="mb-4" style="font-size: 20px; font-weight: 800; color: var(--wz-emerald);">
+                                    <i class="fa fa-sliders ml-2"></i> مواصفات الحديقة المطلوبة:
+                                </h3>
+
+                                <div class="calc-input-box">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <label class="m-0 font-weight-bold" style="font-size: 14.5px;">المساحة التقديرية للحديقة (بالمتر المربع):</label>
+                                        <span id="areaVal" class="badge badge-success font-weight-bold px-3 py-1" style="font-size: 14px; background: var(--wz-emerald);">150 م²</span>
+                                    </div>
+                                    <input type="range" class="custom-range w-100" id="areaRange" min="50" max="800" step="25" value="150" style="accent-color: var(--wz-emerald);">
+                                </div>
+
+                                <div class="calc-input-box">
+                                    <label class="font-weight-bold d-block mb-2" style="font-size: 14.5px;">اختيار العناصر والأشجار الأساسية:</label>
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input calc-chk" id="optPalm" checked data-price="4500">
+                                        <label class="custom-control-label" for="optPalm">نخيل واشنطونيا الحجم الكبير (3 إلى 4 أمتار)</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input calc-chk" id="optOlive" checked data-price="3800">
+                                        <label class="custom-control-label" for="optOlive">شجرة زيتون معمرة أصيلة (جذع منحوت تاريخي)</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input calc-chk" id="optGrass" checked data-sqm="45">
+                                        <label class="custom-control-label" for="optGrass">زرع عشب طبيعي ممتاز مقاوم (عشب طبيعي ملفوف ممتاز)</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input calc-chk" id="optDrip" checked data-sqm="25">
+                                        <label class="custom-control-label" for="optDrip">تركيب شبكة السقي الأوتوماتيكي بالتنقيط والرش</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5">
+                                <div class="calc-result-box">
+                                    <div style="font-size: 14px; opacity: 0.9; margin-bottom: 5px;">الميزانية التقديرية الشاملة للغرس:</div>
+                                    <div id="calcTotal" style="font-size: 38px; font-weight: 900; color: #ffd772; margin-bottom: 8px;">18,800 درهم</div>
+                                    <div style="font-size: 12.5px; opacity: 0.85; margin-bottom: 20px;">
+                                        يشمل الشتلات، التربة المجهزة، الحفر، النقل بالرافعة، وتثبيت وضمان النمو.
+                                    </div>
+                                    <a id="calcWaBtn" href="https://wa.me/212600000000" target="_blank" class="btn btn-warning w-100 font-weight-bold py-3" style="border-radius: 50px; background: var(--wz-gold); border: none; color: #000; font-size: 15px;">
+                                        <i class="fa fa-whatsapp ml-1"></i> طلب هذا العرض التقديري على الواتساب
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Testimonials Section -->
     <section class="py-5" style="background: var(--wz-sand-dark);">
         <div class="container py-4">
@@ -999,6 +1232,78 @@
         </div>
     </section>
 
+    
+    <!-- FAQ Section -->
+    <section class="py-5" style="background: #ffffff;" id="faq">
+        <div class="container py-4">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa fa-question-circle ml-1"></i> إجابات شافية</span>
+                <h2 class="section-title">الأسئلة الشائعة التي يسألها أصحاب الفيلات</h2>
+                <p class="section-desc">جمعنا لك أهم الأسئلة التي يطرحها عملاؤنا بخصوص أثمنة النخيل، النقل، الغرس، والضمان بحد السوالم والمناطق المجاورة.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <!-- Q1 -->
+                    <div class="faq-card open">
+                        <div class="faq-header">
+                            <span><i class="fa fa-truck ml-2 text-success"></i> هل توفرون خدمة الغرس والنقل بالرافعة إلى داخل الفيلا؟</span>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-body">
+                            نعم بكل تأكيد. نوفر أسطول شاحنات مجهزة برافعة هيدروليكية متطورة مخصصة لرفع النخيل الضخم والأشجار المعمرة فوق أسوار الفيلات وإنزالها في المكان المخصص للغرس بكل عناية وأمان دون إلحاق أي ضرر بمرافق الفيلا أو حواف المسبح.
+                        </div>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="faq-card">
+                        <div class="faq-header">
+                            <span><i class="fa fa-shield ml-2 text-success"></i> ما هي الضمانات المقدمة على استقرار الشتلات ونموها؟</span>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-body">
+                            نقدم ضماناً حقيقياً على صحة الجذور وتجذر الأشجار داخل تربتكم. يقوم فريقنا المتخصص تحت إشراف سي عمر بتجهيز الحفر بالسماد العضوي الطبيعي ومضادات الصدمة النباتية، مع متابعة دورية لتقديم النصح والإرشادات اللازمة للري المنتظم.
+                        </div>
+                    </div>
+
+                    <!-- Q3 -->
+                    <div class="faq-card">
+                        <div class="faq-header">
+                            <span><i class="fa fa-calendar ml-2 text-success"></i> هل يمكنني زيارة المشتل في حد السوالم لاختيار الأشجار بنفسي؟</span>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-body">
+                            نرحب بكم بكل سرور طيلة أيام الأسبوع من الساعة 08:00 صباحاً إلى 19:30 مساءً. يمكنكم التجول بالمشتل، معاينة آلاف الشتلات، وترقيم النخيل وشجر الزيتون الذي ينال إعجابكم ليتم شحنه مباشرة إلى فيلتكم.
+                        </div>
+                    </div>
+
+                    <!-- Q4 -->
+                    <div class="faq-card">
+                        <div class="faq-header">
+                            <span><i class="fa fa-map-marker ml-2 text-success"></i> ما هي المدن والمناطق التي تغطونها بخدمة التوريد والغرس؟</span>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-body">
+                            نغطي يومياً: حد السوالم، الدار البيضاء، بوسكورة (المدينة الخضراء)، دار بوعزة، طماريس، بنسليمان، المحمدية، والجديدة. كما نلبي طلبات التوريد والشحن لجميع مدن وأقاليم المملكة للضيعات والمشاريع الكبرى.
+                        </div>
+                    </div>
+
+                    <!-- Q5 -->
+                    <div class="faq-card">
+                        <div class="faq-header">
+                            <span><i class="fa fa-sun-o ml-2 text-success"></i> متى يعتبر أفضل وقت في السنة لغرس النخيل في المغرب؟</span>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-body">
+                            بفضل مناخ جهة الدار البيضاء المعتدل، يمكن غرس نخيل واشنطونيا ونخيل التمر طيلة فصول السنة بنجاح، وتعتبر فترات الربيع وأوائل الصيف مثالية جداً لتحفيز النمو السريع والجذور القوية.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Location & Contact Section -->
     <section class="py-5" id="contact" style="background: #ffffff;">
         <div class="container py-4">
@@ -1039,6 +1344,29 @@
                             <i class="fa fa-whatsapp"></i> حدد موعد زيارتك للمشتل عبر الواتساب
                         </a>
                     </div>
+
+                    <!-- Real Interactive Google Map -->
+                    <div class="map-wrapper mt-4">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53324.96637841103!2d-7.878564175390623!3d33.42436892556783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda63d11b3be2f59%3A0x6b4ef674b0fa0df5!2sHad%20Soualem!5e0!3m2!1sen!2sma!4v1700000000000!5m2!1sen!2sma" 
+                            width="100%" 
+                            height="240" 
+                            style="border:0; display:block;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <div class="p-3 bg-white d-flex justify-content-between align-items-center">
+                            <div>
+                                <strong style="color: var(--wz-emerald);"><i class="fa fa-map-pin ml-1"></i> موقع المشتل على الطريق الوطنية رقم 1</strong>
+                                <div style="font-size: 12px; color: #777;">حد السوالم (قرب مدخل الطريق السيار نحو كازا)</div>
+                            </div>
+                            <a href="https://maps.google.com/?q=Had+Soualem+Morocco" target="_blank" class="btn btn-sm btn-outline-success font-weight-bold" style="border-radius: 50px;">
+                                <i class="fa fa-external-link ml-1"></i> فتح الخريطة
+                            </a>
+                        </div>
+                    </div>
+    
                 </div>
 
                 <div class="col-lg-6">
@@ -1148,6 +1476,20 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
 
+    <!-- Social Proof Toast -->
+    <div id="socialToast" class="social-proof-toast">
+        <div class="social-proof-icon">
+            <i class="fa fa-bell"></i>
+        </div>
+        <div>
+            <div id="toastText" style="font-size: 13.5px; font-weight: 700; color: var(--wz-dark);">
+                تم للتو شحن 4 نخلات واشنطونيا نحو فيلا ببوسكورة
+            </div>
+            <div id="toastTime" style="font-size: 11.5px; color: #888;">منذ دقيقتين • طلب مؤكد</div>
+        </div>
+    </div>
+
+
     <script>
     document.addEventListener("DOMContentLoaded", function() {
         // Mobile navbar toggler
@@ -1159,26 +1501,137 @@
             });
         }
 
-        // Supabase configuration
-        const SUPABASE_PROJECT_URL = "https://xyzcompany.supabase.co";
-        const SUPABASE_ANON_KEY = "dummy-anon-key";
+        // 1. Plant Catalog Filter Tabs
+        const filterBtns = document.querySelectorAll(".catalog-filter-btn");
+        const plantItems = document.querySelectorAll(".plant-item");
 
-        // Form Submission
-        var leadForm = document.getElementById("leadForm");
-        if (leadForm) {
-            leadForm.addEventListener("submit", async function(e) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener("click", function() {
+                filterBtns.forEach(b => b.classList.remove("active"));
+                this.classList.add("active");
+                const filter = this.getAttribute("data-filter");
+
+                plantItems.forEach(item => {
+                    if (filter === "all" || item.getAttribute("data-category") === filter) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            });
+        });
+
+        // 2. Garden Cost Calculator Logic
+        const areaRange = document.getElementById("areaRange");
+        const areaVal = document.getElementById("areaVal");
+        const optPalm = document.getElementById("optPalm");
+        const optOlive = document.getElementById("optOlive");
+        const optGrass = document.getElementById("optGrass");
+        const optDrip = document.getElementById("optDrip");
+        const calcTotal = document.getElementById("calcTotal");
+        const calcWaBtn = document.getElementById("calcWaBtn");
+
+        function updateCalculator() {
+            if (!areaRange) return;
+            const area = parseInt(areaRange.value);
+            areaVal.textContent = area + " م²";
+
+            let total = 0;
+            let details = [];
+
+            if (optPalm && optPalm.checked) {
+                total += 4500;
+                details.push("نخيل واشنطونيا كبير");
+            }
+            if (optOlive && optOlive.checked) {
+                total += 3800;
+                details.push("شجرة زيتون معمرة");
+            }
+            if (optGrass && optGrass.checked) {
+                total += area * 45;
+                details.push("عشب طبيعي (" + area + "م²)");
+            }
+            if (optDrip && optDrip.checked) {
+                total += area * 25;
+                details.push("شبكة ري ذكي (" + area + "م²)");
+            }
+
+            calcTotal.textContent = total.toLocaleString("fr-MA") + " درهم";
+
+            // Update WhatsApp Link
+            const waMsg = "🌿 *استفسار حول كلفة تهيئة حديقة من موقع واحة زاكورة حد السوالم*\n" +
+                          "📐 المساحة: " + area + " متر مربع\n" +
+                          "🌱 المكونات المطلوبة: " + details.join(" + ") + "\n" +
+                          "💰 التكلفة التقديرية بالموقع: " + total.toLocaleString("fr-MA") + " درهم\n" +
+                          "أريد تحديد موعد للمعاينة وتأكيد الطلب.";
+            calcWaBtn.href = "https://wa.me/212600000000?text=" + encodeURIComponent(waMsg);
+        }
+
+        if (areaRange) {
+            areaRange.addEventListener("input", updateCalculator);
+            document.querySelectorAll(".calc-chk").forEach(chk => chk.addEventListener("change", updateCalculator));
+            updateCalculator();
+        }
+
+        // 3. FAQ Accordion Logic
+        document.querySelectorAll(".faq-header").forEach(header => {
+            header.addEventListener("click", function() {
+                const card = this.parentElement;
+                const wasOpen = card.classList.contains("open");
+                document.querySelectorAll(".faq-card").forEach(c => c.classList.remove("open"));
+                if (!wasOpen) {
+                    card.classList.add("open");
+                }
+            });
+        });
+
+        // 4. Subtle Social Proof Notifications Loop
+        const socialToast = document.getElementById("socialToast");
+        const toastText = document.getElementById("toastText");
+        const toastTime = document.getElementById("toastTime");
+
+        const notifications = [
+            { text: "🚚 تم للتو شحن 4 نخلات واشنطونيا نحو فيلا ببوسكورة", time: "منذ دقيقتين • طلب مؤكد" },
+            { text: "🫒 زبون من دار بوعزة قام بحجز شجرة زيتون معمرة تاريخية", time: "منذ 8 دقائق • تم الحجز" },
+            { text: "🌱 جاري تهيئة 250م² عشب طبيعي لحديقة فيلا بحد السوالم", time: "منذ 15 دقيقة • جاري الإنجاز" },
+            { text: "🌴 تم توريد فسائل نخيل تمر مجهول أصيل لضيعة بنسليمان", time: "منذ 25 دقيقة • تم التسليم" },
+            { text: "🌺 طلب 12 شتلة نبات المجنونة بألوان متنوعة لفيلا بطماريس", time: "منذ 35 دقيقة • تم التأكيد" }
+        ];
+
+        let notifIndex = 0;
+        function showNotification() {
+            if (!socialToast) return;
+            const current = notifications[notifIndex];
+            toastText.textContent = current.text;
+            toastTime.textContent = current.time;
+            socialToast.classList.add("show");
+
+            setTimeout(function() {
+                socialToast.classList.remove("show");
+            }, 6000);
+
+            notifIndex = (notifIndex + 1) % notifications.length;
+        }
+
+        setTimeout(function() {
+            showNotification();
+            setInterval(showNotification, 24000);
+        }, 4000);
+
+        // 5. Supabase & WhatsApp Form submission
+        var form = document.querySelector(".contact-form");
+        if (form) {
+            form.addEventListener("submit", function(e) {
                 e.preventDefault();
                 var name = document.getElementById("name") ? document.getElementById("name").value : "";
                 var phone = document.getElementById("phone") ? document.getElementById("phone").value : "";
                 var city = document.getElementById("city") ? document.getElementById("city").value : "";
                 var req = document.getElementById("req") ? document.getElementById("req").value : "";
 
-                // 1. Local Storage Fallback
                 var leads = JSON.parse(localStorage.getItem("wz_leads") || "[]");
-                leads.push({ name: name, phone: phone, city: city, req: req, timestamp: new Date().toISOString() });
+                leads.push({name: name, phone: phone, city: city, req: req, timestamp: new Date().toISOString()});
                 localStorage.setItem("wz_leads", JSON.stringify(leads));
 
-                // 2. Open WhatsApp Direct Dispatch
                 var msg = "🌱 *طلب جديد من موقع واحة زاكورة حد السوالم*\n" +
                           "👤 *الاسم:* " + name + "\n" +
                           "📞 *الهاتف:* " + phone + "\n" +
