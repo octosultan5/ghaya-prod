@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>واحة زاكورة للغرس | مشتل عمر بحد السوالم — توريد النخيل وأشجار الزينة وتهيئة الفيلات</title>
+    <meta name="description" content="مشتل واحة زاكورة بحد السوالم لصاحبه عمر ابن زاكورة. توريد وغرس أجود أنواع النخيل (واشنطونيا، مجهول)، أشجار الزيتون المعمرة، نباتات الزينة وتهيئة حدائق الفيلات بالدار البيضاء والمغرب.">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/png">
+    
+    <!-- Google Fonts Arabic: Cairo & Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Vendors from GreenAura -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/rt-icons.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    
+    <!-- Custom Wahat Zagora Luxury Botanical Theme CSS -->
+    <style>
+        :root {
+            --wz-emerald: #134e3a;
+            --wz-emerald-light: #1f6b52;
+            --wz-leaf: #2ecc71;
+            --wz-gold: #c59b27;
+            --wz-gold-light: #dfb74a;
+            --wz-sand: #fdfbf7;
+            --wz-sand-dark: #f4efe4;
+            --wz-dark: #0f1f18;
+            --wz-text: #2c3e35;
+            --whatsapp-green: #25D366;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cairo', 'Tajawal', sans-serif;
+            background-color: var(--wz-sand);
+            color: var(--wz-text);
+            line-height: 1.8;
+            overflow-x: hidden;
+            text-align: right;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 800;
+            color: var(--wz-dark);
+        }
+
+        /* Top Bar */
+        .wz-topbar {
+            background: var(--wz-dark);
+            color: #ffffff;
+            font-size: 13.5px;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(197, 155, 39, 0.3);
+        }
+        .wz-topbar a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .wz-topbar a:hover {
+            color: var(--wz-gold-light);
+        }
+
+        /* Header Navigation */
+        .wz-header {
+            background: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar-brand img {
+            height: 62px;
+            width: auto;
+            border-radius: 50%;
+            border: 2px solid var(--wz-gold);
+            margin-left: 12px;
+        }
+        .brand-title {
+            font-size: 22px;
+            font-weight: 900;
+            color: var(--wz-emerald);
+            line-height: 1.2;
+        }
+        .brand-subtitle {
+            font-size: 12.5px;
+            color: var(--wz-gold);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .nav-link {
+            font-weight: 700;
+            font-size: 15.5px;
+            color: var(--wz-dark) !important;
+            padding: 12px 16px !important;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--wz-emerald) !important;
+        }
+
+        /* Buttons */
+        .btn-wz-primary {
+            background: linear-gradient(135deg, var(--wz-emerald) 0%, var(--wz-emerald-light) 100%);
+            color: #ffffff !important;
+            font-weight: 800;
+            border-radius: 50px;
+            padding: 12px 28px;
+            border: none;
+            box-shadow: 0 6px 20px rgba(19, 78, 58, 0.35);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        .btn-wz-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(19, 78, 58, 0.5);
+            color: #ffffff;
+        }
+        .btn-wz-gold {
+            background: linear-gradient(135deg, var(--wz-gold) 0%, var(--wz-gold-light) 100%);
+            color: var(--wz-dark) !important;
+            font-weight: 800;
+            border-radius: 50px;
+            padding: 12px 28px;
+            border: none;
+            box-shadow: 0 6px 20px rgba(197, 155, 39, 0.3);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        .btn-wz-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(197, 155, 39, 0.45);
+        }
+        .btn-whatsapp {
+            background: #25D366 !important;
+            color: #ffffff !important;
+            font-weight: 800;
+            border-radius: 50px;
+            padding: 11px 24px;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .btn-whatsapp:hover {
+            background: #20ba59 !important;
+            transform: translateY(-2px);
+            color: #ffffff;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5);
+        }
+
+        /* Hero Section */
+        .wz-hero {
+            position: relative;
+            background: linear-gradient(rgba(15, 31, 24, 0.78), rgba(15, 31, 24, 0.85)), url('assets/images/banner/hero_palms.jpg') center center/cover no-repeat;
+            padding: 120px 0 100px;
+            color: #ffffff;
+            overflow: hidden;
+        }
+        .wz-hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(197, 155, 39, 0.25);
+            border: 1px solid var(--wz-gold);
+            color: #ffd772;
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 14.5px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        .wz-hero h1 {
+            font-size: 46px;
+            font-weight: 900;
+            color: #ffffff;
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+        .wz-hero p {
+            font-size: 19px;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.8;
+            margin-bottom: 35px;
+            max-width: 680px;
+        }
+        .hero-stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 18px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 15px;
+            transition: transform 0.3s ease;
+        }
+        .hero-stat-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        .hero-stat-num {
+            font-size: 32px;
+            font-weight: 900;
+            color: var(--wz-gold-light);
+        }
+        .hero-stat-label {
+            font-size: 13.5px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        /* Section Headings */
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-tag {
+            color: var(--wz-emerald);
+            font-weight: 800;
+            font-size: 14.5px;
+            background: rgba(46, 204, 113, 0.15);
+            padding: 6px 18px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+        .section-title {
+            font-size: 36px;
+            font-weight: 900;
+            color: var(--wz-dark);
+            margin-bottom: 15px;
+        }
+        .section-desc {
+            font-size: 16.5px;
+            color: #607268;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Service Cards */
+        .wz-service-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 35px 25px;
+            border: 1px solid #e5ebe7;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.04);
+            transition: all 0.35s ease;
+            height: 100%;
+            position: relative;
+        }
+        .wz-service-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--wz-emerald);
+            box-shadow: 0 15px 35px rgba(19, 78, 58, 0.12);
+        }
+        .service-icon-box {
+            width: 70px;
+            height: 70px;
+            border-radius: 16px;
+            background: rgba(19, 78, 58, 0.08);
+            color: var(--wz-emerald);
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 22px;
+            transition: all 0.3s ease;
+        }
+        .wz-service-card:hover .service-icon-box {
+            background: var(--wz-emerald);
+            color: #ffffff;
+        }
+
+        /* Plant Product Cards */
+        .plant-card {
+            background: #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid #e5ebe7;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+        .plant-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-color: var(--wz-leaf);
+        }
+        .plant-img-wrapper {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+        .plant-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .plant-card:hover .plant-img-wrapper img {
+            transform: scale(1.08);
+        }
+        .plant-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--wz-emerald);
+            color: #ffffff;
+            padding: 5px 14px;
+            border-radius: 50px;
+            font-size: 12.5px;
+            font-weight: 800;
+        }
+        .plant-body {
+            padding: 24px;
+        }
+        .plant-title {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--wz-dark);
+            margin-bottom: 8px;
+        }
+        .plant-desc {
+            font-size: 14px;
+            color: #607268;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .plant-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #f0f4f1;
+            padding-top: 15px;
+        }
+        .plant-price {
+            font-size: 18px;
+            font-weight: 900;
+            color: var(--wz-emerald);
+        }
+
+        /* About Omar Section */
+        .omar-story-box {
+            background: #ffffff;
+            border-radius: 24px;
+            border: 1px solid #e5ebe7;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        .quote-banner {
+            background: var(--wz-emerald);
+            color: #ffffff;
+            padding: 25px 30px;
+            border-radius: 18px;
+            margin-top: 25px;
+            position: relative;
+        }
+
+        /* WhatsApp Sticky Button */
+        .whatsapp-float-fixed {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            background: #25D366;
+            color: #ffffff;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 34px;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+            z-index: 9999;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float-fixed:hover {
+            transform: scale(1.1);
+            color: #ffffff;
+        }
+
+        /* Footer */
+        .wz-footer {
+            background: var(--wz-dark);
+            color: #b0c2b8;
+            padding: 80px 0 30px;
+            border-top: 3px solid var(--wz-gold);
+        }
+        .wz-footer h4 {
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 19px;
+            margin-bottom: 22px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .wz-footer h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 45px;
+            height: 3px;
+            background: var(--wz-gold);
+            border-radius: 3px;
+        }
+        .wz-footer a {
+            color: #b0c2b8;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .wz-footer a:hover {
+            color: var(--wz-leaf);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- WhatsApp Floating Action -->
+    <a href="https://wa.me/212600000000?text=السلام%20عليكم%20سي%20عمر%20واحة%20زاكورة،%20أريد%20الاستفسار%20عن%20أشجار%20النخيل%20وتهيئة%20الحديقة" target="_blank" class="whatsapp-float-fixed" title="تواصل على الواتساب مع عمر">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+
+    <!-- Top Bar -->
+    <div class="wz-topbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 text-center text-md-right mb-2 mb-md-0">
+                    <span class="mr-3"><i class="fa fa-map-marker text-warning ml-1"></i> حد السوالم — الطريق الوطنية رقم 1 (قرب مدخل كازا وبوسكورة)</span>
+                    <span class="d-none d-lg-inline"><i class="fa fa-clock-o text-warning ml-1"></i> مفتوح 7/7 أيام من 08:00 إلى 19:30</span>
+                </div>
+                <div class="col-md-5 text-center text-md-left">
+                    <span class="ml-3"><i class="fa fa-phone text-warning ml-1"></i> هاتف المشتل: <strong>06.00.00.00.00</strong></span>
+                    <a href="fr.html" class="badge badge-warning text-dark px-2 py-1 font-weight-bold ml-2">Français</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="wz-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light py-3">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/images/logo/logo.png" alt="شعار واحة زاكورة للغرس حد السوالم">
+                    <div>
+                        <div class="brand-title">واحة زاكورة للغرس</div>
+                        <div class="brand-subtitle">PÉPINIÈRE WAHAT ZAGORA • HAD SOUALEM</div>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#wzNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="wzNav">
+                    <ul class="navbar-nav mr-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link active" href="#home">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">قصة عمر ابن زاكورة</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#plants">كتالوج النخيل والأشجار</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">خدمات تهيئة الحدائق</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">إنجازات الفيلات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">الموقع والاتصال</a></li>
+                    </ul>
+                    <div class="mr-lg-3 mt-3 mt-lg-0 text-center">
+                        <a href="https://wa.me/212600000000?text=السلام%20عليكم%20سي%20عمر،%20أريد%20معاينة%20حديقتي%20في%20حد%20السوالم%20أو%20كازا" target="_blank" class="btn-whatsapp">
+                            <i class="fa fa-whatsapp"></i> تواصل مع عمر مباشرة
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="wz-hero" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 text-center text-lg-right">
+                    <div class="wz-hero-badge">
+                        <i class="fa fa-tree"></i> مشتل أصيل بمدينة حد السوالم — توريد وغرس لجميع مدن المغرب
+                    </div>
+                    <h1>أجود أنواع النخيل وأشجار الزينة من قلب زاكورة إلى حد السوالم</h1>
+                    <p>خبرة عريقة متوارثة أباً عن جد في غرس ورعاية النخيل (واشنطونيا، نخيل التمر المجهول)، أشجار الزيتون المعمرة، ونباتات الزينة الفاخرة لتزيين الفيلات والضيعات والمشاريع الكبرى بأثمنة المشتل المباشرة.</p>
+                    
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
+                        <a href="#plants" class="btn-wz-gold ml-3 mb-2"><i class="fa fa-leaf"></i> تصفح كتالوج الأشجار والنخيل</a>
+                        <a href="https://wa.me/212600000000?text=السلام%20عليكم%20سي%20عمر،%20أريد%20طلب%20أثمنة%20النخيل%20والأشجار" target="_blank" class="btn-whatsapp mb-2"><i class="fa fa-whatsapp"></i> اطلب استشارة ومعاينة مجانية</a>
+                    </div>
+
+                    <!-- Hero Stats -->
+                    <div class="row pt-4">
+                        <div class="col-6 col-md-3">
+                            <div class="hero-stat-card">
+                                <div class="hero-stat-num">+15,000</div>
+                                <div class="hero-stat-label">نخلة وشجرة مغروسة</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="hero-stat-card">
+                                <div class="hero-stat-num">+420</div>
+                                <div class="hero-stat-label">فيلا وحديقة مهيأة</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="hero-stat-card">
+                                <div class="hero-stat-num">100%</div>
+                                <div class="hero-stat-label">أثمنة المشتل المباشرة</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="hero-stat-card">
+                                <div class="hero-stat-num">شاحنات + رافعة</div>
+                                <div class="hero-stat-label">توصيل وغرس احترافي</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 text-center mt-5 mt-lg-0">
+                    <div style="background: rgba(255,255,255,0.08); backdrop-filter: blur(15px); border: 2px solid var(--wz-gold); border-radius: 24px; padding: 30px; box-shadow: 0 20px 50px rgba(0,0,0,0.4);">
+                        <img src="assets/images/logo/logo.png" alt="شعار المشتل" style="width: 140px; height: 140px; border-radius: 50%; border: 3px solid #ffffff; margin-bottom: 20px; box-shadow: 0 0 25px rgba(197, 155, 39, 0.6);">
+                        <h3 style="color: #ffffff; font-size: 22px; font-weight: 800; margin-bottom: 8px;">مشتل واحة زاكورة</h3>
+                        <p style="color: #ffd772; font-size: 15px; font-weight: 700; margin-bottom: 15px;">تحت إشراف الخبير الزراعي عمر (ابن زاكورة)</p>
+                        <p style="color: rgba(255,255,255,0.85); font-size: 13.5px; line-height: 1.7; margin-bottom: 20px;">
+                            نستقبلكم طيلة أيام الأسبوع بحد السوالم لمعاينة الشتلات، واختيار الأشجار بنفسك، مع توفير خدمة النقل والغرس والتثبيت بالضمان.
+                        </p>
+                        <a href="https://wa.me/212600000000?text=مرحبا%20سي%20عمر،%20أريد%20الموقع%20GPS%20لزيارة%20المشتل%20بحد%20السوالم" target="_blank" class="btn btn-warning w-100 font-weight-bold py-2" style="border-radius: 50px; background: var(--wz-gold); border: none; color: #000;">
+                            <i class="fa fa-map-marker ml-1"></i> أرسل لي موقع المشتل (GPS)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5" id="services" style="background: #ffffff;">
+        <div class="container py-4">
+            <div class="section-header">
+                <span class="section-tag">خبراتنا الزراعية</span>
+                <h2 class="section-title">خدمات متكاملة لتهيئة وتزيين أرقى المساحات الخضراء</h2>
+                <p class="section-desc">من التوريد المباشر من واحات درعة وزاكورة إلى الغرس والتهيئة الدقيقة في حد السوالم، دار بوعزة، بوسكورة، الدار البيضاء، وجميع ربوع المملكة.</p>
+            </div>
+
+            <div class="row">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="wz-service-card">
+                        <div class="service-icon-box">
+                            <i class="fa fa-tree"></i>
+                        </div>
+                        <h3 class="mb-3" style="font-size: 21px;">توريد وغرس جميع أحجام النخيل</h3>
+                        <p style="color: #607268; font-size: 14.5px;">توريد احترافي لنخيل واشنطونيا (من 1.5 متر إلى 8 أمتار) ونخيل التمر المجهول المثمر، مع التكفل بالحفر، الغرس، الرفع بالرافعة، والمتابعة حتى تثبيت النخلة بالكامل.</p>
+                        <span class="text-success font-weight-bold" style="font-size: 13px;"><i class="fa fa-check-circle ml-1"></i> متوفر فوراً بالمشتل</span>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="wz-service-card">
+                        <div class="service-icon-box" style="color: var(--wz-gold); background: rgba(197, 155, 39, 0.1);">
+                            <i class="fa fa-pagelines"></i>
+                        </div>
+                        <h3 class="mb-3" style="font-size: 21px;">أشجار الزيتون المعمرة والتزيينية</h3>
+                        <p style="color: #607268; font-size: 14.5px;">أشجار زيتون عريقة (Oliviers Centenaires) بجذوع منحوتة تاريخية وأشكال بونساي رائعة تعطي هيبة وفخامة استثنائية لمداخل الفيلات والحدائق العصرية.</p>
+                        <span class="text-success font-weight-bold" style="font-size: 13px;"><i class="fa fa-check-circle ml-1"></i> جودة مغربية أصيلة</span>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="wz-service-card">
+                        <div class="service-icon-box">
+                            <i class="fa fa-leaf"></i>
+                        </div>
+                        <h3 class="mb-3" style="font-size: 21px;">نباتات الزينة والورود المتسلقة</h3>
+                        <p style="color: #607268; font-size: 14.5px;">مجموعة غنية من نباتات (المجنونة Bougainvillea) بكافة الألوان، اللانتانا، ونباتات التسييج الدائمة الخضرة لإحاطة وتأمين خصوصية الفيلات والمسابح.</p>
+                        <span class="text-success font-weight-bold" style="font-size: 13px;"><i class="fa fa-check-circle ml-1"></i> مقاومة للحرارة والرياح</span>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="wz-service-card">
+                        <div class="service-icon-box" style="color: #e67e22; background: rgba(230, 126, 34, 0.1);">
+                            <i class="fa fa-lemon-o"></i>
+                        </div>
+                        <h3 class="mb-3" style="font-size: 21px;">أشجار الفواكه والمثمرة للمزارع</h3>
+                        <p style="color: #607268; font-size: 14.5px;">أشجار الليمون 4 فصول، التين الأسود والأبيض، الرمان، البرتقال، والأفوكادو المطعمة والمختارة بعناية لتحقيق وفرة في الإنتاج وجودة في الثمار.</p>
+                        <span class="text-success font-weight-bold" style="font-size: 13px;"><i class="fa fa-check-circle ml-1"></i> شتلات مطعمة ومضمونة</span>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="wz-service-card">
+                        <div class="service-icon-box" style="color: #3498db; background: rgba(52, 152, 219, 0.1);">
+                            <i class="fa fa-tint"></i>
+                        </div>
+                        <h3 class="mb-3" style="font-size: 21px;">العشب الطبيعي وشبكات الري الذكي</h3>
+                        <p style="color: #607268; font-size: 14.5px;">تجهيز وتسطيح التربة وزرع العشب الطبيعي المقاوم (Gazon en rouleaux) مع تركيب أنظمة السقي بالتنقيط والرشاشات الأوتوماتيكية لترشيد استهلاك الماء.</p>
+                        <span class="text-success font-weight-bold" style="font-size: 13px;"><i class="fa fa-check-circle ml-1"></i> حلول موفرة للماء</span>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="wz-service-card">
+                        <div class="service-icon-box">
+                            <i class="fa fa-scissors"></i>
+                        </div>
+                        <h3 class="mb-3" style="font-size: 21px;">التقليم، التسميد، والصيانة الدورية</h3>
+                        <p style="color: #607268; font-size: 14.5px;">فريق متمرس لتقليم النخيل وتنقيته من الشوائب، التسميد العضوي الطبيعي لتقوية الجذور، ومعالجة الأمراض الفلاحية تحت إشراف وتوجيه سي عمر شخصياً.</p>
+                        <span class="text-success font-weight-bold" style="font-size: 13px;"><i class="fa fa-check-circle ml-1"></i> عقود سنوية وشهرية</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Omar & Zagora Roots -->
+    <section class="py-5" id="about" style="background: var(--wz-sand-dark);">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="position-relative">
+                        <img src="assets/images/about/omar_nursery.jpg" alt="عمر صاحب مشتل واحة زاكورة" style="width: 100%; border-radius: 24px; box-shadow: 0 15px 35px rgba(0,0,0,0.12); object-fit: cover; max-height: 520px;">
+                        <div style="position: absolute; bottom: 20px; right: 20px; left: 20px; background: rgba(19, 78, 58, 0.95); backdrop-filter: blur(10px); color: #ffffff; padding: 20px; border-radius: 18px; border: 1px solid rgba(197, 155, 39, 0.4);">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <div style="font-size: 22px; font-weight: 900; color: #ffd772;">عمر • ابن زاكورة</div>
+                                    <div style="font-size: 13.5px; opacity: 0.9;">أكثر من 20 سنة من الشغف والخبرة في الواحات والمشاتل</div>
+                                </div>
+                                <span class="badge badge-warning text-dark font-weight-bold px-3 py-2">حد السوالم</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 pr-lg-5">
+                    <span class="section-tag">أصالة وخبرة الواحة</span>
+                    <h2 class="mb-4" style="font-size: 34px; font-weight: 900; line-height: 1.3;">من عمق واحات زاكورة إلى حد السوالم: أسرار الغرس الناجح</h2>
+                    <p style="font-size: 16px; color: #475a50; line-height: 1.9;">
+                        نشأ <strong>عمر</strong> بين واحات درعة وزاكورة الخلابة، حيث تعلم أسرار النخيل وشجر الزيتون منذ نعومة أظافره. هناك، حيث تروي الأرض حكايات الصبر والأصالة، ورث المعرفة الحقيقية بكيفية اختيار الفسائل القوية، وتقليم الأشجار، والتعامل مع مختلف أنواع التربة والمناخ.
+                    </p>
+                    <p style="font-size: 16px; color: #475a50; line-height: 1.9;">
+                        قرر عمر نقل هذه التجربة العريقة إلى <strong>مدينة حد السوالم</strong>، لتكون همزة وصل بين هدوء الواحة وروعة الفيلات والمشاريع العصرية بجهة الدار البيضاء-سطات. في <strong>واحة زاكورة</strong>، نؤمن بأن كل شجرة نغرسها هي أمانة، لذلك نقدم لزبائننا النصح الصادق والمتابعة المستمرة حتى تزهر حدائقهم بأبهى حلة.
+                    </p>
+
+                    <div class="quote-banner">
+                        <i class="fa fa-quote-right" style="font-size: 30px; opacity: 0.3; margin-bottom: 10px;"></i>
+                        <p style="font-size: 17px; font-weight: 700; margin: 0; line-height: 1.7;">
+                            "ما كنبيعوش غير الشجر والنخل، كنقدمو نصيحة من القلب وكنحرصو على أن كل فيلا ولا ضيعة تولي جنة خضراء تبارك الله."
+                        </p>
+                        <div style="font-size: 14px; color: #ffd772; margin-top: 8px; font-weight: bold;">— عمر (ابن زاكورة)</div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="https://wa.me/212600000000?text=السلام%20عليكم%20سي%20عمر،%20قرأت%20عن%20المشتل%20وأريد%20الاستفسار" target="_blank" class="btn-wz-primary">
+                            <i class="fa fa-whatsapp"></i> تواصل شخصياً مع عمر
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plant Catalog Section -->
+    <section class="py-5" id="plants" style="background: #ffffff;">
+        <div class="container py-4">
+            <div class="section-header">
+                <span class="section-tag">كتالوج المشتل</span>
+                <h2 class="section-title">أجود الشتلات والأشجار المتوفرة حالياً بالمشتل</h2>
+                <p class="section-desc">جميع الأصناف منتقاة بعناية، خالية من الآفات، وجاهزة للنقل والغرس الفوري مع ضمان الاستقرار والنمو.</p>
+            </div>
+
+            <div class="row">
+                <!-- Item 1: Washingtonia -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="plant-card">
+                        <div class="plant-img-wrapper">
+                            <span class="plant-badge">الأكثر طلباً للفيلات</span>
+                            <img src="assets/images/plants/washingtonia_palm.jpg" alt="نخيل واشنطونيا حد السوالم">
+                        </div>
+                        <div class="plant-body">
+                            <h3 class="plant-title">نخيل واشنطونيا (Washingtonia)</h3>
+                            <p class="plant-desc">نخيل مروحي سريع النمو وشديد التحمل. يعطي طابعاً فندقياً فاخراً للفيلات ومداخل الإقامات والممرات.</p>
+                            <div class="plant-meta">
+                                <div>
+                                    <div class="text-muted" style="font-size: 12px;">الأحجام المتوفرة:</div>
+                                    <div style="font-weight: bold; font-size: 14px;">من 1.5 إلى 7 أمتار</div>
+                                </div>
+                                <a href="https://wa.me/212600000000?text=أريد%20معرفة%20ثمن%20نخيل%20واشنطونيا%20المتوفر%20بالمشتل" target="_blank" class="btn-whatsapp py-1 px-3" style="font-size: 13px;">
+                                    <i class="fa fa-whatsapp"></i> اطلب الثمن
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Date Palm Medjool -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="plant-card">
+                        <div class="plant-img-wrapper">
+                            <span class="plant-badge" style="background: var(--wz-gold); color: #000;">نخيل تمر أصيل</span>
+                            <img src="assets/images/plants/date_palm_medjool.jpg" alt="نخيل التمر المجهول زاكورة">
+                        </div>
+                        <div class="plant-body">
+                            <h3 class="plant-title">نخيل التمر المجهول (Palmier Dattier)</h3>
+                            <p class="plant-desc">فسائل ونخيل تمر مجهول ممتاز من قلب زاكورة. إنتاج ثمري راقي وظل وارف مع قوة تحمل مذهلة للظروف المناخية.</p>
+                            <div class="plant-meta">
+                                <div>
+                                    <div class="text-muted" style="font-size: 12px;">الجودة:</div>
+                                    <div style="font-weight: bold; font-size: 14px;">أصل زاكورة 100%</div>
+                                </div>
+                                <a href="https://wa.me/212600000000?text=أريد%20الاستفسار%20عن%20فسائل%20ونخيل%20التمر%20المجهول" target="_blank" class="btn-whatsapp py-1 px-3" style="font-size: 13px;">
+                                    <i class="fa fa-whatsapp"></i> اطلب الثمن
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Ancient Olive Tree -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="plant-card">
+                        <div class="plant-img-wrapper">
+                            <span class="plant-badge">قطعة فنية طبيعية</span>
+                            <img src="assets/images/plants/olive_tree_ancient.jpg" alt="شجرة زيتون معمرة فخمة">
+                        </div>
+                        <div class="plant-body">
+                            <h3 class="plant-title">أشجار الزيتون المعمرة (Olivier Centenaire)</h3>
+                            <p class="plant-desc">أشجار زيتون تاريخية بأعمار تتجاوز 80 و150 سنة. جذوع عريضة منحوتة تجسد البركة والهيبة في حديقة فيلتك.</p>
+                            <div class="plant-meta">
+                                <div>
+                                    <div class="text-muted" style="font-size: 12px;">المظهر:</div>
+                                    <div style="font-weight: bold; font-size: 14px;">جذع منحوت فريد</div>
+                                </div>
+                                <a href="https://wa.me/212600000000?text=أريد%20معاينة%20أشجار%20الزيتون%20المعمرة%20بالمشتل" target="_blank" class="btn-whatsapp py-1 px-3" style="font-size: 13px;">
+                                    <i class="fa fa-whatsapp"></i> اطلب الثمن
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Bougainvillea -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="plant-card">
+                        <div class="plant-img-wrapper">
+                            <span class="plant-badge" style="background: #e91e63;">ألوان زاهية مبهجة</span>
+                            <img src="assets/images/plants/bougainvillea.jpg" alt="نبات المجنونة المتسلقة حد السوالم">
+                        </div>
+                        <div class="plant-body">
+                            <h3 class="plant-title">نبات المجنونة (Bougainvillier)</h3>
+                            <p class="plant-desc">ورود متسلقة بألوان فاقعة (فوشيا، بنفسجي، أحمر، أبيض، برتقالي). مثالية لتغطية الأسوار والجدران وإضفاء لمسة بهجة ساحرة.</p>
+                            <div class="plant-meta">
+                                <div>
+                                    <div class="text-muted" style="font-size: 12px;">الألوان:</div>
+                                    <div style="font-weight: bold; font-size: 14px;">5 ألوان متوفرة</div>
+                                </div>
+                                <a href="https://wa.me/212600000000?text=أريد%20طلب%20نباتات%20المجنونة%20Bougainvillea" target="_blank" class="btn-whatsapp py-1 px-3" style="font-size: 13px;">
+                                    <i class="fa fa-whatsapp"></i> اطلب الثمن
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Lemon 4 Seasons -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="plant-card">
+                        <div class="plant-img-wrapper">
+                            <span class="plant-badge" style="background: #f1c40f; color: #000;">إنتاج طيلة السنة</span>
+                            <img src="assets/images/plants/lemon_citrus.jpg" alt="شجرة الليمون الحامض 4 فصول">
+                        </div>
+                        <div class="plant-body">
+                            <h3 class="plant-title">شجرة الليمون (Citronnier 4 Saisons)</h3>
+                            <p class="plant-desc">شجرة حامض مطعمة تنتج الثمار والأزهار العطرة على مدار العام. تلائم زراعة الأرض أو الأواني الفخارية الكبيرة بالمدرجات.</p>
+                            <div class="plant-meta">
+                                <div>
+                                    <div class="text-muted" style="font-size: 12px;">الحالة:</div>
+                                    <div style="font-weight: bold; font-size: 14px;">محملة بالثمار والأزهار</div>
+                                </div>
+                                <a href="https://wa.me/212600000000?text=أريد%20شراء%20أشجار%20الليمون%204%20فصول" target="_blank" class="btn-whatsapp py-1 px-3" style="font-size: 13px;">
+                                    <i class="fa fa-whatsapp"></i> اطلب الثمن
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Cycas Revoluta -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="plant-card">
+                        <div class="plant-img-wrapper">
+                            <span class="plant-badge" style="background: #27ae60;">أناقة ملكية</span>
+                            <img src="assets/images/plants/cycas_revoluta.jpg" alt="نخيل السيكاس الفاخر Cycas">
+                        </div>
+                        <div class="plant-body">
+                            <h3 class="plant-title">نخيل السيكاس الفاخر (Cycas Revoluta)</h3>
+                            <p class="plant-desc">نبتة أسطورية ذات أوراق صلبة لامعة وشكل متناسق فائق الجمال. الاختيار الأول لمهندسي الديكور لمداخل الفيلات وحول المسابح.</p>
+                            <div class="plant-meta">
+                                <div>
+                                    <div class="text-muted" style="font-size: 12px;">الاستخدام:</div>
+                                    <div style="font-weight: bold; font-size: 14px;">داخلي وخارجي راقي</div>
+                                </div>
+                                <a href="https://wa.me/212600000000?text=أريد%20الاستفسار%20عن%20نخيل%20السيكاس%20Cycas" target="_blank" class="btn-whatsapp py-1 px-3" style="font-size: 13px;">
+                                    <i class="fa fa-whatsapp"></i> اطلب الثمن
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="https://wa.me/212600000000?text=السلام%20عليكم%20سي%20عمر،%20أريد%20الكتالوج%20الكامل%20لجميع%20الأشجار%20والنباتات%20المتوفرة" target="_blank" class="btn-wz-primary">
+                    <i class="fa fa-file-pdf-o"></i> اطلب الكتالوج الكامل واللائحة المصورة على الواتساب
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Realizations -->
+    <section class="py-5" id="gallery" style="background: var(--wz-sand);">
+        <div class="container py-4">
+            <div class="section-header">
+                <span class="section-tag">معرض إنجازاتنا</span>
+                <h2 class="section-title">فيلات وحدائق تم غرسها وتهيئتها بنجاح</h2>
+                <p class="section-desc">شاهد جانباً من المشاريع التي قام بها عمر وفريق واحة زاكورة في حد السوالم، بوسكورة، دار بوعزة، وبنسليمان.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div style="border-radius: 20px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.08); position: relative;">
+                        <img src="assets/images/gallery/villa_bouskoura.jpg" alt="فيلا ببوسكورة تم تهيئتها بنخيل واشنطونيا" style="width: 100%; height: 280px; object-fit: cover;">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(15, 31, 24, 0.9)); color: #fff; padding: 20px;">
+                            <h4 style="color: #fff; font-size: 18px; margin-bottom: 4px;">تهيئة فيلا خاصة (بوسكورة)</h4>
+                            <p style="font-size: 13px; color: #ffd772; margin: 0;">غرس 8 نخلات واشنطونيا عملاقة مع عشب طبيعي</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div style="border-radius: 20px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.08); position: relative;">
+                        <img src="assets/images/gallery/villa_had_soualem.jpg" alt="حديقة فيلا بحد السوالم" style="width: 100%; height: 280px; object-fit: cover;">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(15, 31, 24, 0.9)); color: #fff; padding: 20px;">
+                            <h4 style="color: #fff; font-size: 18px; margin-bottom: 4px;">حديقة فيلا عصرية (حد السوالم)</h4>
+                            <p style="font-size: 13px; color: #ffd772; margin: 0;">أشجار زيتون معمرة مع شبكة سقي بالتنقيط</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div style="border-radius: 20px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.08); position: relative;">
+                        <img src="assets/images/gallery/villa_dar_bouazza.jpg" alt="فيلا دار بوعزة نخيل وزينة" style="width: 100%; height: 280px; object-fit: cover;">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(15, 31, 24, 0.9)); color: #fff; padding: 20px;">
+                            <h4 style="color: #fff; font-size: 18px; margin-bottom: 4px;">مدخل إقامة خاصة (دار بوعزة)</h4>
+                            <p style="font-size: 13px; color: #ffd772; margin: 0;">نخيل السيكاس وورود المجنونة المتسلقة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5" style="background: #ffffff;">
+        <div class="container py-4">
+            <div class="section-header">
+                <span class="section-tag">مميزاتنا التنافسية</span>
+                <h2 class="section-title">لماذا يختار زبائننا مشتل واحة زاكورة؟</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3 text-center mb-4">
+                    <div style="padding: 25px; border-radius: 18px; background: var(--wz-sand); height: 100%;">
+                        <div style="font-size: 40px; color: var(--wz-emerald); margin-bottom: 15px;"><i class="fa fa-handshake-o"></i></div>
+                        <h4 style="font-size: 18px; font-weight: 800; margin-bottom: 10px;">أثمنة المشتل المباشرة</h4>
+                        <p style="font-size: 13.5px; color: #607268; margin: 0;">تشتري مباشرة من المشتل بدون وسطاء أو سماسرة، مما يوفر عليك ما بين 25% و40% من التكلفة الإجمالية.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 text-center mb-4">
+                    <div style="padding: 25px; border-radius: 18px; background: var(--wz-sand); height: 100%;">
+                        <div style="font-size: 40px; color: var(--wz-gold); margin-bottom: 15px;"><i class="fa fa-truck"></i></div>
+                        <h4 style="font-size: 18px; font-weight: 800; margin-bottom: 10px;">النقل والغرس بالرافعة</h4>
+                        <p style="font-size: 13.5px; color: #607268; margin: 0;">نوفر شاحنات مجهزة ورافعات خاصة لرفع النخيل الضخم ووضعه وغرسه بدقة متناهية داخل حديقتك.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 text-center mb-4">
+                    <div style="padding: 25px; border-radius: 18px; background: var(--wz-sand); height: 100%;">
+                        <div style="font-size: 40px; color: var(--wz-emerald); margin-bottom: 15px;"><i class="fa fa-shield"></i></div>
+                        <h4 style="font-size: 18px; font-weight: 800; margin-bottom: 10px;">ضمان استقرار الشتلات</h4>
+                        <p style="font-size: 13.5px; color: #607268; margin: 0;">نضمن لك صحة الشتلات وتجذرها السليم مع تقديم التوجيهات الدقيقة لكيفية الري والتسميد الصحيح.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 text-center mb-4">
+                    <div style="padding: 25px; border-radius: 18px; background: var(--wz-sand); height: 100%;">
+                        <div style="font-size: 40px; color: var(--wz-leaf); margin-bottom: 15px;"><i class="fa fa-comments-o"></i></div>
+                        <h4 style="font-size: 18px; font-weight: 800; margin-bottom: 10px;">استشارة ومعاينة ميدانية</h4>
+                        <p style="font-size: 13.5px; color: #607268; margin: 0;">عمر وفريقه ينتقلون لمعاينة أرضيتك أو فيلتك ودراسة نوعية التربة لتحديد أنسب الأشجار لحديقتك.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5" style="background: var(--wz-sand-dark);">
+        <div class="container py-4">
+            <div class="section-header">
+                <span class="section-tag">ثقة عملائنا</span>
+                <h2 class="section-title">ماذا يقول زبائننا في كازا وبوسكورة وحد السوالم؟</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div style="background: #ffffff; padding: 30px; border-radius: 20px; box-shadow: 0 6px 20px rgba(0,0,0,0.04); height: 100%;">
+                        <div class="text-warning mb-3">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <p style="font-size: 14.5px; color: #475a50; line-height: 1.8;">
+                            "تعاملت مع السي عمر لغرس 6 نخلات واشنطونيا كبار في فيلتي ببوسكورة. الخدمة كانت في المستوى العالي، جاب الشاحنة والرافعة وغرسو كلشي في نهار واحد بدون أي فوضى، والنخل دابا تبارك الله شاد مزيان."
+                        </p>
+                        <div class="d-flex align-items-center mt-3 pt-3 border-top">
+                            <div>
+                                <h5 style="font-size: 16px; margin: 0;">الحاج عبد الرحيم العلمي</h5>
+                                <small class="text-muted">صاحب فيلا ببوسكورة (Ville Verte)</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div style="background: #ffffff; padding: 30px; border-radius: 20px; box-shadow: 0 6px 20px rgba(0,0,0,0.04); height: 100%;">
+                        <div class="text-warning mb-3">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <p style="font-size: 14.5px; color: #475a50; line-height: 1.8;">
+                            "ما شاء الله على ناس زاكورة والمعقول ديالهم. خديت من عندو شجرة زيتون معمرة فخمة لمدخل الفيلا بدار بوعزة وشجيرات الحامض، الأثمنة جد مناسبة مقارنة بمشاتل كازا والنصيحة كانت من القلب."
+                        </p>
+                        <div class="d-flex align-items-center mt-3 pt-3 border-top">
+                            <div>
+                                <h5 style="font-size: 16px; margin: 0;">الدكتور طارق بنجلون</h5>
+                                <small class="text-muted">دار بوعزة، الدار البيضاء</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div style="background: #ffffff; padding: 30px; border-radius: 20px; box-shadow: 0 6px 20px rgba(0,0,0,0.04); height: 100%;">
+                        <div class="text-warning mb-3">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <p style="font-size: 14.5px; color: #475a50; line-height: 1.8;">
+                            "كنت محتار كيفاش نقاد الحديقة ديالي في حد السوالم. سي عمر جا عاين الحديقة بنفسو واقترح عليا نوع العشب وشجر الزينة اللي كيتحمل الرياح. النتيجة دابا فوق التوقعات."
+                        </p>
+                        <div class="d-flex align-items-center mt-3 pt-3 border-top">
+                            <div>
+                                <h5 style="font-size: 16px; margin: 0;">السيد يونس المرابط</h5>
+                                <small class="text-muted">إقامة حد السوالم</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section class="py-5" id="contact" style="background: #ffffff;">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <span class="section-tag">موقعنا واتصالكم يسعدنا</span>
+                    <h2 class="mb-4" style="font-size: 34px; font-weight: 900;">مرحباً بكم في مشتل واحة زاكورة بحد السوالم</h2>
+                    <p style="font-size: 16px; color: #607268; line-height: 1.8;">
+                        يسعدنا استقبالكم شخصياً لمعاينة آلاف الشتلات، واختيار الأشجار التي تعجبكم على الطبيعة. كما نوفر خدمة الطلب عن بعد عبر الواتساب مع إرسال الصور والفيديوهات الحية لكل شجرة قبل شحنها.
+                    </p>
+
+                    <ul class="list-unstyled mt-4" style="font-size: 16px;">
+                        <li class="mb-3 d-flex align-items-center">
+                            <span class="badge badge-success p-2 ml-3" style="font-size: 16px;"><i class="fa fa-map-marker"></i></span>
+                            <div>
+                                <strong>الموقع الجغرافي:</strong><br>
+                                <span style="color: #607268;">الطريق الوطنية رقم 1، حد السوالم (بالقرب من مدخل الطريق السيار نحو الدار البيضاء والجديدة)</span>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <span class="badge badge-success p-2 ml-3" style="font-size: 16px;"><i class="fa fa-phone"></i></span>
+                            <div>
+                                <strong>رقم الهاتف المباشر:</strong><br>
+                                <a href="tel:+212600000000" style="color: var(--wz-emerald); font-weight: 800; font-size: 18px;">+212 600 000 000</a>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <span class="badge badge-success p-2 ml-3" style="font-size: 16px;"><i class="fa fa-whatsapp"></i></span>
+                            <div>
+                                <strong>واتساب المشتل السريع:</strong><br>
+                                <a href="https://wa.me/212600000000" target="_blank" style="color: #25D366; font-weight: 800;">انقر هنا لمراسلة عمر على الواتساب 24/7</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="mt-4">
+                        <a href="https://wa.me/212600000000?text=السلام%20عليكم%20سي%20عمر،%20أريد%20تحديد%20موعد%20لزيارة%20المشتل" target="_blank" class="btn-whatsapp py-3 px-4" style="font-size: 16px;">
+                            <i class="fa fa-whatsapp"></i> حدد موعد زيارتك للمشتل عبر الواتساب
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Contact Form Card -->
+                    <div style="background: var(--wz-sand); border-radius: 24px; padding: 40px; border: 1px solid #e5ebe7; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                        <h3 class="mb-3" style="font-size: 22px; font-weight: 800; color: var(--wz-emerald);">اطلب معاينة أو عرض سعر مجاني</h3>
+                        <p style="font-size: 14px; color: #607268; margin-bottom: 25px;">املأ البيانات وسيقوم سي عمر بالاتصال بك أو إرسال المعلومات عبر الواتساب فوراً.</p>
+
+                        <form onsubmit="event.preventDefault(); window.open('https://wa.me/212600000000?text=' + encodeURIComponent('الاسم: ' + document.getElementById('name').value + '
+المدينة: ' + document.getElementById('city').value + '
+الهاتف: ' + document.getElementById('phone').value + '
+الطلب: ' + document.getElementById('req').value));">
+                            <div class="form-group mb-3">
+                                <label style="font-weight: 700; font-size: 14px;">الاسم الكامل:</label>
+                                <input type="text" id="name" class="form-control" placeholder="مثال: يوسف الإدريسي" required style="border-radius: 12px; height: 50px; text-align: right;">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label style="font-weight: 700; font-size: 14px;">رقم الهاتف / الواتساب:</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="06 00 00 00 00" required style="border-radius: 12px; height: 50px; text-align: right;">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label style="font-weight: 700; font-size: 14px;">المدينة أو المنطقة:</label>
+                                <input type="text" id="city" class="form-control" placeholder="حد السوالم، كازا، بوسكورة، دار بوعزة..." required style="border-radius: 12px; height: 50px; text-align: right;">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label style="font-weight: 700; font-size: 14px;">الأشجار أو الخدمات المطلوبة:</label>
+                                <textarea id="req" class="form-control" rows="3" placeholder="مثال: أريد 4 نخلات واشنطونيا 4 أمتار مع عشب طبيعي لحديقة فيلا..." style="border-radius: 12px; text-align: right;"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-wz-primary w-100 py-3 justify-content-center" style="font-size: 16px;">
+                                <i class="fa fa-paper-plane ml-2"></i> إرسال الطلب فوراً عبر الواتساب
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="wz-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="assets/images/logo/logo.png" alt="واحة زاكورة" style="width: 55px; height: 55px; border-radius: 50%; border: 2px solid var(--wz-gold); margin-left: 12px;">
+                        <div>
+                            <div style="font-size: 20px; font-weight: 900; color: #ffffff;">واحة زاكورة للغرس</div>
+                            <div style="font-size: 12px; color: var(--wz-gold);">مشتل حد السوالم • جودة وأصالة زاكورة</div>
+                        </div>
+                    </div>
+                    <p style="font-size: 14px; line-height: 1.8; color: #a3b8ad;">
+                        المشتل الرائد بحد السوالم والمتخصص في توريد وغرس النخيل بمختلف أنواعه، وأشجار الزيتون التاريخية، وتهيئة أرقى حدائق الفيلات والمساحات الخضراء بالمغرب.
+                    </p>
+                    <div class="mt-3">
+                        <span style="color: #ffffff; font-weight: bold;"><i class="fa fa-map-marker text-warning ml-2"></i> حد السوالم، جهة الدار البيضاء - سطات</span>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-4 mb-lg-0">
+                    <h4>روابط سريعة</h4>
+                    <ul class="list-unstyled" style="font-size: 14.5px;">
+                        <li class="py-1"><a href="#home">الرئيسية</a></li>
+                        <li class="py-1"><a href="#about">قصة عمر</a></li>
+                        <li class="py-1"><a href="#plants">كتالوج الأشجار</a></li>
+                        <li class="py-1"><a href="#services">خدمات التهيئة</a></li>
+                        <li class="py-1"><a href="#gallery">إنجازات الفيلات</a></li>
+                        <li class="py-1"><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                    <h4>أهم المنتجات</h4>
+                    <ul class="list-unstyled" style="font-size: 14.5px;">
+                        <li class="py-1"><a href="#plants">نخيل واشنطونيا الحجم الكبير</a></li>
+                        <li class="py-1"><a href="#plants">نخيل التمر المجهول المثمر</a></li>
+                        <li class="py-1"><a href="#plants">أشجار الزيتون المعمرة</a></li>
+                        <li class="py-1"><a href="#plants">نباتات المجنونة بكافة الألوان</a></li>
+                        <li class="py-1"><a href="#plants">أشجار الليمون 4 فصول</a></li>
+                        <li class="py-1"><a href="#plants">عشب طبيعي وشبكات الري</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h4>تواصل مباشر</h4>
+                    <p style="font-size: 13.5px; color: #a3b8ad; margin-bottom: 12px;">نحن رهن إشارتكم طيلة أيام الأسبوع :</p>
+                    <a href="https://wa.me/212600000000" target="_blank" style="color: #25D366; font-size: 18px; font-weight: 800; display: block; margin-bottom: 10px;">
+                        <i class="fa fa-whatsapp ml-1"></i> +212 600 000 000
+                    </a>
+                    <a href="tel:+212600000000" style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 20px;">
+                        <i class="fa fa-phone ml-1"></i> اتصل هاتفياً الآن
+                    </a>
+                    <a href="https://wa.me/212600000000?text=مرحبا%20سي%20عمر،%20أريد%20معلومات%20حول%20المشتل" target="_blank" class="btn btn-whatsapp w-100 text-center py-2 justify-content-center" style="font-size: 14px;">
+                        <i class="fa fa-whatsapp"></i> طلب استشارة عبر الواتساب
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-top mt-5 pt-4 text-center" style="border-color: rgba(255,255,255,0.08) !important; font-size: 13.5px;">
+                <p class="m-0">
+                    &copy; 2026 مشتل واحة زاكورة للغرس — حد السوالم. جميع الحقوق محفوظة لصاحبه عمر (ابن زاكورة).
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts from GreenAura -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+</body>
+</html>

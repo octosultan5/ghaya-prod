@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pépinière Oasis Zagora | Had Soualem — Palmiers, Oliviers & Aménagement Paysager</title>
+    <meta name="description" content="Pépinière Oasis Zagora à Had Soualem dirigée par Omar, originaire de Zagora. Fourniture et plantation de palmiers Washingtonia, dattiers Medjool, oliviers centenaires et aménagement paysager de villas à Casablanca et dans tout le Maroc.">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/png">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Syne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Vendors from GreenAura -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/rt-icons.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    
+    <style>
+        :root {
+            --wz-emerald: #134e3a;
+            --wz-emerald-light: #1f6b52;
+            --wz-leaf: #2ecc71;
+            --wz-gold: #c59b27;
+            --wz-gold-light: #dfb74a;
+            --wz-sand: #fdfbf7;
+            --wz-sand-dark: #f4efe4;
+            --wz-dark: #0f1f18;
+            --wz-text: #2c3e35;
+            --whatsapp-green: #25D366;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--wz-sand);
+            color: var(--wz-text);
+            line-height: 1.8;
+            overflow-x: hidden;
+            text-align: left;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Syne', sans-serif;
+            font-weight: 800;
+            color: var(--wz-dark);
+        }
+
+        /* Top Bar */
+        .wz-topbar {
+            background: var(--wz-dark);
+            color: #ffffff;
+            font-size: 13.5px;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(197, 155, 39, 0.3);
+        }
+        .wz-topbar a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .wz-topbar a:hover {
+            color: var(--wz-gold-light);
+        }
+
+        /* Header Navigation */
+        .wz-header {
+            background: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar-brand img {
+            height: 60px;
+            width: auto;
+            border-radius: 50%;
+            border: 2px solid var(--wz-gold);
+            margin-right: 12px;
+        }
+        .brand-title {
+            font-size: 21px;
+            font-weight: 900;
+            color: var(--wz-emerald);
+            line-height: 1.2;
+            font-family: 'Syne', sans-serif;
+        }
+        .brand-subtitle {
+            font-size: 11.5px;
+            color: var(--wz-gold);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .nav-link {
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--wz-dark) !important;
+            padding: 12px 14px !important;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--wz-emerald) !important;
+        }
+
+        /* Buttons */
+        .btn-wz-primary {
+            background: linear-gradient(135deg, var(--wz-emerald) 0%, var(--wz-emerald-light) 100%);
+            color: #ffffff !important;
+            font-weight: 800;
+            border-radius: 50px;
+            padding: 12px 28px;
+            border: none;
+            box-shadow: 0 6px 20px rgba(19, 78, 58, 0.35);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        .btn-wz-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(19, 78, 58, 0.5);
+            color: #ffffff;
+        }
+        .btn-wz-gold {
+            background: linear-gradient(135deg, var(--wz-gold) 0%, var(--wz-gold-light) 100%);
+            color: var(--wz-dark) !important;
+            font-weight: 800;
+            border-radius: 50px;
+            padding: 12px 28px;
+            border: none;
+            box-shadow: 0 6px 20px rgba(197, 155, 39, 0.3);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        .btn-wz-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(197, 155, 39, 0.45);
+        }
+        .btn-whatsapp {
+            background: #25D366 !important;
+            color: #ffffff !important;
+            font-weight: 800;
+            border-radius: 50px;
+            padding: 11px 24px;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .btn-whatsapp:hover {
+            background: #20ba59 !important;
+            transform: translateY(-2px);
+            color: #ffffff;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5);
+        }
+
+        /* Hero */
+        .wz-hero {
+            position: relative;
+            background: linear-gradient(rgba(15, 31, 24, 0.78), rgba(15, 31, 24, 0.85)), url('assets/images/banner/hero_palms.jpg') center center/cover no-repeat;
+            padding: 120px 0 100px;
+            color: #ffffff;
+            overflow: hidden;
+        }
+        .wz-hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(197, 155, 39, 0.25);
+            border: 1px solid var(--wz-gold);
+            color: #ffd772;
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        .wz-hero h1 {
+            font-size: 44px;
+            font-weight: 900;
+            color: #ffffff;
+            line-height: 1.25;
+            margin-bottom: 20px;
+        }
+        .wz-hero p {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.8;
+            margin-bottom: 35px;
+            max-width: 680px;
+        }
+        .hero-stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 18px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 15px;
+            transition: transform 0.3s ease;
+        }
+        .hero-stat-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        .hero-stat-num {
+            font-size: 32px;
+            font-weight: 900;
+            color: var(--wz-gold-light);
+            font-family: 'Syne', sans-serif;
+        }
+        .hero-stat-label {
+            font-size: 13.5px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        /* Section Headings */
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-tag {
+            color: var(--wz-emerald);
+            font-weight: 800;
+            font-size: 13.5px;
+            background: rgba(46, 204, 113, 0.15);
+            padding: 6px 18px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .section-title {
+            font-size: 36px;
+            font-weight: 900;
+            color: var(--wz-dark);
+            margin-bottom: 15px;
+        }
+        .section-desc {
+            font-size: 16.5px;
+            color: #607268;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Service Cards */
+        .wz-service-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 35px 25px;
+            border: 1px solid #e5ebe7;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.04);
+            transition: all 0.35s ease;
+            height: 100%;
+        }
+        .wz-service-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--wz-emerald);
+            box-shadow: 0 15px 35px rgba(19, 78, 58, 0.12);
+        }
+        .service-icon-box {
+            width: 70px;
+            height: 70px;
+            border-radius: 16px;
+            background: rgba(19, 78, 58, 0.08);
+            color: var(--wz-emerald);
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 22px;
+            transition: all 0.3s ease;
+        }
+        .wz-service-card:hover .service-icon-box {
+            background: var(--wz-emerald);
+            color: #ffffff;
+        }
+
+        /* Plant Cards */
+        .plant-card {
+            background: #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid #e5ebe7;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+        .plant-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-color: var(--wz-leaf);
+        }
+        .plant-img-wrapper {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+        .plant-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .plant-card:hover .plant-img-wrapper img {
+            transform: scale(1.08);
+        }
+        .plant-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--wz-emerald);
+            color: #ffffff;
+            padding: 5px 14px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 800;
+        }
+        .plant-body {
+            padding: 24px;
+        }
+        .plant-title {
+            font-size: 19px;
+            font-weight: 800;
+            color: var(--wz-dark);
+            margin-bottom: 8px;
+        }
+        .plant-desc {
+            font-size: 14px;
+            color: #607268;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .plant-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #f0f4f1;
+            padding-top: 15px;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float-fixed {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #25D366;
+            color: #ffffff;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 34px;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+            z-index: 9999;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float-fixed:hover {
+            transform: scale(1.1);
+            color: #ffffff;
+        }
+
+        /* Footer */
+        .wz-footer {
+            background: var(--wz-dark);
+            color: #b0c2b8;
+            padding: 80px 0 30px;
+            border-top: 3px solid var(--wz-gold);
+        }
+        .wz-footer h4 {
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 18px;
+            margin-bottom: 22px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .wz-footer h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 45px;
+            height: 3px;
+            background: var(--wz-gold);
+            border-radius: 3px;
+        }
+        .wz-footer a {
+            color: #b0c2b8;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .wz-footer a:hover {
+            color: var(--wz-leaf);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- WhatsApp Floating Action -->
+    <a href="https://wa.me/212600000000?text=Bonjour%20Omar,%20je%20souhaite%20des%20informations%20sur%20vos%20palmiers%20et%20plantes%20à%20Had%20Soualem" target="_blank" class="whatsapp-float-fixed" title="Contacter Omar sur WhatsApp">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+
+    <!-- Top Bar -->
+    <div class="wz-topbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 text-center text-md-left mb-2 mb-md-0">
+                    <span class="mr-3"><i class="fa fa-map-marker text-warning mr-1"></i> Had Soualem — Route Nationale 1 (Proche Casablanca, Bouskoura & Dar Bouazza)</span>
+                    <span class="d-none d-lg-inline"><i class="fa fa-clock-o text-warning mr-1"></i> Ouvert 7j/7 de 08:00 à 19:30</span>
+                </div>
+                <div class="col-md-5 text-center text-md-right">
+                    <span class="mr-3"><i class="fa fa-phone text-warning mr-1"></i> Tél: <strong>06.00.00.00.00</strong></span>
+                    <a href="index.html" class="badge badge-warning text-dark px-2 py-1 font-weight-bold ml-2">العربية</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="wz-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light py-3">
+                <a class="navbar-brand d-flex align-items-center" href="fr.html">
+                    <img src="assets/images/logo/logo.png" alt="Logo Oasis Zagora Pépinière Had Soualem">
+                    <div>
+                        <div class="brand-title">PÉPINIÈRE OASIS ZAGORA</div>
+                        <div class="brand-subtitle">HAD SOUALEM • PAR OMAR DE ZAGORA</div>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#wzNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="wzNav">
+                    <ul class="navbar-nav ml-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">L'Histoire d'Omar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#plants">Catalogue Végétal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Aménagement Paysager</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Villas Réalisées</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Accès & Contact</a></li>
+                    </ul>
+                    <div class="ml-lg-3 mt-3 mt-lg-0 text-center">
+                        <a href="https://wa.me/212600000000?text=Bonjour%20Omar,%20je%20souhaite%20un%20devis%20pour%20ma%20villa" target="_blank" class="btn-whatsapp">
+                            <i class="fa fa-whatsapp"></i> WhatsApp Direct
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="wz-hero" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 text-center text-lg-left">
+                    <div class="wz-hero-badge">
+                        <i class="fa fa-tree"></i> Pépinière de Référence à Had Soualem • Livraison &amp; Plantation Partout au Maroc
+                    </div>
+                    <h1>Les Plus Beaux Palmiers &amp; Arbres d'Exception, du Cœur de Zagora à Had Soualem</h1>
+                    <p>Une expertise botanique transmise de génération en génération. Fourniture de palmiers royaux (Washingtonia, dattiers Medjool), oliviers centenaires sculptés et aménagement paysager de villas d'exception aux prix directs pépinière.</p>
+                    
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
+                        <a href="#plants" class="btn-wz-gold mr-3 mb-2"><i class="fa fa-leaf"></i> Découvrir le Catalogue Végétal</a>
+                        <a href="https://wa.me/212600000000?text=Bonjour%20Omar,%20je%20souhaite%20connaître%20les%20tarifs%20des%20palmiers" target="_blank" class="btn-whatsapp mb-2"><i class="fa fa-whatsapp"></i> Devis Gratuit sur WhatsApp</a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="row pt-4">
+                        <div class="col-6 col-md-3">
+                            <div class="hero-stat-card">
+                                <div class="hero-stat-num">+15 000</div>
+                                <div class="hero-stat-label">Arbres &amp; Palmiers Plantés</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="hero-stat-card">
+                                <div class="hero-stat-num">+420</div>
+                                <div class="hero-stat-label">Villas &amp; Jardins Aménagés</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="hero-stat-card">
+                                <div class="hero-stat-num">100%</div>
+                                <div class="hero-stat-label">Prix Directs Pépinière</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="hero-stat-card">
+                                <div class="hero-stat-num">Grue + Camions</div>
+                                <div class="hero-stat-label">Plantation Clé en Main</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 text-center mt-5 mt-lg-0">
+                    <div style="background: rgba(255,255,255,0.08); backdrop-filter: blur(15px); border: 2px solid var(--wz-gold); border-radius: 24px; padding: 30px; box-shadow: 0 20px 50px rgba(0,0,0,0.4);">
+                        <img src="assets/images/logo/logo.png" alt="Pépinière Oasis Zagora" style="width: 140px; height: 140px; border-radius: 50%; border: 3px solid #ffffff; margin-bottom: 20px; box-shadow: 0 0 25px rgba(197, 155, 39, 0.6);">
+                        <h3 style="color: #ffffff; font-size: 22px; font-weight: 800; margin-bottom: 8px;">Pépinière Oasis Zagora</h3>
+                        <p style="color: #ffd772; font-size: 15px; font-weight: 700; margin-bottom: 15px;">Sous la direction d'Omar (Natif de Zagora)</p>
+                        <p style="color: rgba(255,255,255,0.85); font-size: 13.5px; line-height: 1.7; margin-bottom: 20px;">
+                            Nous vous accueillons 7j/7 à Had Soualem pour choisir vos arbres sur place, avec service de transport, levage par grue et plantation garantie.
+                        </p>
+                        <a href="https://wa.me/212600000000?text=Bonjour%20Omar,%20merci%20de%20m'envoyer%20la%20localisation%20GPS%20de%20la%20pépinière" target="_blank" class="btn btn-warning w-100 font-weight-bold py-2" style="border-radius: 50px; background: var(--wz-gold); border: none; color: #000;">
+                            <i class="fa fa-map-marker mr-1"></i> Envoyer la Position GPS (Had Soualem)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5" id="services" style="background: #ffffff;">
+        <div class="container py-4">
+            <div class="section-header">
+                <span class="section-tag">Nos Savoir-Faire</span>
+                <h2 class="section-title">Des Prestations Complètes Pour Vos Espaces Verts</h2>
+                <p class="section-desc">De l'approvisionnement direct depuis les oasis de Drâa jusqu'à la plantation méticuleuse dans les villas de Had Soualem, Bouskoura, Dar Bouazza et Casablanca.</p>
+            </div>
+
+            <div class="row">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="wz-service-card">
+                        <div class="service-icon-box">
+                            <i class="fa fa-tree"></i>
+                        </div>
+                        <h3 class="mb-3" style="font-size: 21px;">Palmiers Toutes Hauteurs</h3>
+                        <p style="color: #607268; font-size: 14.5px;">Fourniture de palmiers Washingtonia (de 1.5m à 8m) et dattiers Medjool de premier choix. Nous gérons le creusement, le levage par camion-grue et le suivi d'enracinement.</p>
+                        <span class="text-success font-weight-bold" style="font-size: 13px;"><i class="fa fa-check-circle mr-1"></i> Disponible immédiatement</span>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="wz-service-card">
+                        <div class="service-icon-box" style="color: var(--wz-gold); background: rgba(197, 155, 39, 0.1);">
+                            <i class="fa fa-pagelines"></i>
+                        </div>
+                        <h3 class="mb-3" style="font-size: 21px;">Oliviers Centenaires Sculptés</h3>
+                        <p style="color: #607268; font-size: 14.5px;">Pièces maîtresses végétales avec des troncs noueux millénaires et tailles en nuages (Bonsaï géants). Ils confèrent un prestige immédiat aux allées de villas.</p>
+                        <span class="text-success font-weight-bold" style="font-size: 13px;"><i class="fa fa-check-circle mr-1"></i> Trésor botanique marocain</span>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="wz-service-card">
+                        <div class="service-icon-box">
+                            <i class="fa fa-leaf"></i>
+                        </div>
+                        <h3 class="mb-3" style="font-size: 21px;">Plantes Ornementales &amp; Grimpantes</h3>
+                        <p style="color: #607268; font-size: 14.5px;">Bougainvilliers multicolores éclatants, Cycas Revoluta, Strelitzia (Oiseaux du Paradis) et haies persistantes pour préserver l'intimité de vos piscines et jardins.</p>
+                        <span class="text-success font-weight-bold" style="font-size: 13px;"><i class="fa fa-check-circle mr-1"></i> Haute résistance au vent</span>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="wz-service-card">
+                        <div class="service-icon-box" style="color: #e67e22; background: rgba(230, 126, 34, 0.1);">
+                            <i class="fa fa-lemon-o"></i>
+                        </div>
+                        <h3 class="mb-3" style="font-size: 21px;">Arbres Fruitiers Pour Domaines</h3>
+                        <p style="color: #607268; font-size: 14.5px;">Citronniers 4 saisons greffés ultra-productifs, figuiers, grenadiers, orangers et manguiers parfaitement adaptés au sol et au climat de la région Chaouia.</p>
+                        <span class="text-success font-weight-bold" style="font-size: 13px;"><i class="fa fa-check-circle mr-1"></i> Variétés greffées garanties</span>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="wz-service-card">
+                        <div class="service-icon-box" style="color: #3498db; background: rgba(52, 152, 219, 0.1);">
+                            <i class="fa fa-tint"></i>
+                        </div>
+                        <h3 class="mb-3" style="font-size: 21px;">Gazon Naturel &amp; Arrosage Auto</h3>
+                        <p style="color: #607268; font-size: 14.5px;">Engazonnement en rouleaux ou semis avec pose de systèmes d'arrosage automatique et goutte-à-goutte programmés pour économiser l'eau tout en assurant une verdeur parfaite.</p>
+                        <span class="text-success font-weight-bold" style="font-size: 13px;"><i class="fa fa-check-circle mr-1"></i> Économie d'eau maximale</span>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="wz-service-card">
+                        <div class="service-icon-box">
+                            <i class="fa fa-scissors"></i>
+                        </div>
+                        <h3 class="mb-3" style="font-size: 21px;">Élagage &amp; Entretien Saisonnier</h3>
+                        <p style="color: #607268; font-size: 14.5px;">Équipe d'élagueurs qualifiés pour le nettoyage des palmiers hauts, l'apport d'engrais organique naturel et le traitement phytosanitaire sous la supervision d'Omar.</p>
+                        <span class="text-success font-weight-bold" style="font-size: 13px;"><i class="fa fa-check-circle mr-1"></i> Contrats annuels &amp; ponctuels</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Omar -->
+    <section class="py-5" id="about" style="background: var(--wz-sand-dark);">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="position-relative">
+                        <img src="assets/images/about/omar_nursery.jpg" alt="Omar, fondateur de la Pépinière Oasis Zagora" style="width: 100%; border-radius: 24px; box-shadow: 0 15px 35px rgba(0,0,0,0.12); object-fit: cover; max-height: 520px;">
+                        <div style="position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(19, 78, 58, 0.95); backdrop-filter: blur(10px); color: #ffffff; padding: 20px; border-radius: 18px; border: 1px solid rgba(197, 155, 39, 0.4);">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <div style="font-size: 22px; font-weight: 900; color: #ffd772;">Omar • Natif de Zagora</div>
+                                    <div style="font-size: 13.5px; opacity: 0.9;">Plus de 20 ans de passion et de maîtrise horticole des oasis</div>
+                                </div>
+                                <span class="badge badge-warning text-dark font-weight-bold px-3 py-2">Had Soualem</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 pl-lg-5">
+                    <span class="section-tag">Authenticité &amp; Savoir-Faire</span>
+                    <h2 class="mb-4" style="font-size: 34px; font-weight: 900; line-height: 1.3;">Des Oasis du Sud Marocain aux Jardins de Had Soualem</h2>
+                    <p style="font-size: 16px; color: #475a50; line-height: 1.9;">
+                        Ayant grandi au cœur des splendides palmeraies de <strong>Zagora</strong>, <strong>Omar</strong> a été initié dès son plus jeune âge aux secrets du palmier dattier et de la terre oasienne. C'est dans ce milieu exigeant qu'il a appris à reconnaître les rejets les plus vigoureux, à comprendre le comportement des racines et à maîtriser l'art de l'irrigation équilibrée.
+                    </p>
+                    <p style="font-size: 16px; color: #475a50; line-height: 1.9;">
+                        Installé à <strong>Had Soualem</strong>, carrefour stratégique entre la nature et les prestigieuses résidences de Casablanca, Bouskoura et Dar Bouazza, Omar met son amour du végétal au service des propriétaires de villas. À l'Oasis Zagora, nous privilégions toujours le conseil sincère, la qualité irréprochable et le suivi méticuleux après plantation.
+                    </p>
+
+                    <div class="p-4" style="background: var(--wz-emerald); color: #ffffff; border-radius: 18px; margin-top: 25px;">
+                        <i class="fa fa-quote-left" style="font-size: 30px; opacity: 0.3; margin-bottom: 10px;"></i>
+                        <p style="font-size: 16px; font-weight: 700; margin: 0; line-height: 1.7;">
+                            "Nous ne faisons pas que vendre des arbres : nous transmettons l'âme d'une oasis vivante pour transformer chaque propriété en un havre de paix intemporel."
+                        </p>
+                        <div style="font-size: 14px; color: #ffd772; margin-top: 8px; font-weight: bold;">— Omar (Fondateur Oasis Zagora)</div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="https://wa.me/212600000000?text=Bonjour%20Omar,%20je%20souhaite%20des%20conseils%20pour%20mon%20jardin" target="_blank" class="btn-wz-primary">
+                            <i class="fa fa-whatsapp"></i> Échanger Directement Avec Omar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="py-5" id="plants" style="background: #ffffff;">
+        <div class="container py-4">
+            <div class="section-header">
+                <span class="section-tag">Notre Sélection</span>
+                <h2 class="section-title">Palmiers &amp; Arbres Disponibles en Pépinière</h2>
+                <p class="section-desc">Des spécimens rigoureusement acclimatés, sains et prêts pour une transplantation immédiate dans votre propriété.</p>
+            </div>
+
+            <div class="row">
+                <!-- Item 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="plant-card">
+                        <div class="plant-img-wrapper">
+                            <span class="plant-badge">Incontournable Villas</span>
+                            <img src="assets/images/plants/washingtonia_palm.jpg" alt="Palmier Washingtonia Had Soualem">
+                        </div>
+                        <div class="plant-body">
+                            <h3 class="plant-title">Palmier Washingtonia Robusta</h3>
+                            <p class="plant-desc">Palmier majestueux à croissance rapide et port altier. Idéal pour border les allées, encadrer une entrée de villa ou surplomber une piscine.</p>
+                            <div class="plant-meta">
+                                <div>
+                                    <div class="text-muted" style="font-size: 12px;">Hauteurs disponibles:</div>
+                                    <div style="font-weight: bold; font-size: 14px;">De 1.5m à 7m</div>
+                                </div>
+                                <a href="https://wa.me/212600000000?text=Bonjour,%20je%20souhaite%20le%20prix%20du%20palmier%20Washingtonia" target="_blank" class="btn-whatsapp py-1 px-3" style="font-size: 13px;">
+                                    <i class="fa fa-whatsapp"></i> Demander Tarif
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="plant-card">
+                        <div class="plant-img-wrapper">
+                            <span class="plant-badge" style="background: var(--wz-gold); color: #000;">Dattier Authentique</span>
+                            <img src="assets/images/plants/date_palm_medjool.jpg" alt="Palmier Dattier Medjool Zagora">
+                        </div>
+                        <div class="plant-body">
+                            <h3 class="plant-title">Palmier Dattier Medjool de Zagora</h3>
+                            <p class="plant-desc">Rejets et palmiers adultes d'une noblesse incomparable. Fructification généreuse de dattes Medjool et ombre bienfaisante toute l'année.</p>
+                            <div class="plant-meta">
+                                <div>
+                                    <div class="text-muted" style="font-size: 12px;">Origine:</div>
+                                    <div style="font-weight: bold; font-size: 14px;">100% Terroir Zagora</div>
+                                </div>
+                                <a href="https://wa.me/212600000000?text=Bonjour,%20je%20souhaite%20le%20prix%20du%20palmier%20Dattier%20Medjool" target="_blank" class="btn-whatsapp py-1 px-3" style="font-size: 13px;">
+                                    <i class="fa fa-whatsapp"></i> Demander Tarif
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="plant-card">
+                        <div class="plant-img-wrapper">
+                            <span class="plant-badge">Sculpture Vivante</span>
+                            <img src="assets/images/plants/olive_tree_ancient.jpg" alt="Olivier Centenaire sculpté">
+                        </div>
+                        <div class="plant-body">
+                            <h3 class="plant-title">Olivier Centenaire Millénaire</h3>
+                            <p class="plant-desc">Troncs centenaires massifs et noueux, témoins vivants de l'histoire. Ils apportent une présence d'une élégance rare et une longévité éternelle.</p>
+                            <div class="plant-meta">
+                                <div>
+                                    <div class="text-muted" style="font-size: 12px;">Aspect:</div>
+                                    <div style="font-weight: bold; font-size: 14px;">Tronc sculptural unique</div>
+                                </div>
+                                <a href="https://wa.me/212600000000?text=Bonjour,%20je%20souhaite%20voir%20les%20oliviers%20centenaires" target="_blank" class="btn-whatsapp py-1 px-3" style="font-size: 13px;">
+                                    <i class="fa fa-whatsapp"></i> Demander Tarif
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="plant-card">
+                        <div class="plant-img-wrapper">
+                            <span class="plant-badge" style="background: #e91e63;">Couleurs Éclatantes</span>
+                            <img src="assets/images/plants/bougainvillea.jpg" alt="Bougainvillier grimpant">
+                        </div>
+                        <div class="plant-body">
+                            <h3 class="plant-title">Bougainvillier Grimpant Élite</h3>
+                            <p class="plant-desc">Floraison abondante et éclatante (fuchsia, blanc pur, rouge impérial, violet). Idéal pour habiller les clôtures, pergolas et murs extérieurs.</p>
+                            <div class="plant-meta">
+                                <div>
+                                    <div class="text-muted" style="font-size: 12px;">Coloris:</div>
+                                    <div style="font-weight: bold; font-size: 14px;">5 coloris disponibles</div>
+                                </div>
+                                <a href="https://wa.me/212600000000?text=Bonjour,%20je%20souhaite%20commander%20des%20bougainvilliers" target="_blank" class="btn-whatsapp py-1 px-3" style="font-size: 13px;">
+                                    <i class="fa fa-whatsapp"></i> Demander Tarif
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="plant-card">
+                        <div class="plant-img-wrapper">
+                            <span class="plant-badge" style="background: #f1c40f; color: #000;">Fruits Toute l'Année</span>
+                            <img src="assets/images/plants/lemon_citrus.jpg" alt="Citronnier 4 Saisons greffé">
+                        </div>
+                        <div class="plant-body">
+                            <h3 class="plant-title">Citronnier 4 Saisons Greffé</h3>
+                            <p class="plant-desc">Arbuste fruitier généreux produisant des citrons savoureux et des fleurs parfumées en continu. Parfait en pleine terre ou dans de grands bacs.</p>
+                            <div class="plant-meta">
+                                <div>
+                                    <div class="text-muted" style="font-size: 12px;">État:</div>
+                                    <div style="font-weight: bold; font-size: 14px;">Chargé de fruits &amp; fleurs</div>
+                                </div>
+                                <a href="https://wa.me/212600000000?text=Bonjour,%20je%20souhaite%20commander%20un%20citronnier%204%20saisons" target="_blank" class="btn-whatsapp py-1 px-3" style="font-size: 13px;">
+                                    <i class="fa fa-whatsapp"></i> Demander Tarif
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="plant-card">
+                        <div class="plant-img-wrapper">
+                            <span class="plant-badge" style="background: #27ae60;">Allure Royale</span>
+                            <img src="assets/images/plants/cycas_revoluta.jpg" alt="Cycas Revoluta Japon">
+                        </div>
+                        <div class="plant-body">
+                            <h3 class="plant-title">Cycas Revoluta Japonais</h3>
+                            <p class="plant-desc">Plante millénaire aux palmes vert foncé lustrées et rigides. La signature végétale préférée des architectes contemporains.</p>
+                            <div class="plant-meta">
+                                <div>
+                                    <div class="text-muted" style="font-size: 12px;">Usage:</div>
+                                    <div style="font-weight: bold; font-size: 14px;">Extérieur prestige &amp; patio</div>
+                                </div>
+                                <a href="https://wa.me/212600000000?text=Bonjour,%20je%20souhaite%20le%20prix%20du%20Cycas%20Revoluta" target="_blank" class="btn-whatsapp py-1 px-3" style="font-size: 13px;">
+                                    <i class="fa fa-whatsapp"></i> Demander Tarif
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section class="py-5" id="contact" style="background: var(--wz-sand);">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <span class="section-tag">Visite &amp; Devis</span>
+                    <h2 class="mb-4" style="font-size: 34px; font-weight: 900;">Bienvenue à la Pépinière Oasis Zagora</h2>
+                    <p style="font-size: 16px; color: #607268; line-height: 1.8;">
+                        Venez choisir personnellement vos arbres au milieu de nos milliers de sujets à Had Soualem. Nous assurons l'expédition avec camion-grue directement jusqu'au lieu de plantation.
+                    </p>
+
+                    <ul class="list-unstyled mt-4" style="font-size: 16px;">
+                        <li class="mb-3 d-flex align-items-center">
+                            <span class="badge badge-success p-2 mr-3" style="font-size: 16px;"><i class="fa fa-map-marker"></i></span>
+                            <div>
+                                <strong>Adresse:</strong><br>
+                                <span style="color: #607268;">Route Nationale 1, Had Soualem (Sortie autoroute Casa - El Jadida)</span>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <span class="badge badge-success p-2 mr-3" style="font-size: 16px;"><i class="fa fa-phone"></i></span>
+                            <div>
+                                <strong>Téléphone:</strong><br>
+                                <a href="tel:+212600000000" style="color: var(--wz-emerald); font-weight: 800; font-size: 18px;">+212 600 000 000</a>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <span class="badge badge-success p-2 mr-3" style="font-size: 16px;"><i class="fa fa-whatsapp"></i></span>
+                            <div>
+                                <strong>WhatsApp Direct:</strong><br>
+                                <a href="https://wa.me/212600000000" target="_blank" style="color: #25D366; font-weight: 800;">Contactez Omar 7j/7</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <div style="background: #ffffff; border-radius: 24px; padding: 40px; border: 1px solid #e5ebe7; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                        <h3 class="mb-3" style="font-size: 22px; font-weight: 800; color: var(--wz-emerald);">Demande de Visite ou Devis Paysager</h3>
+                        <p style="font-size: 14px; color: #607268; margin-bottom: 25px;">Renseignez vos coordonnées pour recevoir notre catalogue avec tarifs ou planifier un déplacement d'Omar.</p>
+
+                        <form onsubmit="event.preventDefault(); window.open('https://wa.me/212600000000?text=' + encodeURIComponent('Nom: ' + document.getElementById('fr_name').value + '
+Ville: ' + document.getElementById('fr_city').value + '
+Tel: ' + document.getElementById('fr_phone').value + '
+Projet: ' + document.getElementById('fr_req').value));">
+                            <div class="form-group mb-3">
+                                <label style="font-weight: 700; font-size: 14px;">Nom et Prénom :</label>
+                                <input type="text" id="fr_name" class="form-control" placeholder="Ex: M. Bensouda" required style="border-radius: 12px; height: 50px;">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label style="font-weight: 700; font-size: 14px;">Numéro de Téléphone / WhatsApp :</label>
+                                <input type="tel" id="fr_phone" class="form-control" placeholder="06 00 00 00 00" required style="border-radius: 12px; height: 50px;">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label style="font-weight: 700; font-size: 14px;">Localisation de la Villa / Terrain :</label>
+                                <input type="text" id="fr_city" class="form-control" placeholder="Bouskoura, Dar Bouazza, Had Soualem, Casablanca..." required style="border-radius: 12px; height: 50px;">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label style="font-weight: 700; font-size: 14px;">Votre Besoin :</label>
+                                <textarea id="fr_req" class="form-control" rows="3" placeholder="Ex: Fourniture et plantation de 6 Washingtonia 4m avec gazon et arrosage..." style="border-radius: 12px;"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-wz-primary w-100 py-3 justify-content-center" style="font-size: 16px;">
+                                <i class="fa fa-paper-plane mr-2"></i> Envoyer ma demande sur WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="wz-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="assets/images/logo/logo.png" alt="Oasis Zagora" style="width: 55px; height: 55px; border-radius: 50%; border: 2px solid var(--wz-gold); margin-right: 12px;">
+                        <div>
+                            <div style="font-size: 20px; font-weight: 900; color: #ffffff;">PÉPINIÈRE OASIS ZAGORA</div>
+                            <div style="font-size: 12px; color: var(--wz-gold);">Had Soualem • L'Excellence Végétale du Sud</div>
+                        </div>
+                    </div>
+                    <p style="font-size: 14px; line-height: 1.8; color: #a3b8ad;">
+                        Pépinière leader à Had Soualem spécialisée dans la fourniture de palmiers toutes tailles, oliviers centenaires sculptés et aménagement paysager de résidences de prestige au Maroc.
+                    </p>
+                    <div class="mt-3">
+                        <span style="color: #ffffff; font-weight: bold;"><i class="fa fa-map-marker text-warning mr-2"></i> Had Soualem, Région Casablanca-Settat</span>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-4 mb-lg-0">
+                    <h4>Navigation</h4>
+                    <ul class="list-unstyled" style="font-size: 14.5px;">
+                        <li class="py-1"><a href="#home">Accueil</a></li>
+                        <li class="py-1"><a href="#about">Histoire d'Omar</a></li>
+                        <li class="py-1"><a href="#plants">Catalogue Arbres</a></li>
+                        <li class="py-1"><a href="#services">Aménagement</a></li>
+                        <li class="py-1"><a href="#gallery">Galerie Villas</a></li>
+                        <li class="py-1"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                    <h4>Végétaux Stars</h4>
+                    <ul class="list-unstyled" style="font-size: 14.5px;">
+                        <li class="py-1"><a href="#plants">Palmiers Washingtonia Robusta</a></li>
+                        <li class="py-1"><a href="#plants">Dattiers Medjool de Zagora</a></li>
+                        <li class="py-1"><a href="#plants">Oliviers Centenaires Taillés</a></li>
+                        <li class="py-1"><a href="#plants">Bougainvilliers Multicolores</a></li>
+                        <li class="py-1"><a href="#plants">Citronniers 4 Saisons</a></li>
+                        <li class="py-1"><a href="#plants">Gazon Naturel &amp; Arrosage</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h4>Contact Direct</h4>
+                    <p style="font-size: 13.5px; color: #a3b8ad; margin-bottom: 12px;">Ouvert 7 jours sur 7 :</p>
+                    <a href="https://wa.me/212600000000" target="_blank" style="color: #25D366; font-size: 18px; font-weight: 800; display: block; margin-bottom: 10px;">
+                        <i class="fa fa-whatsapp mr-1"></i> +212 600 000 000
+                    </a>
+                    <a href="tel:+212600000000" style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 20px;">
+                        <i class="fa fa-phone mr-1"></i> Appeler la Pépinière
+                    </a>
+                    <a href="https://wa.me/212600000000?text=Bonjour%20Omar,%20je%20souhaite%20des%20renseignements" target="_blank" class="btn btn-whatsapp w-100 text-center py-2 justify-content-center" style="font-size: 14px;">
+                        <i class="fa fa-whatsapp"></i> Devis Rapide sur WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-top mt-5 pt-4 text-center" style="border-color: rgba(255,255,255,0.08) !important; font-size: 13.5px;">
+                <p class="m-0">
+                    &copy; 2026 Pépinière Oasis Zagora — Had Soualem. Tous droits réservés. Fondée par Omar de Zagora.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts from GreenAura -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+</body>
+</html>
