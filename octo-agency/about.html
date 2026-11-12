@@ -1,364 +1,629 @@
 <!doctype html>
-<html class="no-js" lang="fr">
+<html class="no-js" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>À Propos de Ghaya Prod || Studio & Vision</title>
-    <meta name="description" content="Découvrez l'histoire de l'agence Ghaya Prod à Casablanca, nos standards d'ingénierie web et notre équipement de production cinéma 4K.">
+
+    <!-- SEO Meta Description -->
+    <meta name="description" content="">
+    <meta name="author" content="Ghaya Prod">
+
+    <!-- Title  -->
+    <title>À Propos & Studio de Production || Ghaya Prod Agency</title>
+
+    <!-- Favicon  -->
     <link rel="icon" href="assets/img/favicon.png">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- CSS Plugins -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/aos.css">
+
+    <!-- ***** All CSS Files ***** -->
+
+    <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css">
 
-    <style>
-        :root {
-            --primary: #6366f1;
-            --primary-glow: rgba(99, 102, 241, 0.25);
-            --accent-lime: #10b981;
-            --dark-bg: #090a10;
-            --card-bg: rgba(18, 20, 32, 0.7);
-            --card-border: rgba(255, 255, 255, 0.08);
-        }
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: var(--dark-bg);
-            color: #94a3b8;
-            overflow-x: hidden;
-        }
-        h1, h2, h3, h4, h5, h6, .brand-font {
-            font-family: 'Syne', sans-serif;
-            color: #ffffff;
-            letter-spacing: -0.02em;
-        }
-        .navbar {
-            background: rgba(9, 10, 16, 0.9) !important;
-            backdrop-filter: blur(16px);
-            border-bottom: 1px solid var(--card-border);
-            padding: 18px 0;
-        }
-        .nav-link {
-            color: #cbd5e1 !important;
-            font-weight: 600;
-            font-size: 15px;
-            transition: all 0.2s ease;
-        }
-        .nav-link:hover, .nav-link.active {
-            color: var(--primary) !important;
-        }
-        .bento-card {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 20px;
-            padding: 35px 30px;
-            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-            backdrop-filter: blur(12px);
-            height: 100%;
-        }
-        .bento-card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(99, 102, 241, 0.3);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-        }
-        .bento-card.featured {
-            border: 2px solid var(--primary);
-            box-shadow: 0 0 35px var(--primary-glow);
-            position: relative;
-        }
-        .badge-popular {
-            position: absolute;
-            top: -14px;
-            right: 25px;
-            background: var(--primary);
-            color: #ffffff;
-            font-size: 12px;
-            font-weight: 800;
-            padding: 5px 15px;
-            border-radius: 20px;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        .price-tag {
-            font-size: 42px;
-            font-weight: 800;
-            color: #ffffff;
-            font-family: 'Syne', sans-serif;
-        }
-        .currency {
-            font-size: 20px;
-            color: var(--primary);
-            font-weight: 700;
-            margin-left: 4px;
-        }
-        .cta-btn {
-            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
-            color: #ffffff !important;
-            border-radius: 50px;
-            padding: 14px 28px;
-            font-weight: 700;
-            font-size: 15px;
-            display: inline-block;
-            transition: all 0.3s ease;
-            border: none;
-            box-shadow: 0 10px 25px var(--primary-glow);
-            text-decoration: none !important;
-        }
-        .cta-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 35px rgba(99, 102, 241, 0.4);
-            color: #ffffff;
-        }
-        .cta-btn-outline {
-            background: rgba(255, 255, 255, 0.05);
-            color: #ffffff !important;
-            border: 1px solid var(--card-border);
-            border-radius: 50px;
-            padding: 14px 28px;
-            font-weight: 700;
-            font-size: 15px;
-            display: inline-block;
-            transition: all 0.3s ease;
-            text-decoration: none !important;
-        }
-        .cta-btn-outline:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255, 255, 255, 0.2);
-            color: #ffffff;
-        }
-        .feature-list {
-            list-style: none;
-            padding: 0;
-            margin: 25px 0 35px;
-        }
-        .feature-list li {
-            color: #cbd5e1;
-            font-size: 15px;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-        }
-        .feature-list li i {
-            color: var(--accent-lime);
-            margin-right: 12px;
-            font-size: 14px;
-        }
-        .hero-section {
-            padding: 160px 0 100px;
-            background: radial-gradient(circle at 50% 20%, rgba(99, 102, 241, 0.12) 0%, transparent 60%);
-        }
-        .page-header {
-            padding: 140px 0 70px;
-            background: radial-gradient(circle at 50% 10%, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
-            border-bottom: 1px solid var(--card-border);
-        }
-        .stat-number {
-            font-size: 46px;
-            font-weight: 800;
-            color: #ffffff;
-            font-family: 'Syne', sans-serif;
-            line-height: 1;
-            margin-bottom: 8px;
-        }
-        .form-control-custom {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid var(--card-border);
-            color: #ffffff;
-            border-radius: 12px;
-            padding: 14px 18px;
-        }
-        .form-control-custom:focus {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: var(--primary);
-            color: #ffffff;
-            outline: none;
-            box-shadow: 0 0 15px var(--primary-glow);
-        }
-    </style>
 </head>
+
 <body>
-    <!-- Header -->
-    <header id="header">
-        <nav class="navbar navbar-expand-lg fixed-top">
+    <!--====== Preloader Area Start ======-->
+    <div id="preloader">
+        <!-- Digimax Preloader -->
+        <div id="digimax-preloader" class="digimax-preloader">
+            <!-- Preloader Animation -->
+            <div class="preloader-animation">
+                <!-- Spinner -->
+                <div class="spinner"></div>
+                <!-- Loader -->
+                <div class="loader">
+                    <span data-text-preloader="G" class="animated-letters">G</span>
+                    <span data-text-preloader="H" class="animated-letters">H</span>
+                    <span data-text-preloader="A" class="animated-letters">A</span>
+                    <span data-text-preloader="Y" class="animated-letters">Y</span>
+                    <span data-text-preloader="A" class="animated-letters">A</span>
+                </div>
+                <p class="fw-5 text-center text-uppercase">Loading</p>
+            </div>
+            <!-- Loader Animation -->
+            <div class="loader-animation">
+                <div class="row h-100">
+                    <!-- Single Loader -->
+                    <div class="col-3 single-loader p-0">
+                        <div class="loader-bg"></div>
+                    </div>
+                    <!-- Single Loader -->
+                    <div class="col-3 single-loader p-0">
+                        <div class="loader-bg"></div>
+                    </div>
+                    <!-- Single Loader -->
+                    <div class="col-3 single-loader p-0">
+                        <div class="loader-bg"></div>
+                    </div>
+                    <!-- Single Loader -->
+                    <div class="col-3 single-loader p-0">
+                        <div class="loader-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== Preloader Area End ======-->
+
+    <!--====== Scroll To Top Area Start ======-->
+    <div id="scrollUp" title="Scroll To Top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!--====== Scroll To Top Area End ======-->
+
+    <div class="main overflow-hidden">
+        <!-- ***** Header Start ***** -->
+        <header id="header">
+            <!-- Navbar -->
+            <nav data-aos="zoom-out" data-aos-delay="800" class="navbar navbar-expand">
+                <div class="container header">
+                    <!-- Navbar Brand-->
+                    <a class="navbar-brand d-flex align-items-center" href="index.html" style="text-decoration: none;">
+            <span style="font-weight: 800; font-size: 24px; color: #ffffff; letter-spacing: -0.5px;">⚡ GHAYA<span style="color: #6366f1;">PROD</span></span>
+        </a>
+                    <div class="ml-auto"></div>
+                    <!-- Navbar -->
+                    <ul class="navbar-nav items">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">Studio & Gear</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">Expertises</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portfolio-grid.html" class="nav-link">Réalisations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pricing.html" class="nav-link">Tarifs (MAD)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="team.html" class="nav-link">Équipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Navbar Icons -->
+                    <ul class="navbar-nav icons">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#search">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item social">
+                            <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="nav-item social">
+                            <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+
+                    <!-- Navbar Toggler -->
+                    <ul class="navbar-nav toggle">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#menu">
+                                <i class="fas fa-bars toggle-icon m-0"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Navbar Action Button -->
+                    <ul class="navbar-nav action">
+                        <li class="nav-item ml-3">
+                            <a href="https://wa.me/212600980685?text=Bonjour%20Ghaya%20Prod,%20je%20souhaite%20r%C3%A9server%20un%20appel%20strat%C3%A9gique" target="_blank" class="btn ml-lg-auto btn-bordered-white" style="border-radius: 50px; font-weight: 700;">
+                                <i class="fab fa-whatsapp mr-2" style="color: #25D366; font-size: 16px;"></i> WhatsApp Direct
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ***** Header End ***** -->
+
+        <!-- ***** Breadcrumb Area Start ***** -->
+        <section class="section breadcrumb-area overlay-dark d-flex align-items-center">
             <div class="container">
-                <a class="navbar-brand d-flex align-items-center text-white" href="index.html" style="font-size: 22px; font-weight: 800; text-decoration: none;">
-                    <span style="color: #6366f1; font-size: 26px; margin-right: 8px;">⚡</span> GHAYA<span style="color: #6366f1;">PROD</span>
-                </a>
-                <button class="navbar-toggler border-0 text-white" type="button" data-toggle="collapse" data-target="#navbarNav">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link " href="index.html">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="about.html">Studio & Gear</a></li>
-                        <li class="nav-item"><a class="nav-link " href="services.html">Expertises</a></li>
-                        <li class="nav-item"><a class="nav-link " href="portfolio-grid.html">Réalisations</a></li>
-                        <li class="nav-item"><a class="nav-link " href="pricing.html">Tarifs (MAD)</a></li>
-                        <li class="nav-item"><a class="nav-link " href="team.html">Équipe</a></li>
-                        <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
-                    </ul>
-                    <div class="d-flex align-items-center">
-                        <a href="https://wa.me/212600980685?text=Bonjour%20Ghaya%20Prod,%20je%20souhaite%20r%C3%A9server%20un%20appel%20strat%C3%A9gique%20pour%20mon%20projet" target="_blank" class="cta-btn py-2 px-4" style="font-size: 14px;">
-                            <i class="fab fa-whatsapp mr-2" style="color: #25D366; font-size: 16px;"></i> WhatsApp Direct
-                        </a>
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Breamcrumb Content -->
+                        <div class="breadcrumb-content d-flex flex-column align-items-center text-center">
+                            <h2 class="text-white text-uppercase mb-3">About Us</h2>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a class="text-uppercase text-white" href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a class="text-uppercase text-white" href="index.html">Pages</a></li>
+                                <li class="breadcrumb-item text-white active">About</li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
+        </section>
+        <!-- ***** Breadcrumb Area End ***** -->
 
-    
-    <!-- Page Header -->
-    <section class="page-header text-center">
-        <div class="container">
-            <span class="badge badge-pill badge-primary px-3 py-2 mb-3" style="background: rgba(99, 102, 241, 0.15); color: #818cf8; border: 1px solid rgba(99,102,241,0.3);">
-                Notre Philosophie & Studio
-            </span>
-            <h1 class="font-weight-bold display-4 mb-3">L'Excellence Technique au Service de Votre Image</h1>
-            <p class="lead mx-auto" style="max-width: 700px; color: #94a3b8;">
-                Basés à Casablanca, nous allions le meilleur de l'ingénierie web moderne et de la production cinématographique 4K pour créer des marques incontournables.
-            </p>
+        <!-- ***** About Area Start ***** -->
+        <section class="section about-area ptb_100">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <!-- About Thumb -->
+                        <div class="about-thumb text-center">
+                            <img src="assets/img/about/about_thumb_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <!-- About Content -->
+                        <div class="about-content section-heading text-center text-lg-left pl-md-4 mt-5 mt-lg-0 mb-0">
+                            <h2 class="mb-3">L'Excellence Technique au Service de Votre Image</h2>
+                            <p>Basés à Casablanca, nous allions le meilleur du développement web moderne et de la production cinématographique 4K plein format pour créer des marques incontournables.</p><br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iure excepturi eos, tenetur minima dignissimos repellendus laudantium, rem, quo ipsam esse maiores sequi ex debitis quae facilis dolorum voluptates animi.</p>
+                            <!-- Counter Area -->
+                            <div class="couter-area mt-5">
+                                <!-- Single Counter -->
+                                <div class="single-counter d-block d-md-inline-block m-4 m-md-2">
+                                    <div class="counter-inner">
+                                        <!-- Counter Item -->
+                                        <div class="counter-item d-inline-block mb-3">
+                                            <span class="counter color-1 fw-7">375</span><span class="color-1 fw-7">+</span>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-uppercase fw-7">Clients Satisfaits</h4>
+                                </div>
+                                <!-- Single Counter -->
+                                <div class="single-counter d-block d-md-inline-block m-4 m-md-2">
+                                    <div class="counter-inner">
+                                        <!-- Counter Item -->
+                                        <div class="counter-item d-inline-block mb-3">
+                                            <span class="counter color-2 fw-7">1500</span><span class="color-2 fw-7">+</span>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-uppercase fw-7">Projets Déployés</h4>
+                                </div>
+                                <!-- Single Counter -->
+                                <div class="single-counter d-block d-md-inline-block m-4 m-md-2">
+                                    <div class="counter-inner">
+                                        <!-- Counter Item -->
+                                        <div class="counter-item d-inline-block mb-3">
+                                            <span class="counter color-3 fw-7">695</span><span class="color-3 fw-7">+</span>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-uppercase fw-7">Campagnes Actives</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** About Area End ***** -->
+
+        <!-- ***** Notre Vision & Engagement Area Start ***** -->
+        <section class="section our-goal ptb_100">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <!-- Goal Content -->
+                        <div class="goal-content section-heading text-center text-lg-left pr-md-4 mb-0">
+                            <h2 class="mb-3">Notre Vision & Engagement</h2>
+                            <p>Basés à Casablanca, nous allions le meilleur du développement web moderne et de la production cinématographique 4K plein format pour créer des marques incontournables.</p><br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iure excepturi eos, tenetur minima dignissimos repellendus laudantium, rem, quo ipsam esse maiores sequi ex debitis quae facilis dolorum voluptates animi.</p>
+                            <a href="#" class="btn btn-bordered mt-4">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <!-- Goal Thumb -->
+                        <div class="goal-thumb mt-5 mt-lg-0">
+                            <img src="assets/img/about/about_thumb_2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Notre Vision & Engagement Area End ***** -->
+
+        <!-- ***** Team Area Start ***** -->
+        <section class="section team-area bg-grey ptb_100">
+            <!-- Shape Top -->
+            <div class="shape shape-top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#FFFFFF">
+                    <path class="shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+                c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+                c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-7">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center">
+                            <h2>Our Experts</h2>
+                            <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+                            <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Team -->
+                        <div class="single-team">
+                            <!-- Team Photo -->
+                            <div class="team-photo">
+                                <a href="#"><img src="assets/img/team/thumb_1.jpg" alt=""></a>
+                            </div>
+                            <!-- Team Content -->
+                            <div class="team-content p-3">
+                                <a href="#">
+                                    <h3 class="mb-2">Junaid Hasan</h3>
+                                </a>
+                                <h5 class="text-uppercase">Marketing Officer</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Team -->
+                        <div class="single-team">
+                            <!-- Team Photo -->
+                            <div class="team-photo">
+                                <a href="#"><img src="assets/img/team/thumb_2.jpg" alt=""></a>
+                            </div>
+                            <!-- Team Content -->
+                            <div class="team-content p-3">
+                                <a href="#">
+                                    <h3 class="mb-2">Yasmin Akter</h3>
+                                </a>
+                                <h5 class="text-uppercase">SEO Expert</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Team -->
+                        <div class="single-team">
+                            <!-- Team Photo -->
+                            <div class="team-photo">
+                                <a href="#"><img src="assets/img/team/thumb_3.jpg" alt=""></a>
+                            </div>
+                            <!-- Team Content -->
+                            <div class="team-content p-3">
+                                <a href="#">
+                                    <h3 class="mb-2">Md. Arham</h3>
+                                </a>
+                                <h5 class="text-uppercase">Media Controller</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Team -->
+                        <div class="single-team">
+                            <!-- Team Photo -->
+                            <div class="team-photo">
+                                <a href="#"><img src="assets/img/team/thumb_4.jpg" alt=""></a>
+                            </div>
+                            <!-- Team Content -->
+                            <div class="team-content p-3">
+                                <a href="#">
+                                    <h3 class="mb-2">Jassica William</h3>
+                                </a>
+                                <h5 class="text-uppercase">Data Analyst</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Team -->
+                        <div class="single-team">
+                            <!-- Team Photo -->
+                            <div class="team-photo">
+                                <a href="#"><img src="assets/img/team/thumb_5.jpg" alt=""></a>
+                            </div>
+                            <!-- Team Content -->
+                            <div class="team-content p-3">
+                                <a href="#">
+                                    <h3 class="mb-2">John Doe</h3>
+                                </a>
+                                <h5 class="text-uppercase">Web Developer</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Team -->
+                        <div class="single-team">
+                            <!-- Team Photo -->
+                            <div class="team-photo">
+                                <a href="#"><img src="assets/img/team/thumb_6.jpg" alt=""></a>
+                            </div>
+                            <!-- Team Content -->
+                            <div class="team-content p-3">
+                                <a href="#">
+                                    <h3 class="mb-2">Sara Scotch</h3>
+                                </a>
+                                <h5 class="text-uppercase">Graphic Designer</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Shape Bottom -->
+            <div class="shape shape-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#FFFFFF">
+                    <path class="shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+        c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+        c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                </svg>
+            </div>
+        </section>
+        <!-- ***** Team Area End ***** -->
+
+        <!--====== Contact Area Start ======-->
+        <section id="contact" class="contact-area ptb_100">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-lg-5">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center mb-3">
+                            <h2>Let's connect!</h2>
+                            <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+                            <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                        </div>
+                        <!-- Contact Us -->
+                        <div class="contact-us">
+                            <ul>
+                                <!-- Contact Info -->
+                                <li class="contact-info color-1 bg-hover active hover-bottom text-center p-5 m-3">
+                                    <span><i class="fas fa-mobile-alt fa-3x"></i></span>
+                                    <a class="d-block my-2" href="#">
+                                        <h3>+212 600 980 685</h3>
+                                    </a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </li>
+                                <!-- Contact Info -->
+                                <li class="contact-info color-3 bg-hover active hover-bottom text-center p-5 m-3">
+                                    <span><i class="fas fa-envelope-open-text fa-3x"></i></span>
+                                    <a class="d-none d-sm-block my-2" href="#">
+                                        <h3>contact@ghayaprod.com</h3>
+                                    </a>
+                                    <a class="d-block d-sm-none my-2" href="#">
+                                        <h3>contact@ghayaprod.com</h3>
+                                    </a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 pt-4 pt-lg-0">
+                        <!-- Contact Box -->
+                        <div class="contact-box text-center">
+                            <!-- Contact Form -->
+                            <form id="contact-form" method="POST" action="assets/php/mail.php">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" placeholder="Name" required="required">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" placeholder="Company Name" required="required">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subject" placeholder="Phone" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" placeholder="Message" required="required"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-bordered active btn-block mt-3"><span class="text-white pr-3"><i class="fas fa-paper-plane"></i></span>Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <p class="form-message"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====== Contact Area End ======-->
+
+        <!--====== Call To Action Area Start ======-->
+        <section class="section cta-area bg-overlay ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center m-0">
+                            <h2 class="text-white">Looking for the best digital agency &amp; marketing solution?</h2>
+                            <p class="text-white d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+                            <p class="text-white d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                            <a href="#" class="btn btn-bordered-white mt-4">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====== Call To Action Area End ======-->
+
+        <!--====== Footer Area Start ======-->
+        <footer class="section footer-area">
+            <!-- Footer Top -->
+            <div class="footer-top ptb_100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                                <h3 class="footer-title text-uppercase mb-2">About Us</h3>
+                                <ul>
+                                    <li class="py-2"><a class="text-black-50" href="#">Company Profile</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Testimonials</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Careers</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Partners</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Affiliate Program</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                                <h3 class="footer-title text-uppercase mb-2">Services</h3>
+                                <ul>
+                                    <li class="py-2"><a class="text-black-50" href="#">Web Application</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Product Management</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">User Interaction Design</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">UX Consultant</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Social Media Marketing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                                <h3 class="footer-title text-uppercase mb-2">Support</h3>
+                                <ul>
+                                    <li class="py-2"><a class="text-black-50" href="#">Frequently Asked</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Terms &amp; Conditions</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Privacy Policy</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Help Center</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                                <h3 class="footer-title text-uppercase mb-2">Follow Us</h3>
+                                <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, quae.</p>
+                                <!-- Social Icons -->
+                                <ul class="social-icons list-inline pt-2">
+                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom bg-grey">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Copyright Area -->
+                            <div class="copyright-area d-flex flex-wrap justify-content-center justify-content-sm-between text-center py-4">
+                                <!-- Copyright Left -->
+                                <div class="copyright-left">&copy; Copyrights 2020 Digimax All rights reserved.</div>
+                                <!-- Copyright Right -->
+                                <div class="copyright-right">Made with <i class="fas fa-heart"></i> By <a href="#">Ghaya Prod</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--====== Footer Area End ======-->
+
+        <!--====== Modal Search Area Start ======-->
+        <div id="search" class="modal fade p-0">
+            <div class="modal-dialog dialog-animated">
+                <div class="modal-content h-100">
+                    <div class="modal-header" data-dismiss="modal">
+                        Search <i class="far fa-times-circle icon-close"></i>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row">
+                            <div class="col-12 align-self-center">
+                                <div class="row">
+                                    <div class="col-12 pb-3">
+                                        <h2 class="search-title mb-3">What are you looking for?</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam lacus, dapibus sed imperdiet consectetur.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 input-group">
+                                        <input type="text" class="form-control" placeholder="Enter your keywords">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 input-group align-self-center">
+                                        <button class="btn btn-bordered mt-3">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+        <!--====== Modal Search Area End ======-->
 
-    <!-- Story & Mission -->
-    <section class="py-5" style="margin-top: 40px;">
-        <div class="container">
-            <div class="row align-items-center mb-5">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <span class="text-primary font-weight-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">Pourquoi Ghaya Prod ?</span>
-                    <h2 class="font-weight-bold display-4 mt-2">En Finir avec les Sites Lents et les Vidéos Amateurs.</h2>
-                    <p style="color: #cbd5e1; line-height: 1.8;" class="mt-3">
-                        Au Maroc, la majorité des agences livrent soit de simples templates WordPress pré-fabriqués et lents, soit des vidéos tournées à la va-vite avec un smartphone sans prise de son professionnelle.
-                    </p>
-                    <p style="color: #94a3b8; line-height: 1.8;">
-                        Chez <strong>Ghaya Prod</strong>, nous avons pris le contrepied exact : notre code est écrit sur-mesure pour charger en moins d'une seconde, et nos tournages mobilisent de vraies caméras de cinéma et micros broadcast. Vos clients perçoivent immédiatement la supériorité de votre établissement.
-                    </p>
-                </div>
-                <div class="col-lg-6">
-                    <div class="bento-card p-4 p-md-5">
-                        <h4 class="font-weight-bold text-white mb-4">Nos 4 Standards Inviolables</h4>
-                        <ul class="feature-list mb-0">
-                            <li><i class="fas fa-check-circle"></i> <strong>Temps de chargement &lt; 1.5s :</strong> Nous éliminons les lenteurs qui font fuir vos clients.</li>
-                            <li><i class="fas fa-check-circle"></i> <strong>Son Broadcast Zéro Écho :</strong> La qualité audio fait 70% de la crédibilité perçue d'une vidéo.</li>
-                            <li><i class="fas fa-check-circle"></i> <strong>Psychologie de Conversion :</strong> Chaque mot, bouton et plan de caméra est orienté prise de contact.</li>
-                            <li><i class="fas fa-check-circle"></i> <strong>Accompagnement & Clé en Main :</strong> 100% autonome après livraison, sans dépendance coûteuse.</li>
-                        </ul>
+        <!--====== Modal Responsive Menu Area Start ======-->
+        <div id="menu" class="modal fade p-0">
+            <div class="modal-dialog dialog-animated">
+                <div class="modal-content h-100">
+                    <div class="modal-header" data-dismiss="modal">
+                        Menu <i class="far fa-times-circle icon-close"></i>
                     </div>
-                </div>
-            </div>
-
-            <!-- The Gear Arsenal -->
-            <div class="row mt-5 pt-4">
-                <div class="col-12 text-center mb-5">
-                    <span class="text-primary font-weight-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">Matériel Audiovisuel Pro</span>
-                    <h2 class="font-weight-bold display-4 mt-2">Notre Studio & Arsenal Technique</h2>
-                    <p style="color: #94a3b8; max-width: 600px;" class="mx-auto">Un aperçu du matériel utilisé lors de vos journées de tournage.</p>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="bento-card">
-                        <div class="stat-number mb-2" style="font-size: 32px;"><i class="fas fa-camera text-primary"></i></div>
-                        <h5 class="font-weight-bold text-white mb-2">Panasonic Lumix S5 Plein Format</h5>
-                        <p style="color: #94a3b8; font-size: 14px; margin: 0;">Capteur 24.2 MP, enregistrement 10-bit V-Log 4K, optiques cinéma professionnelles pour un piqué chirurgical.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="bento-card">
-                        <div class="stat-number mb-2" style="font-size: 32px;"><i class="fas fa-microphone-alt text-primary"></i></div>
-                        <h5 class="font-weight-bold text-white mb-2">Micros Broadcast Sennheiser & Shure</h5>
-                        <p style="color: #94a3b8; font-size: 14px; margin: 0;">Micros cravates sans fil discrets Hollyland Lark M2 et capsules Shure/Sennheiser pour des voix cristallines.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="bento-card">
-                        <div class="stat-number mb-2" style="font-size: 32px;"><i class="fas fa-sliders-h text-primary"></i></div>
-                        <h5 class="font-weight-bold text-white mb-2">Post-Production DaVinci Resolve</h5>
-                        <p style="color: #94a3b8; font-size: 14px; margin: 0;">Station de montage calibrée, étalonnage colorimétrique de pointe et sound design immersif.</p>
+                    <div class="menu modal-body">
+                        <div class="row w-100">
+                            <div class="items p-0 col-12 text-center"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        <!--====== Modal Responsive Menu Area End ======-->
+    </div>
 
 
-    <!-- Footer -->
-    <footer style="background: #06070a; border-top: 1px solid var(--card-border); padding: 80px 0 35px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-5">
-                    <h4 class="font-weight-bold mb-3">GHAYA<span style="color: var(--primary);">PROD</span></h4>
-                    <p style="color: #94a3b8; font-size: 15px; line-height: 1.8;">
-                        Agence de croissance digitale et studio de production cinéma 4K à Casablanca. Nous créons des écosystèmes web haute conversion et des vidéos publicitaires captivantes pour les cabinets médicaux, marques e-commerce et leaders de marché.
-                    </p>
-                    <div class="mt-3">
-                        <span class="badge" style="background: rgba(99, 102, 241, 0.15); color: #818cf8; border: 1px solid rgba(99,102,241,0.3); padding: 8px 14px; border-radius: 20px;">
-                            📍 Casablanca, Maroc • Rayonnement MENA & GCC
-                        </span>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-6 mb-5">
-                    <h5 class="font-weight-bold mb-3" style="font-size: 17px;">Navigation</h5>
-                    <ul class="list-unstyled" style="line-height: 2.2;">
-                        <li><a href="index.html" style="color: #94a3b8; text-decoration: none;">Accueil</a></li>
-                        <li><a href="about.html" style="color: #94a3b8; text-decoration: none;">Studio & Gear</a></li>
-                        <li><a href="services.html" style="color: #94a3b8; text-decoration: none;">Nos Expertises</a></li>
-                        <li><a href="portfolio-grid.html" style="color: #94a3b8; text-decoration: none;">Cas Pratiques</a></li>
-                        <li><a href="pricing.html" style="color: #94a3b8; text-decoration: none;">Grille Tarifaire</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-6 mb-5">
-                    <h5 class="font-weight-bold mb-3" style="font-size: 17px;">Solutions</h5>
-                    <ul class="list-unstyled" style="line-height: 2.2;">
-                        <li><a href="services.html" style="color: #94a3b8; text-decoration: none;">Plateformes Web & CRM</a></li>
-                        <li><a href="services.html" style="color: #94a3b8; text-decoration: none;">Production Vidéo Cinéma 4K</a></li>
-                        <li><a href="services.html" style="color: #94a3b8; text-decoration: none;">Boutiques E-Com COD Maroc</a></li>
-                        <li><a href="services.html" style="color: #94a3b8; text-decoration: none;">Reels Verticaux Haute Rétention</a></li>
-                        <li><a href="services.html" style="color: #94a3b8; text-decoration: none;">Secrétariat WhatsApp en 1 Clic</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-5">
-                    <h5 class="font-weight-bold mb-3" style="font-size: 17px;">Contact Rapide</h5>
-                    <p style="color: #94a3b8; font-size: 14px; margin-bottom: 10px;">
-                        <i class="fas fa-phone-alt mr-2" style="color: var(--primary);"></i> +212 600 980 685
-                    </p>
-                    <p style="color: #94a3b8; font-size: 14px; margin-bottom: 10px;">
-                        <i class="fas fa-envelope mr-2" style="color: var(--primary);"></i> contact@ghayaprod.com
-                    </p>
-                    <p style="color: #94a3b8; font-size: 14px; margin-bottom: 18px;">
-                        <i class="fas fa-map-marker-alt mr-2" style="color: var(--primary);"></i> Boulevard d'Anfa, Casablanca, Maroc
-                    </p>
-                    <a href="https://wa.me/212600980685" target="_blank" class="btn btn-sm btn-success px-3 py-2" style="border-radius: 30px; font-weight: 700;">
-                        <i class="fab fa-whatsapp mr-1"></i> Échanger sur WhatsApp
-                    </a>
-                </div>
-            </div>
-            <div class="border-top pt-4 mt-2" style="border-color: rgba(255,255,255,0.06) !important;">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-left">
-                        <p style="color: #64748b; font-size: 14px; margin: 0;">
-                            &copy; 2026 Ghaya Prod. Tous droits réservés. Construit pour la conversion maximale.
-                        </p>
-                    </div>
-                    <div class="col-md-6 text-center text-md-right mt-2 mt-md-0">
-                        <span style="color: #64748b; font-size: 13px;">Tarification transparente en Dirham Marocain (MAD)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- ***** All jQuery Plugins ***** -->
 
-    <!-- Scripts -->
+    <!-- jQuery(necessary for all JavaScript plugins) -->
     <script src="assets/js/jquery/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap js -->
     <script src="assets/js/bootstrap/popper.min.js"></script>
     <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Plugins js -->
     <script src="assets/js/plugins/plugins.min.js"></script>
+
+    <!-- Active js -->
     <script src="assets/js/active.js"></script>
 </body>
+
 </html>

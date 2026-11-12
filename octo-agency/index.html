@@ -1,668 +1,1096 @@
 <!doctype html>
-<html class="no-js" lang="fr">
+<html class="no-js" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Description -->
+    <meta name="description" content="">
+    <meta name="author" content="Ghaya Prod">
+
+    <!-- Title  -->
     <title>Ghaya Prod || Écosystèmes Web Haute Conversion & Production Vidéo Cinéma 4K</title>
-    <meta name="description" content="Studio de production vidéo 4K et agence de croissance digitale à Casablanca. Création de sites web haute conversion, boutiques COD et vidéos publicitaires haute rétention.">
+
+    <!-- Favicon  -->
     <link rel="icon" href="assets/img/favicon.png">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- CSS Plugins -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/aos.css">
+
+    <!-- ***** All CSS Files ***** -->
+
+    <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css">
 
-    <style>
-        :root {
-            --primary: #6366f1;
-            --primary-glow: rgba(99, 102, 241, 0.25);
-            --accent-lime: #10b981;
-            --dark-bg: #090a10;
-            --card-bg: rgba(18, 20, 32, 0.7);
-            --card-border: rgba(255, 255, 255, 0.08);
-        }
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: var(--dark-bg);
-            color: #94a3b8;
-            overflow-x: hidden;
-        }
-        h1, h2, h3, h4, h5, h6, .brand-font {
-            font-family: 'Syne', sans-serif;
-            color: #ffffff;
-            letter-spacing: -0.02em;
-        }
-        .navbar {
-            background: rgba(9, 10, 16, 0.9) !important;
-            backdrop-filter: blur(16px);
-            border-bottom: 1px solid var(--card-border);
-            padding: 18px 0;
-        }
-        .nav-link {
-            color: #cbd5e1 !important;
-            font-weight: 600;
-            font-size: 15px;
-            transition: all 0.2s ease;
-        }
-        .nav-link:hover, .nav-link.active {
-            color: var(--primary) !important;
-        }
-        .bento-card {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 20px;
-            padding: 35px 30px;
-            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-            backdrop-filter: blur(12px);
-            height: 100%;
-        }
-        .bento-card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(99, 102, 241, 0.3);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-        }
-        .bento-card.featured {
-            border: 2px solid var(--primary);
-            box-shadow: 0 0 35px var(--primary-glow);
-            position: relative;
-        }
-        .badge-popular {
-            position: absolute;
-            top: -14px;
-            right: 25px;
-            background: var(--primary);
-            color: #ffffff;
-            font-size: 12px;
-            font-weight: 800;
-            padding: 5px 15px;
-            border-radius: 20px;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        .price-tag {
-            font-size: 42px;
-            font-weight: 800;
-            color: #ffffff;
-            font-family: 'Syne', sans-serif;
-        }
-        .currency {
-            font-size: 20px;
-            color: var(--primary);
-            font-weight: 700;
-            margin-left: 4px;
-        }
-        .cta-btn {
-            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
-            color: #ffffff !important;
-            border-radius: 50px;
-            padding: 14px 28px;
-            font-weight: 700;
-            font-size: 15px;
-            display: inline-block;
-            transition: all 0.3s ease;
-            border: none;
-            box-shadow: 0 10px 25px var(--primary-glow);
-            text-decoration: none !important;
-        }
-        .cta-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 35px rgba(99, 102, 241, 0.4);
-            color: #ffffff;
-        }
-        .cta-btn-outline {
-            background: rgba(255, 255, 255, 0.05);
-            color: #ffffff !important;
-            border: 1px solid var(--card-border);
-            border-radius: 50px;
-            padding: 14px 28px;
-            font-weight: 700;
-            font-size: 15px;
-            display: inline-block;
-            transition: all 0.3s ease;
-            text-decoration: none !important;
-        }
-        .cta-btn-outline:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255, 255, 255, 0.2);
-            color: #ffffff;
-        }
-        .feature-list {
-            list-style: none;
-            padding: 0;
-            margin: 25px 0 35px;
-        }
-        .feature-list li {
-            color: #cbd5e1;
-            font-size: 15px;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-        }
-        .feature-list li i {
-            color: var(--accent-lime);
-            margin-right: 12px;
-            font-size: 14px;
-        }
-        .hero-section {
-            padding: 160px 0 100px;
-            background: radial-gradient(circle at 50% 20%, rgba(99, 102, 241, 0.12) 0%, transparent 60%);
-        }
-        .page-header {
-            padding: 140px 0 70px;
-            background: radial-gradient(circle at 50% 10%, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
-            border-bottom: 1px solid var(--card-border);
-        }
-        .stat-number {
-            font-size: 46px;
-            font-weight: 800;
-            color: #ffffff;
-            font-family: 'Syne', sans-serif;
-            line-height: 1;
-            margin-bottom: 8px;
-        }
-        .form-control-custom {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid var(--card-border);
-            color: #ffffff;
-            border-radius: 12px;
-            padding: 14px 18px;
-        }
-        .form-control-custom:focus {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: var(--primary);
-            color: #ffffff;
-            outline: none;
-            box-shadow: 0 0 15px var(--primary-glow);
-        }
-    </style>
 </head>
+
 <body>
-    <!-- Header -->
-    <header id="header">
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <a class="navbar-brand d-flex align-items-center text-white" href="index.html" style="font-size: 22px; font-weight: 800; text-decoration: none;">
-                    <span style="color: #6366f1; font-size: 26px; margin-right: 8px;">⚡</span> GHAYA<span style="color: #6366f1;">PROD</span>
-                </a>
-                <button class="navbar-toggler border-0 text-white" type="button" data-toggle="collapse" data-target="#navbarNav">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link " href="about.html">Studio & Gear</a></li>
-                        <li class="nav-item"><a class="nav-link " href="services.html">Expertises</a></li>
-                        <li class="nav-item"><a class="nav-link " href="portfolio-grid.html">Réalisations</a></li>
-                        <li class="nav-item"><a class="nav-link " href="pricing.html">Tarifs (MAD)</a></li>
-                        <li class="nav-item"><a class="nav-link " href="team.html">Équipe</a></li>
-                        <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+    <!--====== Preloader Area Start ======-->
+    <div id="preloader">
+        <!-- Digimax Preloader -->
+        <div id="digimax-preloader" class="digimax-preloader">
+            <!-- Preloader Animation -->
+            <div class="preloader-animation">
+                <!-- Spinner -->
+                <div class="spinner"></div>
+                <!-- Loader -->
+                <div class="loader">
+                    <span data-text-preloader="G" class="animated-letters">G</span>
+                    <span data-text-preloader="H" class="animated-letters">H</span>
+                    <span data-text-preloader="A" class="animated-letters">A</span>
+                    <span data-text-preloader="Y" class="animated-letters">Y</span>
+                    <span data-text-preloader="A" class="animated-letters">A</span>
+                </div>
+                <p class="fw-5 text-center text-uppercase">Loading</p>
+            </div>
+            <!-- Loader Animation -->
+            <div class="loader-animation">
+                <div class="row h-100">
+                    <!-- Single Loader -->
+                    <div class="col-3 single-loader p-0">
+                        <div class="loader-bg"></div>
+                    </div>
+                    <!-- Single Loader -->
+                    <div class="col-3 single-loader p-0">
+                        <div class="loader-bg"></div>
+                    </div>
+                    <!-- Single Loader -->
+                    <div class="col-3 single-loader p-0">
+                        <div class="loader-bg"></div>
+                    </div>
+                    <!-- Single Loader -->
+                    <div class="col-3 single-loader p-0">
+                        <div class="loader-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== Preloader Area End ======-->
+
+    <!--====== Scroll To Top Area Start ======-->
+    <div id="scrollUp" title="Scroll To Top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!--====== Scroll To Top Area End ======-->
+
+    <div class="main overflow-hidden">
+        <!-- ***** Header Start ***** -->
+        <header id="header">
+            <!-- Navbar -->
+            <nav data-aos="zoom-out" data-aos-delay="800" class="navbar navbar-expand">
+                <div class="container header">
+                    <!-- Navbar Brand-->
+                    <a class="navbar-brand d-flex align-items-center" href="index.html" style="text-decoration: none;">
+            <span style="font-weight: 800; font-size: 24px; color: #ffffff; letter-spacing: -0.5px;">⚡ GHAYA<span style="color: #6366f1;">PROD</span></span>
+        </a>
+                    <div class="ml-auto"></div>
+                    <!-- Navbar -->
+                    <ul class="navbar-nav items">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">Studio & Gear</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">Expertises</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portfolio-grid.html" class="nav-link">Réalisations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pricing.html" class="nav-link">Tarifs (MAD)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="team.html" class="nav-link">Équipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
                     </ul>
-                    <div class="d-flex align-items-center">
-                        <a href="https://wa.me/212600980685?text=Bonjour%20Ghaya%20Prod,%20je%20souhaite%20r%C3%A9server%20un%20appel%20strat%C3%A9gique%20pour%20mon%20projet" target="_blank" class="cta-btn py-2 px-4" style="font-size: 14px;">
-                            <i class="fab fa-whatsapp mr-2" style="color: #25D366; font-size: 16px;"></i> WhatsApp Direct
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+                    <!-- Navbar Icons -->
+                    <ul class="navbar-nav icons">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#search">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item social">
+                            <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="nav-item social">
+                            <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
 
-    
-    <!-- Hero Section -->
-    <section class="hero-section text-center">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10" data-aos="fade-up">
-                    <span class="badge badge-pill badge-primary px-3 py-2 mb-3" style="background: rgba(99, 102, 241, 0.15); color: #818cf8; border: 1px solid rgba(99,102,241,0.3);">
-                        ⚡ Studio Digital & Production Cinéma 4K à Casablanca
-                    </span>
-                    <h1 class="font-weight-bold display-3 mb-4" style="line-height: 1.15;">
-                        Nous concevons des <span style="background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">écosystèmes web haute conversion</span> & des productions vidéo cinéma 4K.
-                    </h1>
-                    <p class="lead text-muted mx-auto mb-5" style="max-width: 780px; font-size: 18px; line-height: 1.8;">
-                        Nous aidons les cabinets médicaux, marques de prestige et e-commerces ambitieux au Maroc et dans le Golfe à transformer l'attention en clients payants grâce à la vidéo cinématographique et des plateformes de vente ultra-performantes.
-                    </p>
-                    <div class="d-flex flex-wrap justify-content-center gap-3">
-                        <a href="pricing.html" class="cta-btn mr-3 mb-3">
-                            <i class="fas fa-tags mr-2"></i> Voir Nos Tarifs Réalistes (MAD)
-                        </a>
-                        <a href="https://wa.me/212600980685?text=Bonjour%20Ghaya%20Prod,%20je%20souhaite%20r%C3%A9server%20un%20appel%20d%C3%A9couverte" target="_blank" class="cta-btn-outline mb-3">
-                            <i class="fab fa-whatsapp mr-2" style="color: #25D366;"></i> Réserver un Appel Stratégique
-                        </a>
-                    </div>
-                </div>
-            </div>
+                    <!-- Navbar Toggler -->
+                    <ul class="navbar-nav toggle">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#menu">
+                                <i class="fas fa-bars toggle-icon m-0"></i>
+                            </a>
+                        </li>
+                    </ul>
 
-            <!-- Stats Bar -->
-            <div class="row mt-5 pt-4 justify-content-center">
-                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="bento-card py-4 text-center">
-                        <div class="stat-number">1 000+</div>
-                        <div class="text-muted font-weight-bold">Leads Qualifiés Générés</div>
-                    </div>
+                    <!-- Navbar Action Button -->
+                    <ul class="navbar-nav action">
+                        <li class="nav-item ml-3">
+                            <a href="https://wa.me/212600980685?text=Bonjour%20Ghaya%20Prod,%20je%20souhaite%20r%C3%A9server%20un%20appel%20strat%C3%A9gique" target="_blank" class="btn ml-lg-auto btn-bordered-white" style="border-radius: 50px; font-weight: 700;">
+                                <i class="fab fa-whatsapp mr-2" style="color: #25D366; font-size: 16px;"></i> WhatsApp Direct
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="bento-card py-4 text-center">
-                        <div class="stat-number">4K</div>
-                        <div class="text-muted font-weight-bold">Standard Cinéma ProRes</div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="bento-card py-4 text-center">
-                        <div class="stat-number">&lt;1.2s</div>
-                        <div class="text-muted font-weight-bold">Temps de Chargement Web</div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="bento-card py-4 text-center">
-                        <div class="stat-number">100%</div>
-                        <div class="text-muted font-weight-bold">Clé en Main Sans Abonnement</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            </nav>
+        </header>
+        <!-- ***** Header End ***** -->
 
-    <!-- Core Services Bento Grid -->
-    <section class="py-5" style="background: rgba(255,255,255,0.01);">
-        <div class="container py-4">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <span class="text-primary font-weight-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">Nos Piliers de Croissance</span>
-                <h2 class="font-weight-bold display-4 mt-2">Ce Que Nous Ingénions Pour Vous</h2>
-                <p style="color: #94a3b8; max-width: 600px;" class="mx-auto">Chaque composant est conçu avec un seul objectif : maximiser le taux de conversion et l'autorité de votre marque.</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="bento-card">
-                        <div class="d-flex align-items-center mb-3">
-                            <span style="font-size: 32px; margin-right: 15px;">💻</span>
-                            <div>
-                                <span class="badge badge-success px-2 py-1 small font-weight-bold" style="background: rgba(16, 185, 129, 0.2); color: #10b981;">Billion-Dollar Quality</span>
-                                <h3 class="font-weight-bold mb-0 mt-1" style="font-size: 24px;">Création de Sites Web & Boutiques COD</h3>
+        <!-- ***** Welcome Area Start ***** -->
+        <section id="home" class="section welcome-area bg-overlay overflow-hidden d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Welcome Intro Start -->
+                    <div class="col-12 col-md-7">
+                        <div class="welcome-intro">
+                            <h1 class="text-white">Écosystèmes Web Haute Conversion & Production Vidéo Cinéma 4K</h1>
+                            <p class="text-white my-4" style="font-size: 17px; line-height: 1.8;">Nous concevons des plateformes web sur-mesure ultra-rapides (<1s, Google 100/100) et des productions vidéo cinématographiques 4K pour les cabinets médicaux, marques e-commerce COD et entreprises d'élite au Maroc et dans le Golfe.</p>
+                            <!-- Buttons -->
+                            <div class="button-group">
+                                <a href="pricing.html" class="btn btn-bordered-white">Voir Nos Tarifs (MAD)</a>
+                                <a href="https://wa.me/212600980685?text=Bonjour%20Ghaya%20Prod,%20je%20souhaite%20r%C3%A9server%20un%20appel" target="_blank" class="btn btn-bordered-white d-none d-sm-inline-block"><i class="fab fa-whatsapp mr-1" style="color: #25D366;"></i> WhatsApp Direct</a>
                             </div>
                         </div>
-                        <p style="color: #94a3b8; line-height: 1.8;">
-                            Conception de sites vitrines de prestige et boutiques e-commerce COD ultra-rapides (&lt;1s, score Google 100/100). Intégration de formulaires 1-clic avec regex Maroc (06/07), comparateurs Avant/Après HD et routage WhatsApp instantané. Zéro abonnement Shopify ni lenteur WordPress.
-                        </p>
-                        <a href="services.html" class="text-primary font-weight-bold" style="text-decoration: none;">Découvrir nos services de création web &rarr;</a>
                     </div>
-                </div>
-                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="bento-card">
-                        <div class="d-flex align-items-center mb-3">
-                            <span style="font-size: 32px; margin-right: 15px;">🎬</span>
-                            <h3 class="font-weight-bold mb-0" style="font-size: 24px;">Production Vidéo Cinéma 4K</h3>
+                    <div class="col-12 col-md-5">
+                        <!-- Welcome Thumb -->
+                        <div class="welcome-thumb-wrapper mt-5 mt-md-0">
+                            <span class="welcome-thumb-1">
+                                <img class="welcome-animation d-block ml-auto" src="assets/img/welcome/thumb_1.png" alt="">
+                            </span>
+                            <span class="welcome-thumb-2">
+                                <img class="welcome-animation d-block" src="assets/img/welcome/thumb_2.png" alt="">
+                            </span>
+                            <span class="welcome-thumb-3">
+                                <img class="welcome-animation d-block" src="assets/img/welcome/thumb_3.png" alt="">
+                            </span>
+                            <span class="welcome-thumb-4">
+                                <img class="welcome-animation d-block" src="assets/img/welcome/thumb_4.png" alt="">
+                            </span>
+                            <span class="welcome-thumb-5">
+                                <img class="welcome-animation d-block" src="assets/img/welcome/thumb_5.png" alt="">
+                            </span>
+                            <span class="welcome-thumb-6">
+                                <img class="welcome-animation d-block" src="assets/img/welcome/thumb_6.png" alt="">
+                            </span>
                         </div>
-                        <p style="color: #94a3b8; line-height: 1.8;">
-                            Nous ne filmons pas sur téléphone. Nous déployons notre caméra cinéma plein format Panasonic Lumix S5, des micros broadcast Sennheiser/Shure et un éclairage de studio Godox pour donner à votre marque un prestige inégalé.
-                        </p>
-                        <a href="about.html" class="text-primary font-weight-bold" style="text-decoration: none;">Voir notre studio & matériel &rarr;</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="bento-card">
-                        <div class="d-flex align-items-center mb-3">
-                            <span style="font-size: 32px; margin-right: 15px;">📱</span>
-                            <h3 class="font-weight-bold mb-0" style="font-size: 24px;">Reels & Publicités Fort CTR</h3>
-                        </div>
-                        <p style="color: #94a3b8; line-height: 1.8;">
-                            Création de vidéos verticales rythmées avec sous-titrage dynamique CapCut Pro, accroches psychologiques percutantes et appels à l'action calibrés pour générer des messages WhatsApp immédiats.
-                        </p>
-                        <a href="services.html" class="text-primary font-weight-bold" style="text-decoration: none;">En savoir plus sur nos Reels &rarr;</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="bento-card">
-                        <div class="d-flex align-items-center mb-3">
-                            <span style="font-size: 32px; margin-right: 15px;">🤖</span>
-                            <h3 class="font-weight-bold mb-0" style="font-size: 24px;">Secrétariat WhatsApp & CRM</h3>
-                        </div>
-                        <p style="color: #94a3b8; line-height: 1.8;">
-                            Automatisation du traitement des leads. Vos prospects sont directement acheminés vers WhatsApp avec messages pré-remplis, et enregistrés dans un tableau de bord pour un suivi sans friction.
-                        </p>
-                        <a href="services.html" class="text-primary font-weight-bold" style="text-decoration: none;">Explorer nos automatisations &rarr;</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            <!-- Shape Bottom -->
+            <div class="shape shape-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#FFFFFF">
+                    <path class="shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+        c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+        c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                </svg>
+            </div>
+        </section>
+        <!-- ***** Welcome Area End ***** -->
 
-    <!-- Studio & Gear Section -->
-    <section class="py-5" style="border-top: 1px solid var(--card-border); border-bottom: 1px solid var(--card-border);">
-        <div class="container py-4">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
-                    <span class="text-primary font-weight-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">Arsenal Technique</span>
-                    <h2 class="font-weight-bold display-4 mt-2">La Qualité Cinéma N'a Rien d'un Hasard.</h2>
-                    <p style="color: #94a3b8; line-height: 1.8;" class="my-4">
-                        Pour convaincre des clients haut de gamme, les vidéos tournées au smartphone ne suffisent plus. Notre matériel de production audiovisuel broadcast garantit un rendu d'image et de son digne des productions télévisées.
-                    </p>
-                    <a href="about.html" class="cta-btn">Découvrir Notre Équipement</a>
+        <!-- ***** Promo Area Start ***** -->
+        <section class="section promo-area ptb_100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 res-margin">
+                        <!-- Single Promo -->
+                        <div class="single-promo color-1 bg-hover hover-bottom text-center p-5">
+                            <span class="badge badge-success mb-3 p-2 font-weight-bold" style="background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4);">Pôle 01 • Flagship Service</span>
+                            <h3 class="mb-3">Création de Sites Web & COD</h3>
+                            <p>Conception sur-mesure de sites vitrines de prestige et boutiques e-commerce COD ultra-rapides (<1s). Formulaire de commande 1-clic avec regex Maroc (06/07), comparateur Avant/Après HD et zéro abonnement mensuel Shopify.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 res-margin">
+                        <!-- Single Promo -->
+                        <div class="single-promo color-2 bg-hover active hover-bottom text-center p-5">
+                            <span class="badge badge-primary mb-3 p-2 font-weight-bold" style="background: rgba(99, 102, 241, 0.2); color: #818cf8; border: 1px solid rgba(99, 102, 241, 0.4);">Pôle 02 • Cinéma Broadcast</span>
+                            <h3 class="mb-3">Production Vidéo Cinéma 4K</h3>
+                            <p>Tournage sur site avec caméra plein format Panasonic Lumix S5, micros broadcast Sennheiser/Shure, stabilisateur DJI Ronin et éclairage studio Godox pour sublimer votre établissement médical ou votre marque.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Promo -->
+                        <div class="single-promo color-3 bg-hover hover-bottom text-center p-5">
+                            <span class="badge badge-warning mb-3 p-2 font-weight-bold" style="background: rgba(245, 158, 11, 0.2); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.4);">Pôle 03 • Haute Rétention</span>
+                            <h3 class="mb-3">Reels Verticaux & CRM WhatsApp</h3>
+                            <p>Vidéos courtes publicitaires rythmées avec sous-titres dynamiques CapCut Pro, accroches psychologiques et intégration directe d'un secrétariat WhatsApp en 1-clic pour convertir les leads immédiatement.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-7" data-aos="fade-left">
+            </div>
+        </section>
+        <!-- ***** Promo Area End ***** -->
+
+        <!-- ***** Content Area Start ***** -->
+        <section class="section content-area bg-grey ptb_150">
+            <!-- Shape Top -->
+            <div class="shape shape-top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#FFFFFF">
+                    <path class="shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+                c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+                c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-lg-6">
+                        <!-- Content Inner -->
+                        <div class="content-inner text-center">
+                            <!-- Section Heading -->
+                            <div class="section-heading text-center mb-3">
+                                <h2>Une Ingénierie Digitale Calibrée Pour Convertir.</h2>
+                                <p class="d-none d-sm-block mt-4">Chaque ligne de code et chaque plan vidéo sont conçus pour générer des demandes réelles et maximiser vos marges au Maroc et dans le Golfe.</p>
+                                <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                            </div>
+                            <!-- Content List -->
+                            <ul class="content-list text-left">
+                                <li class="single-content-list media py-2">
+                                    <div class="content-icon pr-4">
+                                        <span class="color-1"><i class="fas fa-bolt"></i></span>
+                                    </div>
+                                    <div class="content-text media-body">
+                                        <span><b>Score Google PageSpeed 98-100/100</b><br>Temps de chargement inférieur à 1 seconde sur les réseaux 4G/5G marocains.</span>
+                                    </div>
+                                </li>
+                                <li class="single-content-list media py-2">
+                                    <div class="content-icon pr-4">
+                                        <span class="color-1"><i class="fas fa-video"></i></span>
+                                    </div>
+                                    <div class="content-text media-body">
+                                        <span><b>Son Broadcast & Image 4K 10-Bit</b><br>La clarté acoustique et la colorimétrie DaVinci qui font la différence face aux amateurs.</span>
+                                    </div>
+                                </li>
+                                <li class="single-content-list media py-2">
+                                    <div class="content-icon pr-4">
+                                        <span class="color-1"><i class="fab fa-whatsapp"></i></span>
+                                    </div>
+                                    <div class="content-text media-body">
+                                        <span><b>Formulaire 1-Clic & Secrétariat WhatsApp</b><br>Réception des commandes et réservations directement sur votre WhatsApp avec message pré-rempli.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-bordered mt-4">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <!-- Service Thumb -->
+                        <div class="service-thumb mx-auto pt-4 pt-lg-0">
+                            <img src="assets/img/content/content_thumb.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Shape Bottom -->
+            <div class="shape shape-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#FFFFFF">
+                    <path class="shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+        c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+        c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                </svg>
+            </div>
+        </section>
+        <!-- ***** Content Area End ***** -->
+
+        <!-- ***** Content Area Start ***** -->
+        <section class="section content-area ptb_150">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-lg-6">
+                        <!-- Profile Circle Wrapper -->
+                        <div class="profile-circle-wrapper circle-animation d-none d-sm-block">
+                            <!-- Profile Inner -->
+                            <div class="profile-inner">
+                                <!-- Profile Circle -->
+                                <div class="profile-circle circle-lg">
+                                    <span class="profile-icon icon-1">
+                                        <img class="icon-1-img" src="assets/img/content/profile-icons/profile_icon_1.svg" />
+                                    </span>
+                                    <span class="profile-icon icon-2">
+                                        <img class="icon-2-img" src="assets/img/content/profile-icons/profile_icon_2.svg" />
+                                    </span>
+                                    <span class="profile-icon icon-3">
+                                        <img class="icon-3-img" src="assets/img/content/profile-icons/profile_icon_1.svg" />
+                                    </span>
+                                    <span class="profile-icon icon-4">
+                                        <img class="icon-4-img" src="assets/img/content/profile-icons/profile_icon_2.svg" />
+                                    </span>
+                                </div>
+
+                                <!-- Profile Circle -->
+                                <div class="profile-circle circle-md">
+                                    <span class="profile-icon icon-5">
+                                        <img class="icon-5-img" src="assets/img/content/profile-icons/profile_icon_3.svg" />
+                                    </span>
+                                    <span class="profile-icon icon-6">
+                                        <img class="icon-6-img" src="assets/img/content/profile-icons/profile_icon_3.svg" />
+                                    </span>
+                                    <span class="profile-icon icon-7">
+                                        <img class="icon-7-img" src="assets/img/content/profile-icons/profile_icon_3.svg" />
+                                    </span>
+                                </div>
+
+                                <!-- Profile Circle -->
+                                <div class="profile-circle circle-sm">
+                                    <span class="profile-icon icon-8">
+                                        <img class="icon-8-img" src="assets/img/content/profile-icons/profile_icon_4.svg" />
+                                    </span>
+                                    <span class="profile-icon icon-9">
+                                        <img class="icon-9-img" src="assets/img/content/profile-icons/profile_icon_4.svg" />
+                                    </span>
+                                </div>
+                            </div>
+                            <img class="folder-img" src="assets/img/content/folders.png" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <!-- Content Inner -->
+                        <div class="content-inner text-center pt-sm-4 pt-lg-0 mt-sm-5 mt-lg-0">
+                            <!-- Section Heading -->
+                            <div class="section-heading text-center mb-3">
+                                <h2>Work smarter,<br> not harder.</h2>
+                                <p class="d-none d-sm-block mt-4">Chaque ligne de code et chaque plan vidéo sont conçus pour générer des demandes réelles et maximiser vos marges au Maroc et dans le Golfe.</p>
+                                <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                            </div>
+                            <!-- Content List -->
+                            <ul class="content-list text-left">
+                                <li class="single-content-list media py-2">
+                                    <div class="content-icon pr-4">
+                                        <span class="color-1"><i class="fas fa-bolt"></i></span>
+                                    </div>
+                                    <div class="content-text media-body">
+                                        <span><b>Score Google PageSpeed 98-100/100</b><br>Temps de chargement inférieur à 1 seconde sur les réseaux 4G/5G marocains.</span>
+                                    </div>
+                                </li>
+                                <li class="single-content-list media py-2">
+                                    <div class="content-icon pr-4">
+                                        <span class="color-1"><i class="fas fa-video"></i></span>
+                                    </div>
+                                    <div class="content-text media-body">
+                                        <span><b>Son Broadcast & Image 4K 10-Bit</b><br>La clarté acoustique et la colorimétrie DaVinci qui font la différence face aux amateurs.</span>
+                                    </div>
+                                </li>
+                                <li class="single-content-list media py-2">
+                                    <div class="content-icon pr-4">
+                                        <span class="color-1"><i class="fab fa-whatsapp"></i></span>
+                                    </div>
+                                    <div class="content-text media-body">
+                                        <span><b>Formulaire 1-Clic & Secrétariat WhatsApp</b><br>Réception des commandes et réservations directement sur votre WhatsApp avec message pré-rempli.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-bordered mt-4">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Content Area End ***** -->
+
+        <!-- ***** Service Area End ***** -->
+        <section id="service" class="section service-area bg-grey ptb_150">
+            <!-- Shape Top -->
+            <div class="shape shape-top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#FFFFFF">
+                    <path class="shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+                c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+                c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-7">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center">
+                            <h2>We provide the best digital services</h2>
+                            <p class="d-none d-sm-block mt-4">Chaque ligne de code et chaque plan vidéo sont conçus pour générer des demandes réelles et maximiser vos marges au Maroc et dans le Golfe.</p>
+                            <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Service -->
+                        <div class="single-service p-4">
+                            <span class="flaticon-rocket-launch color-1 icon-bg-1"></span>
+                            <h3 class="my-3">Data Analytics</h3>
+                            <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor incididunt emit.</p>
+                            <a class="service-btn mt-3" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Service -->
+                        <div class="single-service p-4">
+                            <span class="flaticon-monitoring color-2 icon-bg-2"></span>
+                            <h3 class="my-3">Website Growth</h3>
+                            <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor incididunt emit.</p>
+                            <a class="service-btn mt-3" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Service -->
+                        <div class="single-service p-4">
+                            <span class="flaticon-web color-3 icon-bg-3"></span>
+                            <h3 class="my-3">Seo Ranking</h3>
+                            <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor incididunt emit.</p>
+                            <a class="service-btn mt-3" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Service -->
+                        <div class="single-service p-4">
+                            <span class="flaticon-smartphone color-4 icon-bg-4"></span>
+                            <h3 class="my-3">App Development</h3>
+                            <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor incididunt emit.</p>
+                            <a class="service-btn mt-3" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Service -->
+                        <div class="single-service p-4">
+                            <span class="flaticon-email color-5 icon-bg-5"></span>
+                            <h3 class="my-3">Email Marketing</h3>
+                            <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor incididunt emit.</p>
+                            <a class="service-btn mt-3" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Single Service -->
+                        <div class="single-service p-4">
+                            <span class="flaticon-affiliate color-6 icon-bg-6"></span>
+                            <h3 class="my-3">Affiliate Marketing</h3>
+                            <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor incididunt emit.</p>
+                            <a class="service-btn mt-3" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Shape Bottom -->
+            <div class="shape shape-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#FFFFFF">
+                    <path class="shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+        c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+        c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                </svg>
+            </div>
+        </section>
+        <!-- ***** Service Area End ***** -->
+
+        <!-- ***** Portfolio Area Start ***** -->
+        <section id="portfolio" class="portfolio-area overflow-hidden ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-7">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center">
+                            <h2>Our Recent Works</h2>
+                            <p class="d-none d-sm-block mt-4">Chaque ligne de code et chaque plan vidéo sont conçus pour générer des demandes réelles et maximiser vos marges au Maroc et dans le Golfe.</p>
+                            <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center">
+                    <div class="col-12">
+                        <!-- Portfolio Menu -->
+                        <div class="portfolio-menu btn-group btn-group-toggle flex-wrap justify-content-center text-center mb-4 mb-md-5" data-toggle="buttons">
+                            <label class="btn active d-table text-uppercase p-2">
+                                <input type="radio" value="all" checked class="portfolio-btn">
+                                <span>All</span>
+                            </label>
+                            <label class="btn d-table text-uppercase p-2">
+                                <input type="radio" value="marketing" class="portfolio-btn">
+                                <span>Marketing</span>
+                            </label>
+                            <label class="btn d-table text-uppercase p-2">
+                                <input type="radio" value="agency" class="portfolio-btn">
+                                <span>Agency</span>
+                            </label>
+                            <label class="btn d-table text-uppercase p-2">
+                                <input type="radio" value="seo" class="portfolio-btn">
+                                <span>SEO</span>
+                            </label>
+                            <label class="btn d-table text-uppercase p-2">
+                                <input type="radio" value="development" class="portfolio-btn">
+                                <span>App Development</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Items -->
+                <div class="row items portfolio-items">
+                    <div class="col-12 col-sm-6 col-lg-4 portfolio-item" data-groups='["marketing","development"]'>
+                        <!-- Single Case Studies -->
+                        <div class="single-case-studies">
+                            <!-- Case Studies Thumb -->
+                            <a href="#">
+                                <img src="assets/img/case_studies/case_studies_1/thumb_1.jpg" alt="">
+                            </a>
+                            <!-- Case Studies Overlay -->
+                            <a href="#" class="case-studies-overlay">
+                                <!-- Overlay Text -->
+                                <span class="overlay-text text-center p-3">
+                                    <h3 class="text-white mb-3">Digital Marketing</h3>
+                                    <p class="text-white">Lorem ipsum dolor sit amet, consectet ur adipisicing elit.</p>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 portfolio-item" data-groups='["seo","development"]'>
+                        <!-- Single Case Studies -->
+                        <div class="single-case-studies">
+                            <!-- Case Studies Thumb -->
+                            <a href="#">
+                                <img src="assets/img/case_studies/case_studies_1/thumb_2.jpg" alt="">
+                            </a>
+                            <!-- Case Studies Overlay -->
+                            <a href="#" class="case-studies-overlay">
+                                <!-- Overlay Text -->
+                                <span class="overlay-text text-center p-3">
+                                    <h3 class="text-white mb-3">App Development</h3>
+                                    <p class="text-white">Lorem ipsum dolor sit amet, consectet ur adipisicing elit.</p>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 portfolio-item" data-groups='["marketing","agency"]'>
+                        <!-- Single Case Studies -->
+                        <div class="single-case-studies">
+                            <!-- Case Studies Thumb -->
+                            <a href="#">
+                                <img src="assets/img/case_studies/case_studies_1/thumb_4.jpg" alt="">
+                            </a>
+                            <!-- Case Studies Overlay -->
+                            <a href="#" class="case-studies-overlay">
+                                <!-- Overlay Text -->
+                                <span class="overlay-text text-center p-3">
+                                    <h3 class="text-white mb-3">Content Management</h3>
+                                    <p class="text-white">Lorem ipsum dolor sit amet, consectet ur adipisicing elit.</p>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 portfolio-item" data-groups='["agency","development","seo"]'>
+                        <!-- Single Case Studies -->
+                        <div class="single-case-studies">
+                            <!-- Case Studies Thumb -->
+                            <a href="#">
+                                <img src="assets/img/case_studies/case_studies_1/thumb_3.jpg" alt="">
+                            </a>
+                            <!-- Case Studies Overlay -->
+                            <a href="#" class="case-studies-overlay">
+                                <!-- Overlay Text -->
+                                <span class="overlay-text text-center p-3">
+                                    <h3 class="text-white mb-3">Data Analysis</h3>
+                                    <p class="text-white">Lorem ipsum dolor sit amet, consectet ur adipisicing elit.</p>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 portfolio-item" data-groups='["development","marketing","development"]'>
+                        <!-- Single Case Studies -->
+                        <div class="single-case-studies">
+                            <!-- Case Studies Thumb -->
+                            <a href="#">
+                                <img src="assets/img/case_studies/case_studies_1/thumb_5.jpg" alt="">
+                            </a>
+                            <!-- Case Studies Overlay -->
+                            <a href="#" class="case-studies-overlay">
+                                <!-- Overlay Text -->
+                                <span class="overlay-text text-center p-3">
+                                    <h3 class="text-white mb-3">SEO Marketing</h3>
+                                    <p class="text-white">Lorem ipsum dolor sit amet, consectet ur adipisicing elit.</p>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 portfolio-item" data-groups='["agency","development","marketing","seo"]'>
+                        <!-- Single Case Studies -->
+                        <div class="single-case-studies">
+                            <!-- Case Studies Thumb -->
+                            <a href="#">
+                                <img src="assets/img/case_studies/case_studies_1/thumb_6.jpg" alt="">
+                            </a>
+                            <!-- Case Studies Overlay -->
+                            <a href="#" class="case-studies-overlay">
+                                <!-- Overlay Text -->
+                                <span class="overlay-text text-center p-3">
+                                    <h3 class="text-white mb-3">Marketing Strategy</h3>
+                                    <p class="text-white">Lorem ipsum dolor sit amet, consectet ur adipisicing elit.</p>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <a href="#" class="btn btn-bordered mt-4">View More</a>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Portfolio Area End ***** -->
+
+        <!-- ***** Price Plan Area Start ***** -->
+        <section id="pricing" class="section price-plan-area bg-grey overflow-hidden ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-7">
+                        <div class="section-heading text-center">
+                            <h2>Nos Forfaits Spécial Maroc (MAD)</h2>
+                            <p class="d-none d-sm-block mt-4">Tarification claire en Dirham Marocain, transparente et sans abonnement récurrent caché. 50% d'acompte à la commande, 50% à la livraison.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-12">
+                        <div class="row price-plan-wrapper">
+                            <!-- Pack 1 -->
+                            <div class="col-12 col-lg-4 col-md-6 mb-4">
+                                <div class="single-price-plan color-1 bg-hover hover-top text-center p-4 p-md-5">
+                                    <div class="plan-title mb-2 mb-sm-3">
+                                        <h3 class="mb-2">Web & Funnel COD</h3>
+                                        <p>Site vitrine ou boutique mono-produit COD haute conversion.</p>
+                                    </div>
+                                    <div class="plan-price pb-2 pb-sm-3">
+                                        <span class="h1 fw-7">3 900</span>
+                                        <span class="color-primary fw-7">DH</span>
+                                        <sub class="validity text-muted fw-5 d-block mt-1">Paiement unique • Clé en main</sub>
+                                    </div>
+                                    <div class="plan-description">
+                                        <ul class="plan-features">
+                                            <li class="py-2">Site Web / Boutique COD Ultra-Rapide (<1s)</li>
+                                            <li class="py-2">Formulaire 1-Clic avec Regex Maroc (06/07)</li>
+                                            <li class="py-2">Intégration Secrétariat WhatsApp Directe</li>
+                                            <li class="py-2">Configuration Pixels Meta & TikTok sans perte</li>
+                                            <li class="py-2">Nom de domaine offert + Hébergement SSL 1 an</li>
+                                        </ul>
+                                    </div>
+                                    <div class="plan-button">
+                                        <a href="https://wa.me/212600980685?text=Bonjour%20Ghaya%20Prod,%20je%20souhaite%20commander%20le%20Pack%20Web%20%26%20Funnel%20(3900%20DH)" target="_blank" class="btn btn-bordered mt-3">Commander ce Pack</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pack 2 -->
+                            <div class="col-12 col-lg-4 col-md-6 mb-4">
+                                <div class="single-price-plan color-2 bg-hover active hover-top text-center p-4 p-md-5">
+                                    <div class="plan-title mb-2 mb-sm-3">
+                                        <h3 class="mb-2">Croissance & Vidéo 4K <sup><span class="badge badge-pill badge-warning ml-2">Le Plus Choisi</span></sup></h3>
+                                        <p>La formule complète : site d'élite et tournage vidéo cinéma 4K.</p>
+                                    </div>
+                                    <div class="plan-price pb-2 pb-sm-3">
+                                        <span class="h1 fw-7">7 900</span>
+                                        <span class="color-primary fw-7">DH</span>
+                                        <sub class="validity text-muted fw-5 d-block mt-1">Tournage & Plateforme Complète</sub>
+                                    </div>
+                                    <div class="plan-description">
+                                        <ul class="plan-features">
+                                            <li class="py-2"><strong>Tout le contenu du Pack Web & Funnel</strong></li>
+                                            <li class="py-2">Journée de Tournage Cinéma 4K sur site</li>
+                                            <li class="py-2">Caméra Lumix S5 Plein Format + DJI Ronin</li>
+                                            <li class="py-2">Son Broadcast sans écho (Sennheiser/Shure)</li>
+                                            <li class="py-2">Pack de 8 Reels verticaux à fort CTR</li>
+                                            <li class="py-2">Montage dynamique CapCut Pro & DaVinci</li>
+                                        </ul>
+                                    </div>
+                                    <div class="plan-button">
+                                        <a href="https://wa.me/212600980685?text=Bonjour%20Ghaya%20Prod,%20je%20souhaite%20commander%20le%20Pack%20Croissance%20%26%20Vid%C3%A9o%204K%20(7900%20DH)" target="_blank" class="btn btn-bordered mt-3">Réserver cette Formule</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pack 3 -->
+                            <div class="col-12 col-lg-4 col-md-6 mb-4">
+                                <div class="single-price-plan color-1 bg-hover hover-top text-center p-4 p-md-5">
+                                    <div class="plan-title mb-2 mb-sm-3">
+                                        <h3 class="mb-2">Domination 360°</h3>
+                                        <p>L'arsenal absolu pour cliniques esthétiques et marques de luxe.</p>
+                                    </div>
+                                    <div class="plan-price pb-2 pb-sm-3">
+                                        <span class="h1 fw-7">12 900</span>
+                                        <span class="color-primary fw-7">DH</span>
+                                        <sub class="validity text-muted fw-5 d-block mt-1">Écosystème Digital Clé en Main</sub>
+                                    </div>
+                                    <div class="plan-description">
+                                        <ul class="plan-features">
+                                            <li class="py-2">Plateforme Web Multi-Pages Luxe + Entonnoirs</li>
+                                            <li class="py-2">Film de Marque 4K + 15 Reels Publicitaires</li>
+                                            <li class="py-2">Mini-CRM Secrétariat WhatsApp avec gestion d'état</li>
+                                            <li class="py-2">Comparateur Avant / Après interactif HD</li>
+                                            <li class="py-2">Paramétrage Campagnes Meta & TikTok Ads</li>
+                                            <li class="py-2">Support VIP Prioritaire 24/7 & Formation</li>
+                                        </ul>
+                                    </div>
+                                    <div class="plan-button">
+                                        <a href="https://wa.me/212600980685?text=Bonjour%20Ghaya%20Prod,%20je%20souhaite%20commander%20le%20Pack%20Domination%20360%20(12900%20DH)" target="_blank" class="btn btn-bordered mt-3">Sélectionner l'Offre VIP</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center pt-5">
+                    <p class="pt-4 fw-5">Not sure what to choose? <a class="service-btn" href="#"><strong>Contact Us</strong></a></p>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Price Plan Area End ***** -->
+
+        <!-- ***** Review Area Start ***** -->
+        <section id="review" class="section review-area bg-overlay ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-7">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center">
+                            <h2 class="text-white">Avis & Retours de Nos Partenaires</h2>
+                            <p class="text-white d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+                            <p class="text-white d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Client Reviews -->
+                    <div class="client-reviews owl-carousel">
+                        <!-- Single Review -->
+                        <div class="single-review p-5">
+                            <!-- Review Content -->
+                            <div class="review-content">
+                                <!-- Review Text -->
+                                <div class="review-text">
+                                    <p>Ghaya Prod a révolutionné l'image de notre cabinet. Le comparateur Avant/Après et les vidéos 4K tournées au cabinet rassurent immédiatement nos patientes. Notre secrétariat gagne plus de 2 heures par jour.</p>
+                                </div>
+                                <!-- Quotation Icon -->
+                                <div class="quot-icon">
+                                    <img class="avatar-sm" src="assets/img/quote.png" alt="">
+                                </div>
+                            </div>
+                            <!-- Reviewer -->
+                            <div class="reviewer media mt-3">
+                                <!-- Reviewer Thumb -->
+                                <div class="reviewer-thumb">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-1.png" alt="">
+                                </div>
+                                <!-- Reviewer Media -->
+                                <div class="reviewer-meta media-body align-self-center ml-4">
+                                    <h5 class="reviewer-name color-primary mb-2">Junaid Hasan</h5>
+                                    <h6 class="text-secondary fw-6">CEO, Ghaya Prod</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Review -->
+                        <div class="single-review p-5">
+                            <!-- Review Content -->
+                            <div class="review-content">
+                                <!-- Review Text -->
+                                <div class="review-text">
+                                    <p>Ghaya Prod a révolutionné l'image de notre cabinet. Le comparateur Avant/Après et les vidéos 4K tournées au cabinet rassurent immédiatement nos patientes. Notre secrétariat gagne plus de 2 heures par jour.</p>
+                                </div>
+                                <!-- Quotation Icon -->
+                                <div class="quot-icon">
+                                    <img class="avatar-sm" src="assets/img/quote.png" alt="">
+                                </div>
+                            </div>
+                            <!-- Reviewer -->
+                            <div class="reviewer media mt-3">
+                                <!-- Reviewer Thumb -->
+                                <div class="reviewer-thumb">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-2.png" alt="">
+                                </div>
+                                <!-- Reviewer Media -->
+                                <div class="reviewer-meta media-body align-self-center ml-4">
+                                    <h5 class="reviewer-name color-primary mb-2">Dr. Hanane Kashi</h5>
+                                    <h6 class="text-secondary fw-6">Founder, Ghaya Prod</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Review -->
+                        <div class="single-review p-5">
+                            <!-- Review Content -->
+                            <div class="review-content">
+                                <!-- Review Text -->
+                                <div class="review-text">
+                                    <p>Ghaya Prod a révolutionné l'image de notre cabinet. Le comparateur Avant/Après et les vidéos 4K tournées au cabinet rassurent immédiatement nos patientes. Notre secrétariat gagne plus de 2 heures par jour.</p>
+                                </div>
+                                <!-- Quotation Icon -->
+                                <div class="quot-icon">
+                                    <img class="avatar-sm" src="assets/img/quote.png" alt="">
+                                </div>
+                            </div>
+                            <!-- Reviewer -->
+                            <div class="reviewer media mt-3">
+                                <!-- Reviewer Thumb -->
+                                <div class="reviewer-thumb">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-3.png" alt="">
+                                </div>
+                                <!-- Reviewer Media -->
+                                <div class="reviewer-meta media-body align-self-center ml-4">
+                                    <h5 class="reviewer-name color-primary mb-2">Karim Bennani</h5>
+                                    <h6 class="text-secondary fw-6">CEO, Ghaya Prod</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Review Area End ***** -->
+
+        <!--====== Contact Area Start ======-->
+        <section id="contact" class="contact-area ptb_100">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-lg-5">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center mb-3">
+                            <h2>Parlons de Votre Projet</h2>
+                            <p class="d-none d-sm-block mt-4">Chaque ligne de code et chaque plan vidéo sont conçus pour générer des demandes réelles et maximiser vos marges au Maroc et dans le Golfe.</p>
+                            <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                        </div>
+                        <!-- Contact Us -->
+                        <div class="contact-us">
+                            <ul>
+                                <!-- Contact Info -->
+                                <li class="contact-info color-1 bg-hover active hover-bottom text-center p-5 m-3">
+                                    <span><i class="fas fa-mobile-alt fa-3x"></i></span>
+                                    <a class="d-block my-2" href="#">
+                                        <h3>+212 600 980 685</h3>
+                                    </a>
+                                    <p>Boulevard d'Anfa, Casablanca, Maroc</p>
+                                </li>
+                                <!-- Contact Info -->
+                                <li class="contact-info color-3 bg-hover active hover-bottom text-center p-5 m-3">
+                                    <span><i class="fas fa-envelope-open-text fa-3x"></i></span>
+                                    <a class="d-none d-sm-block my-2" href="#">
+                                        <h3>contact@ghayaprod.com</h3>
+                                    </a>
+                                    <a class="d-block d-sm-none my-2" href="#">
+                                        <h3>contact@ghayaprod.com</h3>
+                                    </a>
+                                    <p>Boulevard d'Anfa, Casablanca, Maroc</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 pt-4 pt-lg-0">
+                        <!-- Contact Box -->
+                        <div class="contact-box text-center">
+                            <!-- Contact Form -->
+                            <form id="contact-form" method="POST" action="assets/php/mail.php">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" placeholder="Name" required="required">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" placeholder="Company Name" required="required">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subject" placeholder="Phone" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" placeholder="Message" required="required"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-bordered active btn-block mt-3"><span class="text-white pr-3"><i class="fas fa-paper-plane"></i></span>Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <p class="form-message"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====== Contact Area End ======-->
+
+        <!--====== Call To Action Area Start ======-->
+        <section class="section cta-area bg-overlay ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center m-0">
+                            <h2 class="text-white">Looking for the best digital agency &amp; marketing solution?</h2>
+                            <p class="text-white d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+                            <p class="text-white d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                            <a href="#" class="btn btn-bordered-white mt-4">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====== Call To Action Area End ======-->
+
+        <!--====== Footer Area Start ======-->
+        <footer class="section footer-area">
+            <!-- Footer Top -->
+            <div class="footer-top ptb_100">
+                <div class="container">
                     <div class="row">
-                        <div class="col-sm-6 mb-4">
-                            <div class="bento-card p-4">
-                                <h5 class="font-weight-bold text-white mb-2"><i class="fas fa-video mr-2 text-primary"></i> Panasonic Lumix S5</h5>
-                                <p style="color: #94a3b8; font-size: 14px; margin: 0;">Capteur Plein Format 4K 10-bit V-Log pour des teintes de peau naturelles et un flou d'arrière-plan cinématographique.</p>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                                <h3 class="footer-title text-uppercase mb-2">About Us</h3>
+                                <ul>
+                                    <li class="py-2"><a class="text-black-50" href="#">Company Profile</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Testimonials</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Careers</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Partners</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Affiliate Program</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-sm-6 mb-4">
-                            <div class="bento-card p-4">
-                                <h5 class="font-weight-bold text-white mb-2"><i class="fas fa-microphone mr-2 text-primary"></i> Sennheiser MK4 & Shure</h5>
-                                <p style="color: #94a3b8; font-size: 14px; margin: 0;">Micros de studio broadcast captant une voix profonde et claire, sans aucun écho de pièce clinique.</p>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                                <h3 class="footer-title text-uppercase mb-2">Services</h3>
+                                <ul>
+                                    <li class="py-2"><a class="text-black-50" href="#">Web Application</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Product Management</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">User Interaction Design</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">UX Consultant</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Social Media Marketing</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-sm-6 mb-4">
-                            <div class="bento-card p-4">
-                                <h5 class="font-weight-bold text-white mb-2"><i class="fas fa-wave-square mr-2 text-primary"></i> DJI Ronin RS3 Gimbal</h5>
-                                <p style="color: #94a3b8; font-size: 14px; margin: 0;">Stabilisation gyroscopique 3 axes pour des mouvements de caméra ultra-fluides lors des visites de locaux.</p>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                                <h3 class="footer-title text-uppercase mb-2">Support</h3>
+                                <ul>
+                                    <li class="py-2"><a class="text-black-50" href="#">Frequently Asked</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Terms &amp; Conditions</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Privacy Policy</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Help Center</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Contact Us</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-sm-6 mb-4">
-                            <div class="bento-card p-4">
-                                <h5 class="font-weight-bold text-white mb-2"><i class="fas fa-lightbulb mr-2 text-primary"></i> Éclairage Studio Godox</h5>
-                                <p style="color: #94a3b8; font-size: 14px; margin: 0;">Éclairage doux avec softboxes paraboliques pour sublimer les visages et éliminer les ombres dures.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section Snapshot -->
-    <section class="py-5">
-        <div class="container py-4">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <span class="text-primary font-weight-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">Tarification Spécial Maroc</span>
-                <h2 class="font-weight-bold display-4 mt-2">Investissements Réalistes & Transparents</h2>
-                <p style="color: #94a3b8; max-width: 600px;" class="mx-auto">Tarifs fixes en Dirham Marocain (MAD), sans coûts cachés et avec 50% d'acompte à la commande.</p>
-            </div>
-            <div class="row">
-                <!-- Pack 1 -->
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="bento-card">
-                        <h4 class="font-weight-bold mb-2">Pack Web & Funnel</h4>
-                        <p style="color: #94a3b8; font-size: 14px; min-height: 42px;">
-                            Boutique COD ou site vitrine de prestige calibré pour convertir le trafic marocain.
-                        </p>
-                        <div class="my-4">
-                            <span class="price-tag">3 900</span>
-                            <span class="currency">DH</span>
-                            <div class="text-muted small mt-1">Paiement unique • Clé en main</div>
-                        </div>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-check-circle"></i> Site Web / Boutique COD Ultra-Rapide (Score 95+)</li>
-                            <li><i class="fas fa-check-circle"></i> Design Mobile-First sur-mesure</li>
-                            <li><i class="fas fa-check-circle"></i> Formulaire de Commande 1-Clic avec Regex Maroc</li>
-                            <li><i class="fas fa-check-circle"></i> Intégration WhatsApp Directe avec pré-remplissage</li>
-                            <li><i class="fas fa-check-circle"></i> Configuration Pixels Meta & TikTok sans perte</li>
-                        </ul>
-                        <a href="pricing.html" class="cta-btn-outline w-100 text-center">Voir le détail</a>
-                    </div>
-                </div>
-
-                <!-- Pack 2 -->
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="bento-card featured">
-                        <span class="badge-popular">Le Plus Demandé</span>
-                        <h4 class="font-weight-bold mb-2">Croissance & Vidéo 4K</h4>
-                        <p style="color: #94a3b8; font-size: 14px; min-height: 42px;">
-                            La formule complète pour dominer votre marché : site d'élite et tournage vidéo cinéma.
-                        </p>
-                        <div class="my-4">
-                            <span class="price-tag">7 900</span>
-                            <span class="currency">DH</span>
-                            <div class="text-muted small mt-1">Tournage & Plateforme Intégrale</div>
-                        </div>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-check-circle"></i> <strong>Tout le contenu du Pack Web & Funnel</strong></li>
-                            <li><i class="fas fa-check-circle"></i> Journée Complète de Tournage Cinéma 4K sur site</li>
-                            <li><i class="fas fa-check-circle"></i> Caméra Plein Format Lumix S5 + Stabilisateur DJI</li>
-                            <li><i class="fas fa-check-circle"></i> Son Broadcast Haute Fidélité (Sennheiser/Shure)</li>
-                            <li><i class="fas fa-check-circle"></i> Pack de 8 Reels / Shorts verticaux à fort CTR</li>
-                        </ul>
-                        <a href="pricing.html" class="cta-btn w-100 text-center">Réserver cette formule</a>
-                    </div>
-                </div>
-
-                <!-- Pack 3 -->
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="bento-card">
-                        <h4 class="font-weight-bold mb-2">Domination 360°</h4>
-                        <p style="color: #94a3b8; font-size: 14px; min-height: 42px;">
-                            L'arsenal absolu pour les cliniques médicales, franchises et marques en forte expansion.
-                        </p>
-                        <div class="my-4">
-                            <span class="price-tag">12 900</span>
-                            <span class="currency">DH</span>
-                            <div class="text-muted small mt-1">Écosystème Digital Clé en Main</div>
-                        </div>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-check-circle"></i> Écosystème Web Multi-Pages Luxe + Funnels Dédiés</li>
-                            <li><i class="fas fa-check-circle"></i> Film de Marque Institutionnel 4K + 15 Reels Publicitaires</li>
-                            <li><i class="fas fa-check-circle"></i> Mini-CRM Secrétariat WhatsApp avec gestion d'état</li>
-                            <li><i class="fas fa-check-circle"></i> Système Avant / Après interactif HD pour cliniques</li>
-                            <li><i class="fas fa-check-circle"></i> Support VIP Prioritaire 24/7 & Formation</li>
-                        </ul>
-                        <a href="pricing.html" class="cta-btn-outline w-100 text-center">Voir le détail</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Client Testimonials -->
-    <section class="py-5" style="background: rgba(255,255,255,0.01); border-top: 1px solid var(--card-border);">
-        <div class="container py-4">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <span class="text-primary font-weight-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">Retours d'Expérience</span>
-                <h2 class="font-weight-bold display-4 mt-2">Ce Que Disent Nos Partenaires</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="bento-card">
-                        <div class="mb-3 text-warning">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p style="color: #cbd5e1; font-size: 15px; line-height: 1.8;">
-                            "Ghaya Prod a révolutionné l'image de notre cabinet esthétique. Le comparateur Avant/Après et les vidéos 4K tournées sur place rassurent immédiatement nos patientes. Notre secrétariat gagne plus de 2 heures par jour."
-                        </p>
-                        <div class="d-flex align-items-center mt-4 pt-3 border-top" style="border-color: var(--card-border) !important;">
-                            <div>
-                                <h6 class="font-weight-bold text-white mb-0">Dr. Hanane Kashi</h6>
-                                <span class="small text-muted">Cabinet Médical Esthétique, Casablanca</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="bento-card">
-                        <div class="mb-3 text-warning">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p style="color: #cbd5e1; font-size: 15px; line-height: 1.8;">
-                            "Pour notre marque e-commerce COD, nous avions un problème de confirmation des commandes. Grâce à leur formulaire 1-clic et la redirection WhatsApp instantanée, notre taux de livraison a bondi de 62% à 88%."
-                        </p>
-                        <div class="d-flex align-items-center mt-4 pt-3 border-top" style="border-color: var(--card-border) !important;">
-                            <div>
-                                <h6 class="font-weight-bold text-white mb-0">Karim Bennani</h6>
-                                <span class="small text-muted">Directeur E-Commerce, Darlux Chauffage</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="bento-card">
-                        <div class="mb-3 text-warning">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p style="color: #cbd5e1; font-size: 15px; line-height: 1.8;">
-                            "La rapidité d'exécution et le professionnalisme sur le tournage vidéo sont exceptionnels. Ils ont compris le marché marocain et nos Reels TikTok ont fait plus de 250k vues en organique dès la première semaine."
-                        </p>
-                        <div class="d-flex align-items-center mt-4 pt-3 border-top" style="border-color: var(--card-border) !important;">
-                            <div>
-                                <h6 class="font-weight-bold text-white mb-0">Yasmine Alami</h6>
-                                <span class="small text-muted">Fondatrice, Rosabella Cosmétiques</span>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                                <h3 class="footer-title text-uppercase mb-2">Follow Us</h3>
+                                <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, quae.</p>
+                                <!-- Social Icons -->
+                                <ul class="social-icons list-inline pt-2">
+                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Quick Booking / Contact Section -->
-    <section class="py-5" style="border-top: 1px solid var(--card-border);">
-        <div class="container py-4">
-            <div class="row justify-content-center">
-                <div class="col-lg-8" data-aos="fade-up">
-                    <div class="bento-card p-4 p-md-5">
-                        <div class="text-center mb-4">
-                            <span class="text-primary font-weight-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">Passer à l'Action</span>
-                            <h2 class="font-weight-bold mt-2">Discutons de Votre Projet</h2>
-                            <p style="color: #94a3b8;">Remplissez vos coordonnées pour être redirigé vers WhatsApp avec votre brief pré-rempli.</p>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom bg-grey">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Copyright Area -->
+                            <div class="copyright-area d-flex flex-wrap justify-content-center justify-content-sm-between text-center py-4">
+                                <!-- Copyright Left -->
+                                <div class="copyright-left">&copy; Copyrights 2020 Digimax All rights reserved.</div>
+                                <!-- Copyright Right -->
+                                <div class="copyright-right">Made with <i class="fas fa-heart"></i> By <a href="#">Ghaya Prod</a></div>
+                            </div>
                         </div>
-                        <form onsubmit="handleDirectLead(event)">
-                            <div class="form-row">
-                                <div class="col-md-6 mb-3">
-                                    <label class="text-white font-weight-bold small">Nom & Prénom</label>
-                                    <input type="text" id="leadName" class="form-control form-control-custom" placeholder="ex: Omar Tazi" required>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--====== Footer Area End ======-->
+
+        <!--====== Modal Search Area Start ======-->
+        <div id="search" class="modal fade p-0">
+            <div class="modal-dialog dialog-animated">
+                <div class="modal-content h-100">
+                    <div class="modal-header" data-dismiss="modal">
+                        Search <i class="far fa-times-circle icon-close"></i>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row">
+                            <div class="col-12 align-self-center">
+                                <div class="row">
+                                    <div class="col-12 pb-3">
+                                        <h2 class="search-title mb-3">What are you looking for?</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam lacus, dapibus sed imperdiet consectetur.</p>
+                                    </div>
                                 </div>
-                                <div class="col-md-6 mb-3">
-                                    <label class="text-white font-weight-bold small">Numéro WhatsApp (Maroc)</label>
-                                    <input type="tel" id="leadPhone" class="form-control form-control-custom" placeholder="ex: 06 61 XX XX XX" required>
+                                <div class="row">
+                                    <div class="col-12 input-group">
+                                        <input type="text" class="form-control" placeholder="Enter your keywords">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 input-group align-self-center">
+                                        <button class="btn btn-bordered mt-3">Search</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="col-md-6 mb-3">
-                                    <label class="text-white font-weight-bold small">Formule souhaitée</label>
-                                    <select id="leadPack" class="form-control form-control-custom">
-                                        <option value="Pack Web & Funnel (3 900 DH)">Pack Web & Funnel (3 900 DH)</option>
-                                        <option value="Pack Croissance & Vidéo 4K (7 900 DH)" selected>Pack Croissance & Vidéo 4K (7 900 DH)</option>
-                                        <option value="Pack Domination 360 (12 900 DH)">Pack Domination 360° (12 900 DH)</option>
-                                        <option value="Projet Sur-Mesure">Projet Sur-Mesure / Conseil</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label class="text-white font-weight-bold small">Votre Ville / Marché</label>
-                                    <input type="text" id="leadCity" class="form-control form-control-custom" placeholder="ex: Casablanca, Rabat, Golfe..." required>
-                                </div>
-                            </div>
-                            <div class="mb-4">
-                                <label class="text-white font-weight-bold small">Description rapide de votre activité</label>
-                                <textarea id="leadNotes" rows="3" class="form-control form-control-custom" placeholder="Parlez-nous brièvement de vos objectifs et de vos délais..."></textarea>
-                            </div>
-                            <button type="submit" class="cta-btn w-100 py-3 text-center" style="font-size: 16px;">
-                                <i class="fab fa-whatsapp mr-2" style="font-size: 18px; color: #25D366;"></i> Envoyer ma demande via WhatsApp
-                            </button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        <!--====== Modal Search Area End ======-->
 
-    <script>
-        function handleDirectLead(e) {
-            e.preventDefault();
-            var name = document.getElementById('leadName').value;
-            var phone = document.getElementById('leadPhone').value;
-            var pack = document.getElementById('leadPack').value;
-            var city = document.getElementById('leadCity').value;
-            var notes = document.getElementById('leadNotes').value;
-            
-            var text = "Bonjour Ghaya Prod,%0A%0AJe souhaite démarrer un projet :%0A" +
-                       "• Nom : " + encodeURIComponent(name) + "%0A" +
-                       "• Téléphone : " + encodeURIComponent(phone) + "%0A" +
-                       "• Formule : " + encodeURIComponent(pack) + "%0A" +
-                       "• Ville : " + encodeURIComponent(city) + "%0A" +
-                       "• Détails : " + encodeURIComponent(notes);
-                       
-            window.open("https://wa.me/212600980685?text=" + text, "_blank");
-        }
-    </script>
-
-
-    <!-- Footer -->
-    <footer style="background: #06070a; border-top: 1px solid var(--card-border); padding: 80px 0 35px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-5">
-                    <h4 class="font-weight-bold mb-3">GHAYA<span style="color: var(--primary);">PROD</span></h4>
-                    <p style="color: #94a3b8; font-size: 15px; line-height: 1.8;">
-                        Agence de croissance digitale et studio de production cinéma 4K à Casablanca. Nous créons des écosystèmes web haute conversion et des vidéos publicitaires captivantes pour les cabinets médicaux, marques e-commerce et leaders de marché.
-                    </p>
-                    <div class="mt-3">
-                        <span class="badge" style="background: rgba(99, 102, 241, 0.15); color: #818cf8; border: 1px solid rgba(99,102,241,0.3); padding: 8px 14px; border-radius: 20px;">
-                            📍 Casablanca, Maroc • Rayonnement MENA & GCC
-                        </span>
+        <!--====== Modal Responsive Menu Area Start ======-->
+        <div id="menu" class="modal fade p-0">
+            <div class="modal-dialog dialog-animated">
+                <div class="modal-content h-100">
+                    <div class="modal-header" data-dismiss="modal">
+                        Menu <i class="far fa-times-circle icon-close"></i>
                     </div>
-                </div>
-                <div class="col-lg-2 col-6 mb-5">
-                    <h5 class="font-weight-bold mb-3" style="font-size: 17px;">Navigation</h5>
-                    <ul class="list-unstyled" style="line-height: 2.2;">
-                        <li><a href="index.html" style="color: #94a3b8; text-decoration: none;">Accueil</a></li>
-                        <li><a href="about.html" style="color: #94a3b8; text-decoration: none;">Studio & Gear</a></li>
-                        <li><a href="services.html" style="color: #94a3b8; text-decoration: none;">Nos Expertises</a></li>
-                        <li><a href="portfolio-grid.html" style="color: #94a3b8; text-decoration: none;">Cas Pratiques</a></li>
-                        <li><a href="pricing.html" style="color: #94a3b8; text-decoration: none;">Grille Tarifaire</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-6 mb-5">
-                    <h5 class="font-weight-bold mb-3" style="font-size: 17px;">Solutions</h5>
-                    <ul class="list-unstyled" style="line-height: 2.2;">
-                        <li><a href="services.html" style="color: #94a3b8; text-decoration: none;">Plateformes Web & CRM</a></li>
-                        <li><a href="services.html" style="color: #94a3b8; text-decoration: none;">Production Vidéo Cinéma 4K</a></li>
-                        <li><a href="services.html" style="color: #94a3b8; text-decoration: none;">Boutiques E-Com COD Maroc</a></li>
-                        <li><a href="services.html" style="color: #94a3b8; text-decoration: none;">Reels Verticaux Haute Rétention</a></li>
-                        <li><a href="services.html" style="color: #94a3b8; text-decoration: none;">Secrétariat WhatsApp en 1 Clic</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-5">
-                    <h5 class="font-weight-bold mb-3" style="font-size: 17px;">Contact Rapide</h5>
-                    <p style="color: #94a3b8; font-size: 14px; margin-bottom: 10px;">
-                        <i class="fas fa-phone-alt mr-2" style="color: var(--primary);"></i> +212 600 980 685
-                    </p>
-                    <p style="color: #94a3b8; font-size: 14px; margin-bottom: 10px;">
-                        <i class="fas fa-envelope mr-2" style="color: var(--primary);"></i> contact@ghayaprod.com
-                    </p>
-                    <p style="color: #94a3b8; font-size: 14px; margin-bottom: 18px;">
-                        <i class="fas fa-map-marker-alt mr-2" style="color: var(--primary);"></i> Boulevard d'Anfa, Casablanca, Maroc
-                    </p>
-                    <a href="https://wa.me/212600980685" target="_blank" class="btn btn-sm btn-success px-3 py-2" style="border-radius: 30px; font-weight: 700;">
-                        <i class="fab fa-whatsapp mr-1"></i> Échanger sur WhatsApp
-                    </a>
-                </div>
-            </div>
-            <div class="border-top pt-4 mt-2" style="border-color: rgba(255,255,255,0.06) !important;">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-left">
-                        <p style="color: #64748b; font-size: 14px; margin: 0;">
-                            &copy; 2026 Ghaya Prod. Tous droits réservés. Construit pour la conversion maximale.
-                        </p>
-                    </div>
-                    <div class="col-md-6 text-center text-md-right mt-2 mt-md-0">
-                        <span style="color: #64748b; font-size: 13px;">Tarification transparente en Dirham Marocain (MAD)</span>
+                    <div class="menu modal-body">
+                        <div class="row w-100">
+                            <div class="items p-0 col-12 text-center"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+        <!--====== Modal Responsive Menu Area End ======-->
 
-    <!-- Scripts -->
+    </div>
+
+
+    <!-- ***** All jQuery Plugins ***** -->
+
+    <!-- jQuery(necessary for all JavaScript plugins) -->
     <script src="assets/js/jquery/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap js -->
     <script src="assets/js/bootstrap/popper.min.js"></script>
     <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Plugins js -->
     <script src="assets/js/plugins/plugins.min.js"></script>
+
+    <!-- Active js -->
     <script src="assets/js/active.js"></script>
 </body>
+
 </html>
